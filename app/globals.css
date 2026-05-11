@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-dm-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-dm-sans);
+    background-color: #FDFAF4;
+    color: #1A1A2E;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #F5EED9; }
+  ::-webkit-scrollbar-thumb { background: #C9A84C; border-radius: 99px; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+}
+
+@layer components {
+  .font-display { font-family: var(--font-playfair); }
+
+  .btn-primary {
+    @apply inline-block bg-navy text-white px-9 py-4 rounded-full text-[15px]
+           font-semibold tracking-wide transition-all duration-300
+           hover:-translate-y-1 hover:shadow-2xl relative overflow-hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, rgba(201,168,76,0.2), transparent);
+  }
+  .btn-primary:hover::before { @apply opacity-100; }
+
+  .section-tag {
+    @apply inline-block text-[11px] font-bold tracking-[2.5px] uppercase
+           text-gold mb-4;
+  }
+
+  .section-heading {
+    font-family: var(--font-playfair);
+    @apply text-navy font-bold leading-tight tracking-tight mb-5;
+    font-size: clamp(34px, 4vw, 52px);
+    letter-spacing: -1.5px;
+  }
+
+  .form-input-base {
+    @apply w-full px-4 py-3 border border-gold/20 rounded-xl
+           text-sm text-navy bg-cream outline-none transition-all duration-200
+           focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/10;
+    font-family: var(--font-dm-sans);
+  }
+
+  .card-raised {
+    @apply bg-white rounded-2xl border border-gold/15 shadow-sm;
+  }
+
+  .policy-card-base {
+    @apply bg-white rounded-2xl border border-gold/15 p-6 cursor-pointer
+           transition-all duration-300 relative overflow-hidden;
+  }
+  .policy-card-base::before {
+    content: '';
+    @apply absolute top-0 left-0 bottom-0 w-[3px] bg-gold
+           scale-y-0 transition-transform duration-300 origin-center;
+  }
+  .policy-card-base:hover { @apply shadow-xl translate-x-1; }
+  .policy-card-base:hover::before { @apply scale-y-100; }
+  .policy-card-base.active { @apply shadow-xl translate-x-1; }
+  .policy-card-base.active::before { @apply scale-y-100; }
+}

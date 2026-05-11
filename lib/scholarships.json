@@ -1,0 +1,1835 @@
+[
+  {
+    "id": "s001",
+    "name": "Fulbright Foreign Student Program",
+    "provider": "U.S. Department of State",
+    "country": "United States",
+    "region": "North America",
+    "flag": "🇺🇸",
+    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 50000,
+    "deadline": "2025-10-15",
+    "duration": "1–2 years",
+    "description": "The Fulbright Program is the U.S. government's flagship international educational exchange program, providing funding for graduate study, research, and teaching in over 160 countries. It fosters mutual understanding between Americans and people of other countries.",
+    "benefits": [
+      "Full tuition",
+      "Living stipend",
+      "Round-trip airfare",
+      "Health insurance",
+      "Visa support",
+      "Book allowance"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 75,
+      "minMarks": 750,
+      "exams": [
+        "TOEFL",
+        "IELTS",
+        "GRE (recommended)"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 90,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "prestigious",
+      "research"
+    ],
+    "link": "https://foreign.fulbrightonline.org"
+  },
+  {
+    "id": "s002",
+    "name": "Gates Cambridge Scholarship",
+    "provider": "Gates Cambridge Trust",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "flag": "🇬🇧",
+    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 45000,
+    "deadline": "2025-12-05",
+    "duration": "1–4 years",
+    "description": "Awarded to outstanding applicants from outside the UK to pursue a full-time postgraduate degree at the University of Cambridge. One of the most prestigious scholarships in the world, it selects for exceptional intellect, leadership, and a commitment to improving lives of others.",
+    "benefits": [
+      "Full tuition",
+      "Maintenance allowance £21,000+/yr",
+      "Airfare",
+      "Visa costs",
+      "Family allowance",
+      "Discretionary funding"
+    ],
+    "requirements": {
+      "minGPA": 3.8,
+      "minPercentage": 85,
+      "minMarks": 850,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "Non-UK"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "fully-funded",
+      "prestigious",
+      "ivy-equivalent",
+      "research"
+    ],
+    "link": "https://www.gatescambridge.org"
+  },
+  {
+    "id": "s003",
+    "name": "Rhodes Scholarship",
+    "provider": "Rhodes Trust",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "flag": "🇬🇧",
+    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 55000,
+    "deadline": "2025-10-01",
+    "duration": "2–3 years",
+    "description": "The Rhodes Scholarship is the oldest and most prestigious international scholarship programme, enabling exceptional young people from around the world to study at the University of Oxford. Rhodes Scholars are selected for their intellect, character, leadership, and commitment to service.",
+    "benefits": [
+      "Full tuition at Oxford",
+      "Stipend £17,310/yr",
+      "Airfare",
+      "Visa support",
+      "Healthcare",
+      "Alumni network"
+    ],
+    "requirements": {
+      "minGPA": 3.7,
+      "minPercentage": 85,
+      "minMarks": 850,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "All nationalities (country-specific selection)"
+      ],
+      "ageLimit": 24
+    },
+    "tags": [
+      "fully-funded",
+      "prestigious",
+      "leadership",
+      "oxford"
+    ],
+    "link": "https://www.rhodeshouse.ox.ac.uk"
+  },
+  {
+    "id": "s004",
+    "name": "Chevening Scholarship",
+    "provider": "UK Foreign Commonwealth & Development Office",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "flag": "🇬🇧",
+    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 38000,
+    "deadline": "2025-11-05",
+    "duration": "1 year",
+    "description": "Chevening is the UK government's global scholarship programme offering awards to outstanding scholars with leadership potential from around the world. Chevening Scholars have a demonstrable impact on their communities and countries.",
+    "benefits": [
+      "Full tuition",
+      "Living allowance",
+      "Return airfare",
+      "Travel grants",
+      "Visa fee reimbursement",
+      "Networking events"
+    ],
+    "requirements": {
+      "minGPA": 2.8,
+      "minPercentage": 65,
+      "minMarks": 650,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 79,
+      "nationality": [
+        "Eligible Chevening countries (most non-UK)"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "leadership",
+      "uk"
+    ],
+    "link": "https://www.chevening.org"
+  },
+  {
+    "id": "s005",
+    "name": "DAAD Scholarship",
+    "provider": "German Academic Exchange Service",
+    "country": "Germany",
+    "region": "Europe",
+    "flag": "🇩🇪",
+    "imageUrl": "https://images.unsplash.com/photo-1551009175-15bda9bb8f59?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "€934/month",
+    "amountUSD": 12000,
+    "deadline": "2025-11-15",
+    "duration": "1–3 years",
+    "description": "DAAD offers a wide range of scholarships for international students and researchers wishing to study or conduct research in Germany. Germany's public universities are largely tuition-free for all students, making DAAD one of the most cost-effective global scholarships.",
+    "benefits": [
+      "Monthly stipend €934",
+      "Health insurance",
+      "Travel allowance",
+      "Study/research allowance",
+      "Free tuition at public universities"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "TestDaF",
+        "Goethe Certificate"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 80,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 32
+    },
+    "tags": [
+      "government",
+      "partially-funded",
+      "germany",
+      "research"
+    ],
+    "link": "https://www.daad.de"
+  },
+  {
+    "id": "s006",
+    "name": "Australia Awards Scholarship",
+    "provider": "Australian Government (DFAT)",
+    "country": "Australia",
+    "region": "Oceania",
+    "flag": "🇦🇺",
+    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 42000,
+    "deadline": "2025-04-30",
+    "duration": "1–4 years",
+    "description": "Australia Awards Scholarships provide opportunities for people from developing countries in the Indo-Pacific and beyond to undertake full-time undergraduate or postgraduate studies at Australian institutions.",
+    "benefits": [
+      "Full tuition",
+      "Return airfare",
+      "Living allowance",
+      "Establishment allowance",
+      "Health insurance (OSHC)",
+      "Introductory Academic Program"
+    ],
+    "requirements": {
+      "minGPA": 2.8,
+      "minPercentage": 65,
+      "minMarks": 650,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 79,
+      "nationality": [
+        "Eligible developing countries"
+      ],
+      "ageLimit": 18
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "australia",
+      "development"
+    ],
+    "link": "https://www.australiaawards.gov.au"
+  },
+  {
+    "id": "s007",
+    "name": "Erasmus Mundus Joint Master Degrees",
+    "provider": "European Commission",
+    "country": "Europe (Multi-country)",
+    "region": "Europe",
+    "flag": "🇪🇺",
+    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 28000,
+    "deadline": "2026-01-15",
+    "duration": "1–2 years",
+    "description": "Erasmus Mundus Joint Master Degrees are integrated international study programmes delivered by a consortium of higher education institutions from different countries. Students study in at least two countries and gain double/multiple degrees.",
+    "benefits": [
+      "Full tuition waiver",
+      "Monthly allowance €1,400",
+      "Travel and installation costs",
+      "Insurance coverage",
+      "Unique multi-country study experience"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 90,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "european-commission",
+      "fully-funded",
+      "multi-country",
+      "prestigious"
+    ],
+    "link": "https://erasmus-plus.ec.europa.eu"
+  },
+  {
+    "id": "s008",
+    "name": "Japanese Government (MEXT) Scholarship",
+    "provider": "Ministry of Education, Japan",
+    "country": "Japan",
+    "region": "Asia",
+    "flag": "🇯🇵",
+    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 18000,
+    "deadline": "2025-05-31",
+    "duration": "1–5 years",
+    "description": "The MEXT Scholarship is the Japanese government scholarship programme for international students, covering undergraduate, postgraduate, and research programs at Japanese national universities, with full financial support and Japanese language training.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend ¥117,000–¥145,000",
+      "Round-trip airfare",
+      "Japanese language training"
+    ],
+    "requirements": {
+      "minGPA": 2.8,
+      "minPercentage": 65,
+      "minMarks": 650,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "JLPT (optional)"
+      ],
+      "minIELTS": 5.5,
+      "minTOEFL": 72,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 34
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "japan",
+      "research"
+    ],
+    "link": "https://www.mext.go.jp/en/policy/education/highered/title02/detail02/1373897.htm"
+  },
+  {
+    "id": "s009",
+    "name": "Commonwealth Scholarship",
+    "provider": "Commonwealth Scholarship Commission (UK)",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "flag": "🇬🇧",
+    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 35000,
+    "deadline": "2025-12-10",
+    "duration": "1–3 years",
+    "description": "Commonwealth Scholarships enable talented and motivated individuals from Commonwealth countries to gain the knowledge and skills required for sustainable development. They are funded by the UK Department for International Development.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Airfare",
+      "Thesis grant",
+      "Study travel grant",
+      "Arrival allowance"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "Commonwealth countries"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "commonwealth",
+      "development"
+    ],
+    "link": "https://cscuk.fcdo.gov.uk"
+  },
+  {
+    "id": "s010",
+    "name": "Korean Government Scholarship (KGSP)",
+    "provider": "National Institute for International Education (NIIED)",
+    "country": "South Korea",
+    "region": "Asia",
+    "flag": "🇰🇷",
+    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 20000,
+    "deadline": "2026-02-28",
+    "duration": "1–4 years",
+    "description": "The Global Korea Scholarship (GKS) is offered by the Korean Government to international students to provide opportunities to study at higher educational institutions in Korea and to develop global leaders with a friendly view of Korea.",
+    "benefits": [
+      "Full tuition",
+      "Monthly allowance KRW 900,000",
+      "Settlement allowance",
+      "Korean language training",
+      "Airfare",
+      "Medical insurance"
+    ],
+    "requirements": {
+      "minGPA": 2.64,
+      "minPercentage": 65,
+      "minMarks": 650,
+      "exams": [
+        "TOPIK (Korean preferred)",
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 5.5,
+      "minTOEFL": 71,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 25
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "korea",
+      "undergraduate"
+    ],
+    "link": "https://www.studyinkorea.go.kr"
+  },
+  {
+    "id": "s011",
+    "name": "Chinese Government Scholarship (CSC)",
+    "provider": "China Scholarship Council",
+    "country": "China",
+    "region": "Asia",
+    "flag": "🇨🇳",
+    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 14000,
+    "deadline": "2026-03-31",
+    "duration": "1–4 years",
+    "description": "The Chinese Government Scholarship (CGS) is a full scholarship programme sponsored by China's Ministry of Education, covering undergraduate, master's, doctoral programs, and general scholar programs at designated Chinese universities.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend CNY 2,500–3,500",
+      "On-campus accommodation",
+      "Comprehensive insurance"
+    ],
+    "requirements": {
+      "minGPA": 2.5,
+      "minPercentage": 60,
+      "minMarks": 600,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "HSK (Chinese preferred)"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 45
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "china",
+      "undergraduate"
+    ],
+    "link": "https://www.campuschina.org"
+  },
+  {
+    "id": "s012",
+    "name": "Vanier Canada Graduate Scholarship",
+    "provider": "Government of Canada",
+    "country": "Canada",
+    "region": "North America",
+    "flag": "🇨🇦",
+    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "levels": [
+      "PhD"
+    ],
+    "fields": [
+      "Health Sciences",
+      "Natural Sciences & Engineering",
+      "Social Sciences & Humanities"
+    ],
+    "amount": "CAD 50,000/year",
+    "amountUSD": 38000,
+    "deadline": "2025-11-01",
+    "duration": "3 years",
+    "description": "The Vanier Canada Graduate Scholarship (Vanier CGS) program is designed to attract and retain world-class doctoral students and to establish Canada as a global centre of excellence in research and higher learning.",
+    "benefits": [
+      "CAD 50,000/year for 3 years",
+      "Prestigious research environment",
+      "Access to tri-council networks",
+      "International recognition"
+    ],
+    "requirements": {
+      "minGPA": 3.7,
+      "minPercentage": 85,
+      "minMarks": 850,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "Canadian citizens",
+        "Permanent residents",
+        "International students"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "canada",
+      "research",
+      "phd"
+    ],
+    "link": "https://vanier.gc.ca"
+  },
+  {
+    "id": "s013",
+    "name": "Rotary Foundation Global Grant",
+    "provider": "Rotary International",
+    "country": "Global",
+    "region": "Global",
+    "flag": "🌍",
+    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Peace and Conflict Prevention",
+      "Disease Prevention",
+      "Water and Sanitation",
+      "Maternal and Child Health",
+      "Basic Education",
+      "Economic and Community Development"
+    ],
+    "amount": "USD 30,000+",
+    "amountUSD": 30000,
+    "deadline": "Varies by district",
+    "duration": "1–2 years",
+    "description": "Rotary Global Grants fund large international activities with sustainable, measurable outcomes in one or more of our six areas of focus. Global Grants can fund vocational training teams, humanitarian projects, and scholarships for graduate-level study.",
+    "benefits": [
+      "Minimum USD 30,000 funding",
+      "Study in any Rotary-eligible country",
+      "Strong alumni network",
+      "Leadership development",
+      "Community impact"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 88,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "ngo",
+      "partially-funded",
+      "vocational",
+      "service"
+    ],
+    "link": "https://www.rotary.org/en/our-programs/grants"
+  },
+  {
+    "id": "s014",
+    "name": "Aga Khan Foundation International Scholarship",
+    "provider": "Aga Khan Foundation",
+    "country": "Global",
+    "region": "Global",
+    "flag": "🌍",
+    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding (50% loan)",
+    "amountUSD": 25000,
+    "deadline": "2025-03-31",
+    "duration": "1–2 years",
+    "description": "The Aga Khan Foundation provides a limited number of scholarships each year for postgraduate studies to outstanding students from developing countries who have no other means of financing their studies. Awards are made as a combination of grant and loan.",
+    "benefits": [
+      "50% grant, 50% loan",
+      "Tuition fees covered",
+      "Living expenses",
+      "Travel allowance"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 88,
+      "nationality": [
+        "Developing country nationals"
+      ],
+      "ageLimit": 30
+    },
+    "tags": [
+      "ngo",
+      "fully-funded",
+      "developing-world",
+      "merit-need"
+    ],
+    "link": "https://www.akdn.org/akf-scholarship"
+  },
+  {
+    "id": "s015",
+    "name": "Schwarzman Scholars",
+    "provider": "Schwarzman Scholars Program",
+    "country": "China",
+    "region": "Asia",
+    "flag": "🇨🇳",
+    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "Public Policy",
+      "Economics & Business",
+      "International Studies",
+      "STEM with Leadership focus"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 60000,
+    "deadline": "2025-09-19",
+    "duration": "1 year",
+    "description": "Schwarzman Scholars is a highly selective program at Tsinghua University in Beijing designed to prepare the next generation of global leaders for a world in which China plays a central role. It is modelled after the Rhodes Scholarship.",
+    "benefits": [
+      "Full tuition",
+      "Room and board",
+      "Stipend USD 5,000/year",
+      "All program activities",
+      "Flights",
+      "Mentorship from global leaders"
+    ],
+    "requirements": {
+      "minGPA": 3.5,
+      "minPercentage": 80,
+      "minMarks": 800,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "GMAT",
+        "GRE"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 28
+    },
+    "tags": [
+      "private",
+      "fully-funded",
+      "leadership",
+      "china",
+      "prestigious"
+    ],
+    "link": "https://www.schwarzmanscholars.org"
+  },
+  {
+    "id": "s016",
+    "name": "Swedish Institute Scholarship",
+    "provider": "Swedish Institute",
+    "country": "Sweden",
+    "region": "Europe",
+    "flag": "🇸🇪",
+    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 24000,
+    "deadline": "2026-02-10",
+    "duration": "1–2 years",
+    "description": "The Swedish Institute Study Scholarships are highly competitive scholarships for global professionals who want to pursue a Master's degree in Sweden. The programme targets future leaders and change-makers who want to make a difference in their home countries.",
+    "benefits": [
+      "SEK 11,000/month living costs",
+      "Full tuition",
+      "Travel grant",
+      "Insurance",
+      "Leadership network access"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 90,
+      "nationality": [
+        "Non-EU/EEA nationalities (eligible countries)"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "sweden",
+      "leadership"
+    ],
+    "link": "https://si.se/en/apply/scholarships"
+  },
+  {
+    "id": "s017",
+    "name": "Orange Tulip Scholarship (Netherlands)",
+    "provider": "Nuffic Neso Netherlands",
+    "country": "Netherlands",
+    "region": "Europe",
+    "flag": "🇳🇱",
+    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "€5,000–€25,000",
+    "amountUSD": 10000,
+    "deadline": "2026-02-01",
+    "duration": "1–3 years",
+    "description": "The Orange Tulip Scholarship (OTS) is a scholarship programme initiated by the Dutch Ministry of Education and offered by Dutch universities of applied sciences and research universities in the Netherlands.",
+    "benefits": [
+      "Tuition reduction",
+      "Accommodation support",
+      "Living allowance (some programs)",
+      "Dutch student card benefits"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 80,
+      "nationality": [
+        "Selected non-EU countries"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "partially-funded",
+      "netherlands",
+      "undergraduate"
+    ],
+    "link": "https://www.studyinholland.nl/scholarships/orange-tulip-scholarship"
+  },
+  {
+    "id": "s018",
+    "name": "Swiss Government Excellence Scholarship",
+    "provider": "State Secretariat for Education, Research and Innovation (SERI)",
+    "country": "Switzerland",
+    "region": "Europe",
+    "flag": "🇨🇭",
+    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "levels": [
+      "PhD",
+      "Research",
+      "Postdoc"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 30000,
+    "deadline": "2025-12-15",
+    "duration": "1–3 years",
+    "description": "The Swiss Government Excellence Scholarships are aimed at young researchers from abroad who have completed a master's degree or PhD and at foreign artists who have completed an arts diploma/degree. They promote international exchange and research cooperation.",
+    "benefits": [
+      "CHF 1,920/month stipend",
+      "Free tuition",
+      "Health insurance",
+      "Housing allowance",
+      "Language courses"
+    ],
+    "requirements": {
+      "minGPA": 3.5,
+      "minPercentage": 80,
+      "minMarks": 800,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "Most nationalities excluding Swiss/Liechtenstein"
+      ],
+      "ageLimit": 35
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "switzerland",
+      "research"
+    ],
+    "link": "https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships.html"
+  },
+  {
+    "id": "s019",
+    "name": "New Zealand Excellence Awards",
+    "provider": "Education New Zealand",
+    "country": "New Zealand",
+    "region": "Oceania",
+    "flag": "🇳🇿",
+    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "NZD 10,000–Full tuition",
+    "amountUSD": 15000,
+    "deadline": "2026-03-01",
+    "duration": "1–3 years",
+    "description": "New Zealand Excellence Awards are awarded to exceptional international students who plan to study at postgraduate level in New Zealand. The awards recognise and support those who demonstrate academic excellence and the potential to contribute to their home countries.",
+    "benefits": [
+      "Tuition support",
+      "Living costs contribution",
+      "Travel allowance",
+      "Networking opportunities"
+    ],
+    "requirements": {
+      "minGPA": 3.5,
+      "minPercentage": 80,
+      "minMarks": 800,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 90,
+      "nationality": [
+        "Selected Asian and Pacific countries"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "partially-funded",
+      "new-zealand",
+      "merit"
+    ],
+    "link": "https://www.studywithnewzealand.govt.nz/scholarships"
+  },
+  {
+    "id": "s020",
+    "name": "Eni Award",
+    "provider": "Eni S.p.A. (Italy)",
+    "country": "Italy",
+    "region": "Europe",
+    "flag": "🇮🇹",
+    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Energy",
+      "Environment",
+      "STEM",
+      "Sustainability"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 22000,
+    "deadline": "2025-09-30",
+    "duration": "1–3 years",
+    "description": "The Eni Award supports outstanding research in energy transition, climate change, decarbonization, and sustainability for PhD students and young researchers studying in Italy.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Research budget",
+      "Conference support",
+      "Industry mentorship"
+    ],
+    "requirements": {
+      "minGPA": 3.3,
+      "minPercentage": 75,
+      "minMarks": 750,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 88,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 35
+    },
+    "tags": [
+      "corporate",
+      "partially-funded",
+      "energy",
+      "stem",
+      "italy"
+    ],
+    "link": "https://www.eni.com/en-IT/eni-award.html"
+  },
+  {
+    "id": "s021",
+    "name": "ADB–JSP Scholarship",
+    "provider": "Asian Development Bank (ADB)",
+    "country": "Japan",
+    "region": "Asia",
+    "flag": "🇯🇵",
+    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "Economics",
+      "Management",
+      "Science & Technology",
+      "Law",
+      "Social Work",
+      "Public Policy"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 28000,
+    "deadline": "2025-06-30",
+    "duration": "1–2 years",
+    "description": "The ADB-JSP provides opportunities for qualified citizens of ADB borrowing member countries to undertake postgraduate study at participating academic institutions in the Asia-Pacific region, contributing to sustainable development.",
+    "benefits": [
+      "Full tuition",
+      "Monthly subsistence allowance",
+      "Housing",
+      "Medical insurance",
+      "Airfare"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "GMAT"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "ADB borrowing member countries"
+      ],
+      "ageLimit": 35
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "asia-pacific",
+      "development"
+    ],
+    "link": "https://www.adb.org/site/careers/japan-scholarship-program"
+  },
+  {
+    "id": "s022",
+    "name": "Heinrich Böll Foundation Scholarship",
+    "provider": "Heinrich Böll Foundation (Germany)",
+    "country": "Germany",
+    "region": "Europe",
+    "flag": "🇩🇪",
+    "imageUrl": "https://images.unsplash.com/photo-1551009175-15bda9bb8f59?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Social Sciences",
+      "Environment",
+      "Politics",
+      "Arts",
+      "Culture"
+    ],
+    "amount": "€850/month",
+    "amountUSD": 10000,
+    "deadline": "2026-03-01",
+    "duration": "Up to 3 years",
+    "description": "The Heinrich Böll Foundation offers scholarships to politically engaged students committed to green politics and the principles of ecology, democracy, solidarity, and non-violence. Open to both German and international students.",
+    "benefits": [
+      "Monthly stipend €850 (Master's)",
+      "Study allowance €100/month",
+      "Health insurance",
+      "Book allowance"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "TestDaF",
+        "Goethe Certificate",
+        "IELTS"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "ngo",
+      "partially-funded",
+      "germany",
+      "political-engagement",
+      "environment"
+    ],
+    "link": "https://www.boell.de/en/foundation/scholarships"
+  },
+  {
+    "id": "s023",
+    "name": "Turkish Government Scholarship (Türkiye Burslari)",
+    "provider": "Presidency for Turks Abroad and Related Communities",
+    "country": "Turkey",
+    "region": "Europe",
+    "flag": "🇹🇷",
+    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 8000,
+    "deadline": "2026-02-20",
+    "duration": "1–5 years",
+    "description": "Türkiye Bursları is a prestigious government scholarship offered to international students for academic degrees at Turkish universities. It covers undergraduate through doctoral programs and includes language training.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend TRY 3,700–6,500",
+      "Accommodation",
+      "Health insurance",
+      "Turkish language course",
+      "Return airfare"
+    ],
+    "requirements": {
+      "minGPA": 2.8,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "YÖS (Turkish)"
+      ],
+      "minIELTS": null,
+      "minTOEFL": null,
+      "nationality": [
+        "All non-Turkish nationalities"
+      ],
+      "ageLimit": 30
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "turkey",
+      "undergraduate"
+    ],
+    "link": "https://turkiyeburslari.gov.tr"
+  },
+  {
+    "id": "s024",
+    "name": "Stipendium Hungaricum",
+    "provider": "Hungarian Government",
+    "country": "Hungary",
+    "region": "Europe",
+    "flag": "🇭🇺",
+    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 9000,
+    "deadline": "2026-01-15",
+    "duration": "1–5 years",
+    "description": "The Stipendium Hungaricum Scholarship Programme is designed to increase the number of foreign students in Hungary and strengthen educational cooperation between Hungary and partner countries worldwide.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend HUF 43,700",
+      "Accommodation",
+      "Health insurance"
+    ],
+    "requirements": {
+      "minGPA": 2.5,
+      "minPercentage": 60,
+      "minMarks": 600,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 5.5,
+      "minTOEFL": 72,
+      "nationality": [
+        "Eligible countries per programme"
+      ],
+      "ageLimit": 45
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "hungary",
+      "eastern-europe"
+    ],
+    "link": "https://stipendiumhungaricum.hu"
+  },
+  {
+    "id": "s025",
+    "name": "Taiwan MOE Scholarship",
+    "provider": "Ministry of Education, Taiwan",
+    "country": "Taiwan",
+    "region": "Asia",
+    "flag": "🇹🇼",
+    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "TWD 15,000–25,000/month",
+    "amountUSD": 12000,
+    "deadline": "2026-03-31",
+    "duration": "1–4 years",
+    "description": "Taiwan's Ministry of Education Scholarship is designed to help international students of outstanding academic excellence study in Taiwan. Recipients study at prestigious Taiwanese universities.",
+    "benefits": [
+      "Monthly stipend TWD 15,000–25,000",
+      "Tuition waiver up to TWD 40,000/semester",
+      "One-time airfare"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "TOCFL (Chinese)"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "All non-Taiwanese nationalities"
+      ],
+      "ageLimit": 40
+    },
+    "tags": [
+      "government",
+      "partially-funded",
+      "taiwan",
+      "asian-studies"
+    ],
+    "link": "https://www.studyintaiwan.org/scholarship"
+  },
+  {
+    "id": "s026",
+    "name": "Knight-Hennessy Scholars (Stanford)",
+    "provider": "Stanford University",
+    "country": "United States",
+    "region": "North America",
+    "flag": "🇺🇸",
+    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD",
+      "JD",
+      "MD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 80000,
+    "deadline": "2025-10-09",
+    "duration": "Up to 3 years",
+    "description": "Knight-Hennessy Scholars is one of the world's largest fully endowed graduate scholarship programs, providing funding for graduate students at Stanford University. It selects future leaders committed to creating positive change in the world.",
+    "benefits": [
+      "Full tuition at Stanford",
+      "Living stipend",
+      "Travel allowance",
+      "Community-focused enrichment programs",
+      "Access to Silicon Valley network"
+    ],
+    "requirements": {
+      "minGPA": 3.7,
+      "minPercentage": 85,
+      "minMarks": 850,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "GRE",
+        "GMAT",
+        "LSAT",
+        "MCAT"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "university",
+      "fully-funded",
+      "prestigious",
+      "leadership",
+      "stanford"
+    ],
+    "link": "https://knight-hennessy.stanford.edu"
+  },
+  {
+    "id": "s027",
+    "name": "MasterCard Foundation Scholars Program",
+    "provider": "Mastercard Foundation",
+    "country": "Global (Africa focus)",
+    "region": "Africa",
+    "flag": "🌍",
+    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 35000,
+    "deadline": "Varies by institution",
+    "duration": "2–4 years",
+    "description": "The Mastercard Foundation Scholars Program is dedicated to supporting talented but economically marginalized young people, primarily from Sub-Saharan Africa, to access high-quality education and leadership development.",
+    "benefits": [
+      "Full tuition",
+      "Living expenses",
+      "Transportation",
+      "Books and supplies",
+      "Mentorship",
+      "Leadership training"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "African countries (Sub-Saharan Africa priority)"
+      ],
+      "ageLimit": 35
+    },
+    "tags": [
+      "foundation",
+      "fully-funded",
+      "africa",
+      "need-based",
+      "leadership"
+    ],
+    "link": "https://mastercardfdn.org/our-work/scholars-program"
+  },
+  {
+    "id": "s028",
+    "name": "Harvard University Financial Aid",
+    "provider": "Harvard University",
+    "country": "United States",
+    "region": "North America",
+    "flag": "🇺🇸",
+    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Need-based (up to full tuition)",
+    "amountUSD": 70000,
+    "deadline": "2026-01-01",
+    "duration": "1–4 years",
+    "description": "Harvard is committed to meeting 100% of demonstrated financial need for all admitted undergraduate students, regardless of nationality. Graduate schools also offer extensive fellowships and need-based aid programs.",
+    "benefits": [
+      "Meets 100% of demonstrated financial need",
+      "Living stipend (grad)",
+      "Research funding",
+      "Teaching fellowships",
+      "Health insurance"
+    ],
+    "requirements": {
+      "minGPA": 3.9,
+      "minPercentage": 90,
+      "minMarks": 900,
+      "exams": [
+        "SAT",
+        "ACT",
+        "TOEFL",
+        "IELTS",
+        "GRE",
+        "GMAT"
+      ],
+      "minIELTS": 7.0,
+      "minTOEFL": 100,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "university",
+      "need-based",
+      "prestigious",
+      "ivy-league",
+      "harvard"
+    ],
+    "link": "https://college.harvard.edu/financial-aid"
+  },
+  {
+    "id": "s029",
+    "name": "Franco-British Council Scholarship",
+    "provider": "Franco-British Council",
+    "country": "France",
+    "region": "Europe",
+    "flag": "🇫🇷",
+    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Social Sciences",
+      "Arts & Humanities",
+      "STEM"
+    ],
+    "amount": "€1,000–€3,000",
+    "amountUSD": 3500,
+    "deadline": "2026-01-31",
+    "duration": "3–12 months",
+    "description": "The Franco-British Council Scholarship supports research exchanges and collaborative projects between France and the UK. It is ideal for students conducting joint research, attending conferences, or undertaking short-term placements.",
+    "benefits": [
+      "Research grant €1,000–€3,000",
+      "Conference support",
+      "Cultural exchange",
+      "Bi-national alumni network"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "DELF"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "French or British nationals"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "bilateral",
+      "partially-funded",
+      "france",
+      "uk",
+      "research"
+    ],
+    "link": "https://francobritishcouncil.fr"
+  },
+  {
+    "id": "s030",
+    "name": "Singapore International Graduate Award (SINGA)",
+    "provider": "Agency for Science, Technology and Research (A*STAR)",
+    "country": "Singapore",
+    "region": "Asia",
+    "flag": "🇸🇬",
+    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "levels": [
+      "PhD"
+    ],
+    "fields": [
+      "Biomedical Sciences",
+      "Computing",
+      "Engineering",
+      "Physical Sciences"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 32000,
+    "deadline": "2026-01-01",
+    "duration": "4 years",
+    "description": "SINGA is a prestigious scholarship for international students to pursue PhD studies in Singapore at A*STAR Research Institutes, the National University of Singapore, Nanyang Technological University, or Singapore University of Technology and Design.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend SGD 2,200–2,700",
+      "One-time airfare",
+      "One-time settling-in allowance",
+      "Conference support"
+    ],
+    "requirements": {
+      "minGPA": 3.5,
+      "minPercentage": 80,
+      "minMarks": 800,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "GRE"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 90,
+      "nationality": [
+        "All nationalities except Singapore citizens/PRs"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "singapore",
+      "research",
+      "phd"
+    ],
+    "link": "https://www.singa.a-star.edu.sg"
+  },
+  {
+    "id": "s031",
+    "name": "Joint Japan/World Bank Graduate Scholarship",
+    "provider": "World Bank & Japan",
+    "country": "Japan",
+    "region": "Asia",
+    "flag": "🇯🇵",
+    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "levels": [
+      "Master's"
+    ],
+    "fields": [
+      "Economics",
+      "Public Policy",
+      "Business Administration",
+      "Agriculture",
+      "Environment"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 30000,
+    "deadline": "2026-04-10",
+    "duration": "1–2 years",
+    "description": "The Joint Japan/World Bank Graduate Scholarship Program supports mid-career professionals from developing member countries of the World Bank to pursue a Master's degree related to development at a participating university.",
+    "benefits": [
+      "Full tuition",
+      "Monthly living expenses",
+      "Round-trip airfare",
+      "Health insurance",
+      "Thesis grant"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL",
+        "GMAT"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 80,
+      "nationality": [
+        "World Bank developing member countries"
+      ],
+      "ageLimit": 45
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "world-bank",
+      "development",
+      "mid-career"
+    ],
+    "link": "https://www.worldbank.org/en/programs/scholarships"
+  },
+  {
+    "id": "s032",
+    "name": "Endeavour Leadership Program (Australia)",
+    "provider": "Australian Government",
+    "country": "Australia",
+    "region": "Oceania",
+    "flag": "🇦🇺",
+    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD",
+      "Vocational"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "AUD 15,000–272,500",
+    "amountUSD": 20000,
+    "deadline": "2025-06-30",
+    "duration": "1–4 years",
+    "description": "The Endeavour Leadership Program is the Australian Government's internationally competitive, merit-based scholarship program providing opportunities for high achieving individuals to undertake study, research, or professional development in Australia.",
+    "benefits": [
+      "Tuition contribution",
+      "Monthly living allowance AUD 3,000",
+      "Travel allowance",
+      "Health insurance",
+      "Establishment allowance"
+    ],
+    "requirements": {
+      "minGPA": 3.0,
+      "minPercentage": 70,
+      "minMarks": 700,
+      "exams": [
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.0,
+      "minTOEFL": 79,
+      "nationality": [
+        "Non-Australian citizens"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "government",
+      "partially-funded",
+      "australia",
+      "leadership"
+    ],
+    "link": "https://internationaleducation.gov.au/endeavour"
+  },
+  {
+    "id": "s033",
+    "name": "Russian Government Scholarship",
+    "provider": "Russian Government / Rossotrudnichestvo",
+    "country": "Russia",
+    "region": "Europe",
+    "flag": "🇷🇺",
+    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "levels": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 6000,
+    "deadline": "2026-02-01",
+    "duration": "1–4 years",
+    "description": "The Russian Government offers scholarships to foreign citizens to study at leading Russian universities. The programme covers full tuition and provides a monthly stipend, though students may need to separately arrange accommodation.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend RUB 1,340–2,750",
+      "Russian language preparatory year",
+      "Russian language course"
+    ],
+    "requirements": {
+      "minGPA": 2.5,
+      "minPercentage": 60,
+      "minMarks": 600,
+      "exams": [
+        "TORFL (Russian preferred)",
+        "IELTS"
+      ],
+      "minIELTS": 5.0,
+      "minTOEFL": 60,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": 30
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "russia",
+      "undergraduate"
+    ],
+    "link": "https://studyinrussia.ru/en/study-in-russia/scholarships"
+  },
+  {
+    "id": "s034",
+    "name": "Eiffel Excellence Scholarship (France)",
+    "provider": "Campus France / French Ministry of Foreign Affairs",
+    "country": "France",
+    "region": "Europe",
+    "flag": "🇫🇷",
+    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "levels": [
+      "Master's",
+      "PhD"
+    ],
+    "fields": [
+      "Engineering",
+      "Economics",
+      "Political Science",
+      "Law"
+    ],
+    "amount": "€1,181/month",
+    "amountUSD": 15000,
+    "deadline": "2026-01-08",
+    "duration": "1–3 years",
+    "description": "The Eiffel Excellence Scholarship Program was established by the French Ministry for Europe and Foreign Affairs to enable French higher education institutions to attract top foreign students to pursue master's or doctoral degree programs.",
+    "benefits": [
+      "Monthly allowance €1,181 (Master's)",
+      "Monthly allowance €1,400 (PhD)",
+      "Round-trip airfare",
+      "Health insurance",
+      "Cultural activities"
+    ],
+    "requirements": {
+      "minGPA": 3.5,
+      "minPercentage": 80,
+      "minMarks": 800,
+      "exams": [
+        "DALF",
+        "DELF",
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 88,
+      "nationality": [
+        "All non-French nationalities"
+      ],
+      "ageLimit": 25
+    },
+    "tags": [
+      "government",
+      "fully-funded",
+      "france",
+      "merit",
+      "engineering"
+    ],
+    "link": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence"
+  },
+  {
+    "id": "s035",
+    "name": "NUS Research Scholarship",
+    "provider": "National University of Singapore",
+    "country": "Singapore",
+    "region": "Asia",
+    "flag": "🇸🇬",
+    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "levels": [
+      "PhD",
+      "Research"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "amount": "Full funding",
+    "amountUSD": 30000,
+    "deadline": "Rolling",
+    "duration": "4 years",
+    "description": "The NUS Research Scholarship supports PhD candidates conducting research at NUS, one of Asia's top universities. Scholars are selected based on academic excellence and research potential.",
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend SGD 2,100+",
+      "Conference grants",
+      "Research allowance",
+      "Health insurance"
+    ],
+    "requirements": {
+      "minGPA": 3.5,
+      "minPercentage": 80,
+      "minMarks": 800,
+      "exams": [
+        "GRE",
+        "IELTS",
+        "TOEFL"
+      ],
+      "minIELTS": 6.5,
+      "minTOEFL": 90,
+      "nationality": [
+        "All nationalities"
+      ],
+      "ageLimit": null
+    },
+    "tags": [
+      "university",
+      "fully-funded",
+      "singapore",
+      "research",
+      "phd"
+    ],
+    "link": "https://www.nus.edu.sg/registrar/scholarships"
+  }
+]
