@@ -7,14 +7,8 @@
     "region": "North America",
     "flag": "🇺🇸",
     "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 50000,
     "deadline": "2025-10-15",
@@ -32,24 +26,13 @@
       "minGPA": 3.0,
       "minPercentage": 75,
       "minMarks": 750,
-      "exams": [
-        "TOEFL",
-        "IELTS",
-        "GRE (recommended)"
-      ],
+      "exams": ["TOEFL", "IELTS", "GRE (recommended)"],
       "minIELTS": 6.5,
       "minTOEFL": 90,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "prestigious",
-      "research"
-    ],
+    "tags": ["government", "fully-funded", "prestigious", "research"],
     "link": "https://foreign.fulbrightonline.org"
   },
   {
@@ -60,13 +43,8 @@
     "region": "Europe",
     "flag": "🇬🇧",
     "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 45000,
     "deadline": "2025-12-05",
@@ -84,23 +62,13 @@
       "minGPA": 3.8,
       "minPercentage": 85,
       "minMarks": 850,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
-      "nationality": [
-        "Non-UK"
-      ],
+      "nationality": ["Non-UK"],
       "ageLimit": null
     },
-    "tags": [
-      "fully-funded",
-      "prestigious",
-      "ivy-equivalent",
-      "research"
-    ],
+    "tags": ["fully-funded", "prestigious", "ivy-equivalent", "research"],
     "link": "https://www.gatescambridge.org"
   },
   {
@@ -111,13 +79,8 @@
     "region": "Europe",
     "flag": "🇬🇧",
     "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 55000,
     "deadline": "2025-10-01",
@@ -135,23 +98,13 @@
       "minGPA": 3.7,
       "minPercentage": 85,
       "minMarks": 850,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
-      "nationality": [
-        "All nationalities (country-specific selection)"
-      ],
+      "nationality": ["All nationalities (country-specific selection)"],
       "ageLimit": 24
     },
-    "tags": [
-      "fully-funded",
-      "prestigious",
-      "leadership",
-      "oxford"
-    ],
+    "tags": ["fully-funded", "prestigious", "leadership", "oxford"],
     "link": "https://www.rhodeshouse.ox.ac.uk"
   },
   {
@@ -162,12 +115,8 @@
     "region": "Europe",
     "flag": "🇬🇧",
     "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 38000,
     "deadline": "2025-11-05",
@@ -185,23 +134,13 @@
       "minGPA": 2.8,
       "minPercentage": 65,
       "minMarks": 650,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 79,
-      "nationality": [
-        "Eligible Chevening countries (most non-UK)"
-      ],
+      "nationality": ["Eligible Chevening countries (most non-UK)"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "leadership",
-      "uk"
-    ],
+    "tags": ["government", "fully-funded", "leadership", "uk"],
     "link": "https://www.chevening.org"
   },
   {
@@ -211,16 +150,9 @@
     "country": "Germany",
     "region": "Europe",
     "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1551009175-15bda9bb8f59?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "levels": ["Bachelor's", "Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "€934/month",
     "amountUSD": 12000,
     "deadline": "2025-11-15",
@@ -237,25 +169,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "TestDaF",
-        "Goethe Certificate"
-      ],
+      "exams": ["IELTS", "TOEFL", "TestDaF", "Goethe Certificate"],
       "minIELTS": 6.0,
       "minTOEFL": 80,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 32
     },
-    "tags": [
-      "government",
-      "partially-funded",
-      "germany",
-      "research"
-    ],
+    "tags": ["government", "partially-funded", "germany", "research"],
     "link": "https://www.daad.de"
   },
   {
@@ -266,14 +186,8 @@
     "region": "Oceania",
     "flag": "🇦🇺",
     "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 42000,
     "deadline": "2025-04-30",
@@ -291,23 +205,13 @@
       "minGPA": 2.8,
       "minPercentage": 65,
       "minMarks": 650,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 79,
-      "nationality": [
-        "Eligible developing countries"
-      ],
+      "nationality": ["Eligible developing countries"],
       "ageLimit": 18
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "australia",
-      "development"
-    ],
+    "tags": ["government", "fully-funded", "australia", "development"],
     "link": "https://www.australiaawards.gov.au"
   },
   {
@@ -318,12 +222,8 @@
     "region": "Europe",
     "flag": "🇪🇺",
     "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 28000,
     "deadline": "2026-01-15",
@@ -340,15 +240,10 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 90,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
     "tags": [
@@ -367,15 +262,8 @@
     "region": "Asia",
     "flag": "🇯🇵",
     "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 18000,
     "deadline": "2025-05-31",
@@ -391,24 +279,13 @@
       "minGPA": 2.8,
       "minPercentage": 65,
       "minMarks": 650,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "JLPT (optional)"
-      ],
+      "exams": ["IELTS", "TOEFL", "JLPT (optional)"],
       "minIELTS": 5.5,
       "minTOEFL": 72,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 34
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "japan",
-      "research"
-    ],
+    "tags": ["government", "fully-funded", "japan", "research"],
     "link": "https://www.mext.go.jp/en/policy/education/highered/title02/detail02/1373897.htm"
   },
   {
@@ -419,14 +296,8 @@
     "region": "Europe",
     "flag": "🇬🇧",
     "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 35000,
     "deadline": "2025-12-10",
@@ -444,23 +315,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "Commonwealth countries"
-      ],
+      "nationality": ["Commonwealth countries"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "commonwealth",
-      "development"
-    ],
+    "tags": ["government", "fully-funded", "commonwealth", "development"],
     "link": "https://cscuk.fcdo.gov.uk"
   },
   {
@@ -471,15 +332,8 @@
     "region": "Asia",
     "flag": "🇰🇷",
     "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 20000,
     "deadline": "2026-02-28",
@@ -497,24 +351,13 @@
       "minGPA": 2.64,
       "minPercentage": 65,
       "minMarks": 650,
-      "exams": [
-        "TOPIK (Korean preferred)",
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["TOPIK (Korean preferred)", "IELTS", "TOEFL"],
       "minIELTS": 5.5,
       "minTOEFL": 71,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 25
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "korea",
-      "undergraduate"
-    ],
+    "tags": ["government", "fully-funded", "korea", "undergraduate"],
     "link": "https://www.studyinkorea.go.kr"
   },
   {
@@ -525,15 +368,8 @@
     "region": "Asia",
     "flag": "🇨🇳",
     "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 14000,
     "deadline": "2026-03-31",
@@ -549,24 +385,13 @@
       "minGPA": 2.5,
       "minPercentage": 60,
       "minMarks": 600,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "HSK (Chinese preferred)"
-      ],
+      "exams": ["IELTS", "TOEFL", "HSK (Chinese preferred)"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 45
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "china",
-      "undergraduate"
-    ],
+    "tags": ["government", "fully-funded", "china", "undergraduate"],
     "link": "https://www.campuschina.org"
   },
   {
@@ -577,9 +402,7 @@
     "region": "North America",
     "flag": "🇨🇦",
     "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
-    "levels": [
-      "PhD"
-    ],
+    "levels": ["PhD"],
     "fields": [
       "Health Sciences",
       "Natural Sciences & Engineering",
@@ -600,10 +423,7 @@
       "minGPA": 3.7,
       "minPercentage": 85,
       "minMarks": 850,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
       "nationality": [
@@ -613,13 +433,7 @@
       ],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "canada",
-      "research",
-      "phd"
-    ],
+    "tags": ["government", "fully-funded", "canada", "research", "phd"],
     "link": "https://vanier.gc.ca"
   },
   {
@@ -630,10 +444,7 @@
     "region": "Global",
     "flag": "🌍",
     "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
+    "levels": ["Master's", "PhD"],
     "fields": [
       "Peace and Conflict Prevention",
       "Disease Prevention",
@@ -658,23 +469,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 88,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
-    "tags": [
-      "ngo",
-      "partially-funded",
-      "vocational",
-      "service"
-    ],
+    "tags": ["ngo", "partially-funded", "vocational", "service"],
     "link": "https://www.rotary.org/en/our-programs/grants"
   },
   {
@@ -685,12 +486,8 @@
     "region": "Global",
     "flag": "🌍",
     "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's"],
+    "fields": ["All Fields"],
     "amount": "Full funding (50% loan)",
     "amountUSD": 25000,
     "deadline": "2025-03-31",
@@ -706,23 +503,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 88,
-      "nationality": [
-        "Developing country nationals"
-      ],
+      "nationality": ["Developing country nationals"],
       "ageLimit": 30
     },
-    "tags": [
-      "ngo",
-      "fully-funded",
-      "developing-world",
-      "merit-need"
-    ],
+    "tags": ["ngo", "fully-funded", "developing-world", "merit-need"],
     "link": "https://www.akdn.org/akf-scholarship"
   },
   {
@@ -733,9 +520,7 @@
     "region": "Asia",
     "flag": "🇨🇳",
     "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
+    "levels": ["Master's"],
     "fields": [
       "Public Policy",
       "Economics & Business",
@@ -759,26 +544,13 @@
       "minGPA": 3.5,
       "minPercentage": 80,
       "minMarks": 800,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "GMAT",
-        "GRE"
-      ],
+      "exams": ["IELTS", "TOEFL", "GMAT", "GRE"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 28
     },
-    "tags": [
-      "private",
-      "fully-funded",
-      "leadership",
-      "china",
-      "prestigious"
-    ],
+    "tags": ["private", "fully-funded", "leadership", "china", "prestigious"],
     "link": "https://www.schwarzmanscholars.org"
   },
   {
@@ -789,12 +561,8 @@
     "region": "Europe",
     "flag": "🇸🇪",
     "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 24000,
     "deadline": "2026-02-10",
@@ -811,23 +579,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 90,
-      "nationality": [
-        "Non-EU/EEA nationalities (eligible countries)"
-      ],
+      "nationality": ["Non-EU/EEA nationalities (eligible countries)"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "sweden",
-      "leadership"
-    ],
+    "tags": ["government", "fully-funded", "sweden", "leadership"],
     "link": "https://si.se/en/apply/scholarships"
   },
   {
@@ -838,13 +596,8 @@
     "region": "Europe",
     "flag": "🇳🇱",
     "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's"],
+    "fields": ["All Fields"],
     "amount": "€5,000–€25,000",
     "amountUSD": 10000,
     "deadline": "2026-02-01",
@@ -860,23 +613,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.0,
       "minTOEFL": 80,
-      "nationality": [
-        "Selected non-EU countries"
-      ],
+      "nationality": ["Selected non-EU countries"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "partially-funded",
-      "netherlands",
-      "undergraduate"
-    ],
+    "tags": ["government", "partially-funded", "netherlands", "undergraduate"],
     "link": "https://www.studyinholland.nl/scholarships/orange-tulip-scholarship"
   },
   {
@@ -887,14 +630,8 @@
     "region": "Europe",
     "flag": "🇨🇭",
     "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
-    "levels": [
-      "PhD",
-      "Research",
-      "Postdoc"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["PhD", "Research", "Postdoc"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 30000,
     "deadline": "2025-12-15",
@@ -911,23 +648,13 @@
       "minGPA": 3.5,
       "minPercentage": 80,
       "minMarks": 800,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
-      "nationality": [
-        "Most nationalities excluding Swiss/Liechtenstein"
-      ],
+      "nationality": ["Most nationalities excluding Swiss/Liechtenstein"],
       "ageLimit": 35
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "switzerland",
-      "research"
-    ],
+    "tags": ["government", "fully-funded", "switzerland", "research"],
     "link": "https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships.html"
   },
   {
@@ -938,13 +665,8 @@
     "region": "Oceania",
     "flag": "🇳🇿",
     "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "NZD 10,000–Full tuition",
     "amountUSD": 15000,
     "deadline": "2026-03-01",
@@ -960,23 +682,13 @@
       "minGPA": 3.5,
       "minPercentage": 80,
       "minMarks": 800,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 90,
-      "nationality": [
-        "Selected Asian and Pacific countries"
-      ],
+      "nationality": ["Selected Asian and Pacific countries"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "partially-funded",
-      "new-zealand",
-      "merit"
-    ],
+    "tags": ["government", "partially-funded", "new-zealand", "merit"],
     "link": "https://www.studywithnewzealand.govt.nz/scholarships"
   },
   {
@@ -987,16 +699,8 @@
     "region": "Europe",
     "flag": "🇮🇹",
     "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Energy",
-      "Environment",
-      "STEM",
-      "Sustainability"
-    ],
+    "levels": ["Master's", "PhD"],
+    "fields": ["Energy", "Environment", "STEM", "Sustainability"],
     "amount": "Full funding",
     "amountUSD": 22000,
     "deadline": "2025-09-30",
@@ -1013,24 +717,13 @@
       "minGPA": 3.3,
       "minPercentage": 75,
       "minMarks": 750,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 88,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 35
     },
-    "tags": [
-      "corporate",
-      "partially-funded",
-      "energy",
-      "stem",
-      "italy"
-    ],
+    "tags": ["corporate", "partially-funded", "energy", "stem", "italy"],
     "link": "https://www.eni.com/en-IT/eni-award.html"
   },
   {
@@ -1041,9 +734,7 @@
     "region": "Asia",
     "flag": "🇯🇵",
     "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
+    "levels": ["Master's"],
     "fields": [
       "Economics",
       "Management",
@@ -1068,24 +759,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "GMAT"
-      ],
+      "exams": ["IELTS", "TOEFL", "GMAT"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "ADB borrowing member countries"
-      ],
+      "nationality": ["ADB borrowing member countries"],
       "ageLimit": 35
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "asia-pacific",
-      "development"
-    ],
+    "tags": ["government", "fully-funded", "asia-pacific", "development"],
     "link": "https://www.adb.org/site/careers/japan-scholarship-program"
   },
   {
@@ -1095,19 +775,9 @@
     "country": "Germany",
     "region": "Europe",
     "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1551009175-15bda9bb8f59?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Social Sciences",
-      "Environment",
-      "Politics",
-      "Arts",
-      "Culture"
-    ],
+    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "levels": ["Bachelor's", "Master's", "PhD"],
+    "fields": ["Social Sciences", "Environment", "Politics", "Arts", "Culture"],
     "amount": "€850/month",
     "amountUSD": 10000,
     "deadline": "2026-03-01",
@@ -1123,16 +793,10 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "TestDaF",
-        "Goethe Certificate",
-        "IELTS"
-      ],
+      "exams": ["TestDaF", "Goethe Certificate", "IELTS"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
     "tags": [
@@ -1152,15 +816,8 @@
     "region": "Europe",
     "flag": "🇹🇷",
     "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 8000,
     "deadline": "2026-02-20",
@@ -1178,22 +835,13 @@
       "minGPA": 2.8,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "YÖS (Turkish)"
-      ],
+      "exams": ["YÖS (Turkish)"],
       "minIELTS": null,
       "minTOEFL": null,
-      "nationality": [
-        "All non-Turkish nationalities"
-      ],
+      "nationality": ["All non-Turkish nationalities"],
       "ageLimit": 30
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "turkey",
-      "undergraduate"
-    ],
+    "tags": ["government", "fully-funded", "turkey", "undergraduate"],
     "link": "https://turkiyeburslari.gov.tr"
   },
   {
@@ -1204,14 +852,8 @@
     "region": "Europe",
     "flag": "🇭🇺",
     "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 9000,
     "deadline": "2026-01-15",
@@ -1227,23 +869,13 @@
       "minGPA": 2.5,
       "minPercentage": 60,
       "minMarks": 600,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 5.5,
       "minTOEFL": 72,
-      "nationality": [
-        "Eligible countries per programme"
-      ],
+      "nationality": ["Eligible countries per programme"],
       "ageLimit": 45
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "hungary",
-      "eastern-europe"
-    ],
+    "tags": ["government", "fully-funded", "hungary", "eastern-europe"],
     "link": "https://stipendiumhungaricum.hu"
   },
   {
@@ -1254,14 +886,8 @@
     "region": "Asia",
     "flag": "🇹🇼",
     "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "TWD 15,000–25,000/month",
     "amountUSD": 12000,
     "deadline": "2026-03-31",
@@ -1276,24 +902,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "TOCFL (Chinese)"
-      ],
+      "exams": ["IELTS", "TOEFL", "TOCFL (Chinese)"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "All non-Taiwanese nationalities"
-      ],
+      "nationality": ["All non-Taiwanese nationalities"],
       "ageLimit": 40
     },
-    "tags": [
-      "government",
-      "partially-funded",
-      "taiwan",
-      "asian-studies"
-    ],
+    "tags": ["government", "partially-funded", "taiwan", "asian-studies"],
     "link": "https://www.studyintaiwan.org/scholarship"
   },
   {
@@ -1304,15 +919,8 @@
     "region": "North America",
     "flag": "🇺🇸",
     "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD",
-      "JD",
-      "MD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Master's", "PhD", "JD", "MD"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 80000,
     "deadline": "2025-10-09",
@@ -1329,19 +937,10 @@
       "minGPA": 3.7,
       "minPercentage": 85,
       "minMarks": 850,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "GRE",
-        "GMAT",
-        "LSAT",
-        "MCAT"
-      ],
+      "exams": ["IELTS", "TOEFL", "GRE", "GMAT", "LSAT", "MCAT"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
     "tags": [
@@ -1361,13 +960,8 @@
     "region": "Africa",
     "flag": "🌍",
     "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 35000,
     "deadline": "Varies by institution",
@@ -1385,15 +979,10 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "African countries (Sub-Saharan Africa priority)"
-      ],
+      "nationality": ["African countries (Sub-Saharan Africa priority)"],
       "ageLimit": 35
     },
     "tags": [
@@ -1413,14 +1002,8 @@
     "region": "North America",
     "flag": "🇺🇸",
     "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "Need-based (up to full tuition)",
     "amountUSD": 70000,
     "deadline": "2026-01-01",
@@ -1437,19 +1020,10 @@
       "minGPA": 3.9,
       "minPercentage": 90,
       "minMarks": 900,
-      "exams": [
-        "SAT",
-        "ACT",
-        "TOEFL",
-        "IELTS",
-        "GRE",
-        "GMAT"
-      ],
+      "exams": ["SAT", "ACT", "TOEFL", "IELTS", "GRE", "GMAT"],
       "minIELTS": 7.0,
       "minTOEFL": 100,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
     "tags": [
@@ -1469,15 +1043,8 @@
     "region": "Europe",
     "flag": "🇫🇷",
     "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Social Sciences",
-      "Arts & Humanities",
-      "STEM"
-    ],
+    "levels": ["Master's", "PhD"],
+    "fields": ["Social Sciences", "Arts & Humanities", "STEM"],
     "amount": "€1,000–€3,000",
     "amountUSD": 3500,
     "deadline": "2026-01-31",
@@ -1493,24 +1060,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "DELF"
-      ],
+      "exams": ["IELTS", "DELF"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "French or British nationals"
-      ],
+      "nationality": ["French or British nationals"],
       "ageLimit": null
     },
-    "tags": [
-      "bilateral",
-      "partially-funded",
-      "france",
-      "uk",
-      "research"
-    ],
+    "tags": ["bilateral", "partially-funded", "france", "uk", "research"],
     "link": "https://francobritishcouncil.fr"
   },
   {
@@ -1521,9 +1077,7 @@
     "region": "Asia",
     "flag": "🇸🇬",
     "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
-    "levels": [
-      "PhD"
-    ],
+    "levels": ["PhD"],
     "fields": [
       "Biomedical Sciences",
       "Computing",
@@ -1546,25 +1100,13 @@
       "minGPA": 3.5,
       "minPercentage": 80,
       "minMarks": 800,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "GRE"
-      ],
+      "exams": ["IELTS", "TOEFL", "GRE"],
       "minIELTS": 6.5,
       "minTOEFL": 90,
-      "nationality": [
-        "All nationalities except Singapore citizens/PRs"
-      ],
+      "nationality": ["All nationalities except Singapore citizens/PRs"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "singapore",
-      "research",
-      "phd"
-    ],
+    "tags": ["government", "fully-funded", "singapore", "research", "phd"],
     "link": "https://www.singa.a-star.edu.sg"
   },
   {
@@ -1575,9 +1117,7 @@
     "region": "Asia",
     "flag": "🇯🇵",
     "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
+    "levels": ["Master's"],
     "fields": [
       "Economics",
       "Public Policy",
@@ -1601,16 +1141,10 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "GMAT"
-      ],
+      "exams": ["IELTS", "TOEFL", "GMAT"],
       "minIELTS": 6.0,
       "minTOEFL": 80,
-      "nationality": [
-        "World Bank developing member countries"
-      ],
+      "nationality": ["World Bank developing member countries"],
       "ageLimit": 45
     },
     "tags": [
@@ -1630,15 +1164,8 @@
     "region": "Oceania",
     "flag": "🇦🇺",
     "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Vocational"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD", "Vocational"],
+    "fields": ["All Fields"],
     "amount": "AUD 15,000–272,500",
     "amountUSD": 20000,
     "deadline": "2025-06-30",
@@ -1655,23 +1182,13 @@
       "minGPA": 3.0,
       "minPercentage": 70,
       "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["IELTS", "TOEFL"],
       "minIELTS": 6.0,
       "minTOEFL": 79,
-      "nationality": [
-        "Non-Australian citizens"
-      ],
+      "nationality": ["Non-Australian citizens"],
       "ageLimit": null
     },
-    "tags": [
-      "government",
-      "partially-funded",
-      "australia",
-      "leadership"
-    ],
+    "tags": ["government", "partially-funded", "australia", "leadership"],
     "link": "https://internationaleducation.gov.au/endeavour"
   },
   {
@@ -1682,14 +1199,8 @@
     "region": "Europe",
     "flag": "🇷🇺",
     "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["Bachelor's", "Master's", "PhD"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 6000,
     "deadline": "2026-02-01",
@@ -1705,23 +1216,13 @@
       "minGPA": 2.5,
       "minPercentage": 60,
       "minMarks": 600,
-      "exams": [
-        "TORFL (Russian preferred)",
-        "IELTS"
-      ],
+      "exams": ["TORFL (Russian preferred)", "IELTS"],
       "minIELTS": 5.0,
       "minTOEFL": 60,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": 30
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "russia",
-      "undergraduate"
-    ],
+    "tags": ["government", "fully-funded", "russia", "undergraduate"],
     "link": "https://studyinrussia.ru/en/study-in-russia/scholarships"
   },
   {
@@ -1732,16 +1233,8 @@
     "region": "Europe",
     "flag": "🇫🇷",
     "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Engineering",
-      "Economics",
-      "Political Science",
-      "Law"
-    ],
+    "levels": ["Master's", "PhD"],
+    "fields": ["Engineering", "Economics", "Political Science", "Law"],
     "amount": "€1,181/month",
     "amountUSD": 15000,
     "deadline": "2026-01-08",
@@ -1758,26 +1251,13 @@
       "minGPA": 3.5,
       "minPercentage": 80,
       "minMarks": 800,
-      "exams": [
-        "DALF",
-        "DELF",
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["DALF", "DELF", "IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 88,
-      "nationality": [
-        "All non-French nationalities"
-      ],
+      "nationality": ["All non-French nationalities"],
       "ageLimit": 25
     },
-    "tags": [
-      "government",
-      "fully-funded",
-      "france",
-      "merit",
-      "engineering"
-    ],
+    "tags": ["government", "fully-funded", "france", "merit", "engineering"],
     "link": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence"
   },
   {
@@ -1788,13 +1268,8 @@
     "region": "Asia",
     "flag": "🇸🇬",
     "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
-    "levels": [
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
+    "levels": ["PhD", "Research"],
+    "fields": ["All Fields"],
     "amount": "Full funding",
     "amountUSD": 30000,
     "deadline": "Rolling",
@@ -1811,25 +1286,13 @@
       "minGPA": 3.5,
       "minPercentage": 80,
       "minMarks": 800,
-      "exams": [
-        "GRE",
-        "IELTS",
-        "TOEFL"
-      ],
+      "exams": ["GRE", "IELTS", "TOEFL"],
       "minIELTS": 6.5,
       "minTOEFL": 90,
-      "nationality": [
-        "All nationalities"
-      ],
+      "nationality": ["All nationalities"],
       "ageLimit": null
     },
-    "tags": [
-      "university",
-      "fully-funded",
-      "singapore",
-      "research",
-      "phd"
-    ],
+    "tags": ["university", "fully-funded", "singapore", "research", "phd"],
     "link": "https://www.nus.edu.sg/registrar/scholarships"
   }
 ]

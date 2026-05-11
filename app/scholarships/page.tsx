@@ -1,15 +1,14 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import scholarshipsData from '@/lib/scholarships.json'
 import type { Scholarship, ScholarshipFilters, MarksMode } from '@/types'
 
-const scholarships = scholarshipsData as Scholarship[]
+const baseScholarships = scholarshipsData as Scholarship[]
 
-const ALL_REGIONS = ['All Regions', ...Array.from(new Set(scholarships.map(s => s.region))).sort()]
 const ALL_LEVELS = ['All Levels', "Bachelor's", "Master's", 'PhD', 'Research', 'Postdoc', 'Vocational']
 const ALL_FIELDS = ['All Fields', 'STEM', 'Medicine', 'Business', 'Law', 'Arts & Humanities', 'Social Sciences', 'Engineering', 'Environment', 'Public Policy']
 const ALL_EXAMS = ['Any Exam', 'IELTS', 'TOEFL', 'GRE', 'GMAT', 'JLPT', 'TestDaF', 'SAT', 'ACT']
@@ -46,6 +45,19 @@ export default function ScholarshipsPage() {
   const [userPct, setUserPct] = useState(0)
   const [userMarks, setUserMarks] = useState(0)
   const [userMarksMax, setUserMarksMax] = useState(1000)
+  const [addedScholarships, setAddedScholarships] = useState<Scholarship[]>([])
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('gr_custom_scholarships')
+      if (stored) setAddedScholarships(JSON.parse(stored))
+    } catch {
+      // ignore invalid local storage data
+    }
+  }, [])
+
+  const scholarships = useMemo(() => [...addedScholarships, ...baseScholarships], [addedScholarships])
+  const ALL_REGIONS = ['All Regions', ...Array.from(new Set(scholarships.map(s => s.region))).sort()]
 
   const pctEquiv = marksMode === 'gpa' ? (userGPA / 4) * 100
     : marksMode === 'marks' && userMarksMax > 0 ? (userMarks / userMarksMax) * 100
@@ -69,7 +81,7 @@ export default function ScholarshipsPage() {
       if (filters.sortBy === 'name') return a.name.localeCompare(b.name)
       return new Date(a.deadline).getTime() - new Date(b.deadline).getTime()
     })
-  }, [filters, pctEquiv])
+  }, [filters, pctEquiv, scholarships])
 
   const setF = (key: keyof ScholarshipFilters, val: string | number) =>
     setFilters(p => ({ ...p, [key]: val }))

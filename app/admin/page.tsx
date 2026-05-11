@@ -6,7 +6,8 @@ import { useAuth } from '@/context/AuthContext'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { MOCK_APPLICATIONS } from '@/lib/mockApplications'
-import type { Application, AppStatus } from '@/types'
+import scholarshipsData from '@/lib/scholarships.json'
+import type { Application, AppStatus, Scholarship } from '@/types'
 
 /* ─── Constants ─────────────────────────────────────────── */
 const ALL_STATUSES: AppStatus[] = ['Pending', 'Under Review', 'Shortlisted', 'Accepted', 'Rejected']
@@ -20,6 +21,54 @@ const STATUS_STYLE: Record<AppStatus, { pill: string; dot: string }> = {
 }
 
 const PER_PAGE = 12
+
+interface ScholarshipFormState {
+  name: string
+  provider: string
+  country: string
+  region: string
+  flag: string
+  imageUrl: string
+  levels: string
+  fields: string
+  amount: string
+  amountUSD: number
+  deadline: string
+  duration: string
+  description: string
+  benefits: string
+  tags: string
+  link: string
+  minGPA: number
+  minPercentage: number
+  minMarks: number
+  exams: string
+}
+
+const blankScholarshipForm: ScholarshipFormState = {
+  name: '',
+  provider: 'GlobalReach',
+  country: 'International',
+  region: 'Global',
+  flag: '🌍',
+  imageUrl: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
+  levels: "Master's",
+  fields: 'All Fields',
+  amount: 'Full funding',
+  amountUSD: 0,
+  deadline: new Date().toISOString().slice(0, 10),
+  duration: '1 year',
+  description: '',
+  benefits: 'Full tuition, Living stipend, Travel support',
+  tags: 'fully-funded',
+  link: 'https://',
+  minGPA: 3,
+  minPercentage: 75,
+  minMarks: 750,
+  exams: 'IELTS, TOEFL',
+}
+
+const parseList = (value: string) => value.split(',').map(item => item.trim()).filter(Boolean)
 
 /* ─── Helper: format score ──────────────────────────────── */
 function formatScore(a: Application): string {
@@ -62,11 +111,36 @@ export default function AdminDashboard() {
   const [selected,     setSelected]     = useState<Application | null>(null)
   const [page,         setPage]         = useState(1)
   const [editNote,     setEditNote]     = useState('')
+  const [scholarships, setScholarships] = useState<Scholarship[]>(scholarshipsData as Scholarship[])
+  const [customScholarships, setCustomScholarships] = useState<Scholarship[]>([])
+  const [scholarshipSearch, setScholarshipSearch] = useState('')
+  const [scholarshipModalOpen, setScholarshipModalOpen] = useState(false)
+  const [selectedScholarship, setSelectedScholarship] = useState<Scholarship | null>(null)
+  const [isEditingScholarship, setIsEditingScholarship] = useState(false)
+  const [scholarshipForm, setScholarshipForm] = useState<ScholarshipFormState>(blankScholarshipForm)
+
+  const mergeScholarships = (custom: Scholarship[]) => {
+    const customIds = new Set(custom.map(s => s.id))
+    return [...custom, ...scholarshipsData.filter(s => !customIds.has(s.id))]
+  }
 
   // Guard: admin only
   useEffect(() => {
     if (!loading && (!user || user.role !== 'admin')) router.replace('/login')
   }, [user, loading, router])
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('gr_custom_scholarships')
+      if (stored) {
+        const custom = JSON.parse(stored) as Scholarship[]
+        setCustomScholarships(custom)
+        setScholarships(mergeScholarships(custom))
+      }
+    } catch {
+      // ignore invalid local storage data
+    }
+  }, [])
 
   // Derived filter options
   const destinations = useMemo(() => ['All', ...Array.from(new Set(apps.map(a => a.destination))).sort()], [apps])
@@ -112,6 +186,52 @@ export default function AdminDashboard() {
     setSelected(prev => prev?.id === id ? { ...prev, notes: editNote } : prev)
   }
 
+  const saveScholarship = () => {
+    const scholarship: Scholarship = {
+      id: isEditingScholarship && selectedScholarship ? selectedScholarship.id : `custom-${Date.now()}`,
+      name: scholarshipForm.name.trim() || 'New Scholarship',
+      provider: scholarshipForm.provider.trim() || 'GlobalReach',
+      country: scholarshipForm.country.trim() || 'International',
+      region: scholarshipForm.region.trim() || 'Global',
+      flag: scholarshipForm.flag.trim() || '🌍',
+      imageUrl: scholarshipForm.imageUrl.trim() || 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
+      levels: parseList(scholarshipForm.levels),
+      fields: parseList(scholarshipForm.fields),
+      amount: scholarshipForm.amount.trim() || 'TBD',
+      amountUSD: Number(scholarshipForm.amountUSD) || 0,
+      deadline: scholarshipForm.deadline,
+      duration: scholarshipForm.duration.trim() || '1 year',
+      description: scholarshipForm.description.trim() || 'No description available.',
+      benefits: parseList(scholarshipForm.benefits),
+      requirements: {
+        minGPA: Number(scholarshipForm.minGPA) || 0,
+        minPercentage: Number(scholarshipForm.minPercentage) || 0,
+        minMarks: Number(scholarshipForm.minMarks) || 0,
+        exams: parseList(scholarshipForm.exams),
+        minIELTS: null,
+        minTOEFL: null,
+        nationality: ['All nationalities'],
+        ageLimit: null,
+      },
+      tags: parseList(scholarshipForm.tags),
+      link: scholarshipForm.link.trim() || '#',
+    }
+
+    const nextCustom = isEditingScholarship
+      ? customScholarships.some(s => s.id === scholarship.id)
+        ? customScholarships.map(s => s.id === scholarship.id ? scholarship : s)
+        : [scholarship, ...customScholarships]
+      : [scholarship, ...customScholarships]
+
+    setCustomScholarships(nextCustom)
+    setScholarships(mergeScholarships(nextCustom))
+    localStorage.setItem('gr_custom_scholarships', JSON.stringify(nextCustom))
+    setScholarshipModalOpen(false)
+    setScholarshipForm(blankScholarshipForm)
+    setSelectedScholarship(null)
+    setIsEditingScholarship(false)
+  }
+
   const openDetail = (app: Application) => {
     setSelected(app)
     setEditNote(app.notes ?? '')
@@ -120,6 +240,30 @@ export default function AdminDashboard() {
   const resetFilters = () => {
     setSearch(''); setStatusFilter('All'); setDestFilter('All')
     setLevelFilter('All'); setFieldFilter('All'); setPage(1)
+  }
+
+  const openAddScholarship = () => {
+    setScholarshipForm(blankScholarshipForm)
+    setSelectedScholarship(null)
+    setIsEditingScholarship(false)
+    setScholarshipModalOpen(true)
+  }
+
+  const openEditScholarship = (scholarship: Scholarship) => {
+    setScholarshipForm({
+      ...scholarship,
+      levels: scholarship.levels.join(', '),
+      fields: scholarship.fields.join(', '),
+      benefits: scholarship.benefits.join(', '),
+      exams: scholarship.requirements.exams.join(', '),
+      tags: scholarship.tags.join(', '),
+      minGPA: scholarship.requirements.minGPA,
+      minPercentage: scholarship.requirements.minPercentage,
+      minMarks: scholarship.requirements.minMarks,
+    })
+    setSelectedScholarship(scholarship)
+    setIsEditingScholarship(true)
+    setScholarshipModalOpen(true)
   }
 
   const selCls = 'px-3 py-2 rounded-xl border border-gold/20 text-[13px] text-navy outline-none focus:border-gold bg-white transition-all cursor-pointer'
@@ -178,6 +322,16 @@ export default function AdminDashboard() {
           </p>
         </div>
 
+        <div className="flex flex-wrap items-center gap-3 mb-8">
+          <button onClick={openAddScholarship}
+            className="px-4 py-3 rounded-2xl bg-gold text-navy font-semibold transition hover:bg-gold/90">
+            + Add Scholarship
+          </button>
+          <div className="rounded-2xl border border-gold/15 bg-white px-4 py-3 text-[13px] text-navy">
+            {scholarships.length} scholarships · {customScholarships.length} edited/custom
+          </div>
+        </div>
+
         {/* ── Stat cards ── */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
           <StatCard icon="📋" label="Total"       value={stats.total}       border="border-gold/20" />
@@ -234,6 +388,35 @@ export default function AdminDashboard() {
                 </button>
               )}
             </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl border border-gold/15 p-5 mb-5">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+            <div>
+              <h2 className="font-semibold text-navy text-[18px]">Scholarship Catalog</h2>
+              <p className="text-[13px] text-navy/50">Manage the scholarships shown on the public scholarships page.</p>
+            </div>
+            <div className="text-[13px] text-navy/45">
+              {scholarships.length} total · {customScholarships.length} edited/custom
+            </div>
+          </div>
+          <div className="grid gap-3">
+            {scholarships.slice(0, 5).map(s => (
+              <div key={s.id} className="rounded-2xl border border-gold/15 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <div>
+                  <div className="font-semibold text-navy">{s.name}</div>
+                  <div className="text-[12px] text-navy/50">{s.provider} · {s.country} · {s.region}</div>
+                </div>
+                <button type="button" onClick={() => openEditScholarship(s)}
+                  className="rounded-2xl bg-gold/10 text-gold px-4 py-2 text-[12px] font-semibold hover:bg-gold/20 transition-all">
+                  Edit
+                </button>
+              </div>
+            ))}
+            {scholarships.length > 5 && (
+              <div className="text-[13px] text-navy/50">Showing first 5 scholarships. Use the public scholarships page to browse all entries.</div>
+            )}
           </div>
         </div>
 
@@ -463,6 +646,171 @@ export default function AdminDashboard() {
                     className="mt-2 px-5 py-2 bg-navy text-white text-[13px] font-semibold rounded-xl
                       hover:bg-navy-mid transition-all hover:-translate-y-0.5">
                     Save Note
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {scholarshipModalOpen && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4"
+            style={{ background: 'rgba(15,31,61,0.72)', backdropFilter: 'blur(10px)' }}
+            onClick={() => setScholarshipModalOpen(false)}>
+
+            <motion.div initial={{ y: 60, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 60, opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 280, damping: 30 }}
+              onClick={e => e.stopPropagation()}
+              className="bg-white w-full sm:max-w-3xl max-h-[92vh] overflow-y-auto rounded-[28px] shadow-2xl">
+
+              <div className="bg-navy sm:rounded-t-[28px] rounded-t-[28px] p-7 relative">
+                <button onClick={() => setScholarshipModalOpen(false)}
+                  className="absolute top-5 right-5 w-9 h-9 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center text-xl transition-all">
+                  ×
+                </button>
+
+                <div>
+                  <div className="text-[11px] font-bold uppercase tracking-[2px] text-gold mb-2">Scholarship Management</div>
+                  <h2 className="font-display font-bold text-white text-[24px] md:text-[28px] leading-tight">
+                    {isEditingScholarship ? 'Edit scholarship entry' : 'Add a new scholarship to the site'}
+                  </h2>
+                  <p className="text-white/60 mt-2 max-w-2xl">
+                    {isEditingScholarship ? 'Update the existing scholarship and keep changes in local storage.' : 'New scholarships created here will appear in the public scholarship database.'}
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-7 space-y-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Scholarship name
+                    <input value={scholarshipForm.name} onChange={e => setScholarshipForm(prev => ({ ...prev, name: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Provider
+                    <input value={scholarshipForm.provider} onChange={e => setScholarshipForm(prev => ({ ...prev, provider: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Country
+                    <input value={scholarshipForm.country} onChange={e => setScholarshipForm(prev => ({ ...prev, country: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Region
+                    <input value={scholarshipForm.region} onChange={e => setScholarshipForm(prev => ({ ...prev, region: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Flag emoji
+                    <input value={scholarshipForm.flag} onChange={e => setScholarshipForm(prev => ({ ...prev, flag: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Image URL
+                    <input value={scholarshipForm.imageUrl} onChange={e => setScholarshipForm(prev => ({ ...prev, imageUrl: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Levels (comma-separated)
+                    <input value={scholarshipForm.levels} onChange={e => setScholarshipForm(prev => ({ ...prev, levels: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Fields (comma-separated)
+                    <input value={scholarshipForm.fields} onChange={e => setScholarshipForm(prev => ({ ...prev, fields: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Tags (comma-separated)
+                    <input value={scholarshipForm.tags} onChange={e => setScholarshipForm(prev => ({ ...prev, tags: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Deadline
+                    <input type="date" value={scholarshipForm.deadline} onChange={e => setScholarshipForm(prev => ({ ...prev, deadline: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Amount label
+                    <input value={scholarshipForm.amount} onChange={e => setScholarshipForm(prev => ({ ...prev, amount: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Amount USD
+                    <input type="number" value={scholarshipForm.amountUSD} onChange={e => setScholarshipForm(prev => ({ ...prev, amountUSD: Number(e.target.value) }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Duration
+                    <input value={scholarshipForm.duration} onChange={e => setScholarshipForm(prev => ({ ...prev, duration: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Link
+                    <input value={scholarshipForm.link} onChange={e => setScholarshipForm(prev => ({ ...prev, link: e.target.value }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                </div>
+
+                <label className="block text-[12px] text-navy/50">
+                  Description
+                  <textarea value={scholarshipForm.description} onChange={e => setScholarshipForm(prev => ({ ...prev, description: e.target.value }))}
+                    className="mt-2 w-full min-h-[120px] rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 resize-y" />
+                </label>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Benefits (comma-separated)
+                    <textarea value={scholarshipForm.benefits} onChange={e => setScholarshipForm(prev => ({ ...prev, benefits: e.target.value }))}
+                      className="mt-2 w-full min-h-[80px] rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 resize-y" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Exams (comma-separated)
+                    <textarea value={scholarshipForm.exams} onChange={e => setScholarshipForm(prev => ({ ...prev, exams: e.target.value }))}
+                      className="mt-2 w-full min-h-[80px] rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 resize-y" />
+                  </label>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Min GPA
+                    <input type="number" step="0.1" value={scholarshipForm.minGPA} onChange={e => setScholarshipForm(prev => ({ ...prev, minGPA: Number(e.target.value) }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Min %
+                    <input type="number" value={scholarshipForm.minPercentage} onChange={e => setScholarshipForm(prev => ({ ...prev, minPercentage: Number(e.target.value) }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Min Marks
+                    <input type="number" value={scholarshipForm.minMarks} onChange={e => setScholarshipForm(prev => ({ ...prev, minMarks: Number(e.target.value) }))}
+                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
+                  </label>
+                </div>
+
+                <div className="flex flex-wrap gap-3 justify-end">
+                  <button type="button" onClick={() => setScholarshipModalOpen(false)}
+                    className="px-5 py-3 rounded-2xl border border-navy/15 text-[13px] text-navy hover:border-navy/30 transition-all">
+                    Cancel
+                  </button>
+                  <button type="button" onClick={saveScholarship}
+                    className="px-5 py-3 rounded-2xl bg-gold text-navy font-semibold hover:bg-gold/90 transition-all">
+                    {isEditingScholarship ? 'Save Changes' : 'Save Scholarship'}
                   </button>
                 </div>
               </div>

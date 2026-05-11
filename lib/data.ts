@@ -34,7 +34,7 @@ export const countries: Country[] = [
     flag: '🇩🇪',
     universities: 'TU Munich · Heidelberg',
     cost: 'Free tuition available',
-    imageUrl: 'https://images.unsplash.com/photo-1551009175-15bda9bb8f59?w=500&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=500&q=80',
   },
   {
     name: 'Australia',
