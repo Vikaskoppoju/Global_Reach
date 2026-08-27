@@ -86,9 +86,9 @@ export interface Application {
 }
 
 export interface ScholarshipRequirements {
-  minGPA: number
-  minPercentage: number
-  minMarks: number
+  minGPA: number | null
+  minPercentage: number | null
+  minMarks: number | null
   exams: string[]
   minIELTS?: number | null
   minTOEFL?: number | null

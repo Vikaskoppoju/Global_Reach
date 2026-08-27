@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, DM_Sans } from 'next/font/google'
 import { AuthProvider } from '@/context/AuthContext'
+import ChatLauncher from '@/components/ui/ChatLauncher'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -32,7 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          {children}
+          <ChatLauncher />
+        </AuthProvider>
       </body>
     </html>
   )

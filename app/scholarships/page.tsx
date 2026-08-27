@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import ScholarshipChatbot from '@/components/ui/ScholarshipChatbot'
 import scholarshipsData from '@/lib/scholarships.json'
 import type { Scholarship, ScholarshipFilters, MarksMode } from '@/types'
 
@@ -109,6 +110,8 @@ export default function ScholarshipsPage() {
           </p>
         </div>
       </div>
+
+      <ScholarshipChatbot />
 
       <div className="px-5 md:px-10 lg:px-16 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 items-start">
@@ -322,8 +325,8 @@ export default function ScholarshipsPage() {
                   <div>
                     <h4 className="font-bold text-navy text-[14px] mb-3">📋 Requirements</h4>
                     <ul className="flex flex-col gap-2 text-[13px] text-navy/65">
-                      {selected.requirements.minGPA && <li>Min GPA: <strong>{selected.requirements.minGPA}</strong></li>}
-                      {selected.requirements.minPercentage && <li>Min %: <strong>{selected.requirements.minPercentage}%</strong></li>}
+                      <li>Min GPA: <strong>{selected.requirements.minGPA ? selected.requirements.minGPA : 'Not specified'}</strong></li>
+                      <li>Min %: <strong>{selected.requirements.minPercentage ? `${selected.requirements.minPercentage}%` : 'Not specified'}</strong></li>
                       {selected.requirements.minIELTS && <li>Min IELTS: <strong>{selected.requirements.minIELTS}</strong></li>}
                       {selected.requirements.minTOEFL && <li>Min TOEFL: <strong>{selected.requirements.minTOEFL}</strong></li>}
                       {selected.requirements.ageLimit && <li>Age limit: <strong>{selected.requirements.ageLimit}</strong></li>}
@@ -344,7 +347,7 @@ export default function ScholarshipsPage() {
                     className="flex-1 py-3.5 bg-navy text-white font-bold text-[14px] rounded-xl text-center transition-all hover:bg-navy-mid hover:-translate-y-0.5">
                     Apply on Official Site →
                   </a>
-                  <Link href="/application" onClick={() => setSelected(null)}
+                  <Link href="/#application" onClick={() => setSelected(null)}
                     className="flex-1 py-3.5 border-2 border-gold text-gold font-bold text-[14px] rounded-xl text-center transition-all hover:bg-gold hover:text-white">
                     Apply via GlobalReach
                   </Link>

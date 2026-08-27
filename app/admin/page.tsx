@@ -257,9 +257,9 @@ export default function AdminDashboard() {
       benefits: scholarship.benefits.join(', '),
       exams: scholarship.requirements.exams.join(', '),
       tags: scholarship.tags.join(', '),
-      minGPA: scholarship.requirements.minGPA,
-      minPercentage: scholarship.requirements.minPercentage,
-      minMarks: scholarship.requirements.minMarks,
+      minGPA: scholarship.requirements.minGPA ?? 0,
+      minPercentage: scholarship.requirements.minPercentage ?? 0,
+      minMarks: scholarship.requirements.minMarks ?? 0,
     })
     setSelectedScholarship(scholarship)
     setIsEditingScholarship(true)
