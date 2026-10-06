@@ -28,17 +28,25 @@ function writeIfChanged(file, content) {
 }
 const json = value => JSON.stringify(value, null, 2) + '\n'
 
-const client = new pg.Client({ connectionString: databaseUrl(root), connectionTimeoutMillis: 3000 })
-try {
-  await client.connect()
-} catch (err) {
-  const message = `Database not reachable (${err.code ?? err.message}); the static snapshot in lib/ was not updated.`
+// During a build (--if-available) a missing or unusable database must never fail the build:
+// warn and keep the snapshot already in lib/. A manual `npm run db:export` fails loudly instead.
+function skipOrFail(reason, hint) {
+  const message = `${reason}; the static snapshot in lib/ was not updated.`
   if (ifAvailable) {
     console.warn(`db-export: ${message} Building with the existing snapshot.`)
     process.exit(0)
   }
-  console.error(`db-export: ${message} Start it with npm run db:up.`)
+  console.error(`db-export: ${message} ${hint}`)
   process.exit(1)
+}
+
+let client
+try {
+  client = new pg.Client({ connectionString: databaseUrl(root), connectionTimeoutMillis: 3000 })
+  await client.connect()
+} catch (err) {
+  if (err.message.startsWith('DATABASE_URL')) skipOrFail('DATABASE_URL is not set', 'Copy .env.example to .env.local.')
+  skipOrFail(`Database not reachable (${err.code ?? err.message})`, 'Start it with npm run db:up.')
 }
 
 try {
@@ -50,8 +58,8 @@ try {
                                    ORDER BY t.continent_id, t.position`)
   if (continents.rowCount === 0) {
     // An empty database would wipe the snapshot; that is never what a build wants
-    console.warn('db-export: the database has no continents (not seeded?); leaving the static snapshot unchanged.')
-    process.exit(ifAvailable ? 0 : 1)
+    await client.end()
+    skipOrFail('The database has no continents (not seeded?)', 'Run npm run db:seed.')
   }
 
   // Uploaded logos live in the database; copy them to files the static site can serve
@@ -117,8 +125,9 @@ try {
     + (changed.length ? `Updated ${changed.join(', ')}.` : 'Static snapshot already up to date.')
     + (pruned ? ` Removed ${pruned} unused uploaded logo file(s).` : ''))
 } catch (err) {
-  console.error(`db-export: ${err.message}`)
-  process.exitCode = 1
+  // e.g. tables missing because the schema was never applied to this database
+  await client.end().catch(() => {})
+  skipOrFail(`Export failed: ${err.message}`, 'Check the database with npm run db:psql, or reseed it.')
 } finally {
   await client.end()
 }
