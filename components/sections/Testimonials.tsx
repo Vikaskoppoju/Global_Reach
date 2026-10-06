@@ -11,7 +11,7 @@ export default function Testimonials() {
         <div className="section-tag">Alumni Voices</div>
         <h2 className="section-heading">Lives Transformed</h2>
         <p className="text-[17px] leading-relaxed text-navy/60 max-w-xl mx-auto">
-          Real stories from real scholars who changed their trajectories with GlobalReach.
+          Students who found their university abroad and built a global career.
         </p>
       </AnimatedSection>
 
@@ -33,7 +33,6 @@ export default function Testimonials() {
                   <div className="text-[14px] font-bold text-navy">{t.name}</div>
                   <div className="text-[12px] text-navy/45">{t.role}</div>
                 </div>
-                <span className="text-xl">{t.flag}</span>
               </div>
             </div>
           </AnimatedSection>

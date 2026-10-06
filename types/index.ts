@@ -1,9 +1,34 @@
-export interface Country {
+// `id`s are present when the atlas comes from the database (absent in the bundled fallback data)
+export interface University {
+  id?: number
   name: string
-  flag: string
-  universities: string
-  cost: string
+  logo?: string
+  website?: string
+}
+
+// A university together with where it sits in the atlas
+export interface UniversityListing extends University {
+  country: string
+  continentId: string
+  continentName: string
+}
+
+export interface Country {
+  id?: number
+  name: string
+  universities: University[]
+  cost?: string
+}
+
+export interface Continent {
+  id: string
+  name: string
+  tagline: string
   imageUrl: string
+  // Names of the universities featured on the landing page, in display order
+  top: string[]
+  topIds?: number[]
+  countries: Country[]
 }
 
 export interface Policy {
@@ -136,4 +161,18 @@ export interface User {
   name: string
   email: string
   role: 'admin' | 'applicant'
+}
+
+export type ActivityAction = 'create' | 'update' | 'delete' | 'seed'
+export type ActivityEntity = 'continent' | 'country' | 'university' | 'atlas'
+
+export interface ActivityEntry {
+  id: number
+  occurredAt: string
+  actor: string
+  action: ActivityAction
+  entity: ActivityEntity
+  entityId: string | null
+  summary: string
+  changes: Record<string, unknown> | null
 }

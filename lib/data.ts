@@ -1,49 +1,35 @@
-import type { Country, Policy, Step, Testimonial, EligibilityItem } from '@/types'
+import type { Continent, Country, Policy, Step, Testimonial, EligibilityItem } from '@/types'
+import worldUniversities from './world-universities.json'
+import continentMeta from './continent-meta.json'
+import countryCosts from './country-costs.json'
 
-export const countries: Country[] = [
-  {
-    name: 'United Kingdom',
-    flag: '🇬🇧',
-    universities: 'Oxford · Cambridge · Imperial',
-    cost: 'From £5,000/yr',
-    imageUrl: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=500&q=80',
-  },
-  {
-    name: 'United States',
-    flag: '🇺🇸',
-    universities: 'MIT · Stanford · Harvard',
-    cost: 'From $8,000/yr',
-    imageUrl: 'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=500&q=80',
-  },
-  {
-    name: 'France',
-    flag: '🇫🇷',
-    universities: 'Sorbonne · Sciences Po',
-    cost: 'From €3,000/yr',
-    imageUrl: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=500&q=80',
-  },
-  {
-    name: 'Japan',
-    flag: '🇯🇵',
-    universities: 'Tokyo · Kyoto · Osaka',
-    cost: 'From ¥400,000/yr',
-    imageUrl: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&q=80',
-  },
-  {
-    name: 'Germany',
-    flag: '🇩🇪',
-    universities: 'TU Munich · Heidelberg',
-    cost: 'Free tuition available',
-    imageUrl: 'https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=500&q=80',
-  },
-  {
-    name: 'Australia',
-    flag: '🇦🇺',
-    universities: 'Melbourne · ANU · Sydney',
-    cost: 'From AUD 6,000/yr',
-    imageUrl: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=500&q=80',
-  },
-]
+// University lists come from World_Universities_International_Students.xlsx.
+// Regenerate with: python scripts/build-universities.py
+const universitiesByContinent = worldUniversities as Record<string, Country[]>
+
+// Indicative tuition, shown when a country is selected
+const COSTS = countryCosts as Record<string, string>
+
+// Display order (Middle East first), taglines, card images and each region's top 5 (its leading
+// universities in international rankings). Also read by scripts/db-seed.mjs.
+const CONTINENT_META = continentMeta as Omit<Continent, 'countries'>[]
+
+export const continents: Continent[] = CONTINENT_META.map(meta => ({
+  ...meta,
+  countries: (universitiesByContinent[meta.name] ?? []).map(c => ({ ...c, cost: COSTS[c.name] })),
+}))
+
+// Headline numbers rounded down for marketing copy, e.g. 1213 → "1,200+", 137 → "130+"
+const roundedPlus = (n: number, step: number) => `${(Math.floor(n / step) * step).toLocaleString('en-US')}+`
+const countryTotal = continents.reduce((sum, c) => sum + c.countries.length, 0)
+const universityTotal = continents.reduce(
+  (sum, c) => sum + c.countries.reduce((s, country) => s + country.universities.length, 0), 0)
+
+export const atlasStats = {
+  universities: roundedPlus(universityTotal, 100),
+  countries: roundedPlus(countryTotal, 10),
+  regions: String(continents.length),
+}
 
 export const policies: Policy[] = [
   {

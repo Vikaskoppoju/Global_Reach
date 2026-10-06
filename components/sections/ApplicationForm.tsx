@@ -2,20 +2,19 @@
 
 import { useState, type ChangeEvent, type FormEvent } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { eligibilityItems } from '@/lib/data'
+import { continents, eligibilityItems } from '@/lib/data'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 const englishTests = ['IELTS (6.5+)', 'TOEFL (88+)', 'Duolingo English Test', 'Native English Speaker']
 const nationalities = ['Indian', 'Pakistani', 'Nigerian', 'Bangladeshi', 'Indonesian', 'Other']
 const qualifications = ['High School / 12th Grade', "Bachelor's Degree", "Master's Degree", 'Other']
 const studyLevels = ["Bachelor's", "Master's", 'PhD', 'Short Course']
-const destinations = ['United Kingdom', 'United States', 'France', 'Germany', 'Japan', 'Australia', 'Canada', 'Other']
 const admissionStatuses = ['Unconditional Offer Received', 'Conditional Offer Received', 'Applied, Awaiting Decision', 'Not Yet Applied']
 
 interface FormState {
   firstName: string; lastName: string; email: string; dob: string
   nationality: string; qualification: string; gpa: number
-  studyLevel: string; destination: string; fieldOfStudy: string
+  studyLevel: string; destination: string; destinationCountry: string; fieldOfStudy: string
   selectedTests: string[]; admissionStatus: string
   personalStatement: string; financialStatement: string
 }
@@ -23,7 +22,7 @@ interface FormState {
 const initialState: FormState = {
   firstName: '', lastName: '', email: '', dob: '',
   nationality: '', qualification: '', gpa: 35,
-  studyLevel: '', destination: '', fieldOfStudy: '',
+  studyLevel: '', destination: '', destinationCountry: '', fieldOfStudy: '',
   selectedTests: [], admissionStatus: '',
   personalStatement: '', financialStatement: '',
 }
@@ -167,19 +166,31 @@ export default function ApplicationForm() {
                   />
                 </div>
                 {/* Study Level */}
-                <div className="flex flex-col gap-2">
+                <div className="sm:col-span-2 flex flex-col gap-2">
                   <label className={labelCls}>Desired Study Level *</label>
                   <select className={inputCls} value={form.studyLevel} onChange={set('studyLevel')} required>
                     <option value="">Select…</option>
                     {studyLevels.map(l => <option key={l}>{l}</option>)}
                   </select>
                 </div>
-                {/* Destination */}
+                {/* Destination: region first, country optional */}
                 <div className="flex flex-col gap-2">
-                  <label className={labelCls}>Preferred Destination *</label>
-                  <select className={inputCls} value={form.destination} onChange={set('destination')} required>
-                    <option value="">Select country…</option>
-                    {destinations.map(d => <option key={d}>{d}</option>)}
+                  <label className={labelCls}>Preferred Region *</label>
+                  <select className={inputCls} value={form.destination}
+                    onChange={e => setForm(prev => ({ ...prev, destination: e.target.value, destinationCountry: '' }))} required>
+                    <option value="">Select region…</option>
+                    {continents.map(c => <option key={c.id} value={c.name}>{c.name}</option>)}
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className={labelCls}>Preferred Country</label>
+                  <select className={inputCls} value={form.destinationCountry} onChange={set('destinationCountry')}
+                    disabled={!continents.some(c => c.name === form.destination)}>
+                    <option value="">Any country in region</option>
+                    {continents.find(c => c.name === form.destination)?.countries.map(c => (
+                      <option key={c.name}>{c.name}</option>
+                    ))}
                   </select>
                 </div>
                 {/* Field of Study */}

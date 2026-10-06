@@ -6,19 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:seed": "node scripts/db-seed.mjs",
+    "db:psql": "docker exec -it globalreach-db psql -U globalreach -d globalreach",
+    "db:export": "node scripts/db-export.mjs",
+    "prebuild": "node scripts/db-export.mjs --if-available"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.0",
     "lucide-react": "^0.400.0",
     "next": "^14.2.35",
+    "pg": "^8.23.1",
     "react": "^18",
     "react-dom": "^18",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.23.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",

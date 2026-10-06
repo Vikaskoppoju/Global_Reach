@@ -14,7 +14,7 @@ export default function Footer() {
             Global<span className="text-gold">Reach</span>
           </div>
           <p className="text-sm leading-[1.7] max-w-[280px]">
-            Breaking financial barriers to world-class education since 2008. Every bright mind deserves a global platform.
+            An atlas of the world&apos;s universities for students building careers across borders.
           </p>
         </div>
         {Object.entries(footerLinks).map(([title, links]) => (
@@ -32,8 +32,8 @@ export default function Footer() {
         ))}
       </div>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 pt-7 text-[13px]">
-        <span>© 2025 GlobalReach Scholarship Fund. All rights reserved.</span>
-        <span>Made with ♥ for ambitious minds everywhere</span>
+        <span>© {new Date().getFullYear()} GlobalReach. All rights reserved.</span>
+        <span>Made for ambitious minds everywhere</span>
       </div>
     </footer>
   )

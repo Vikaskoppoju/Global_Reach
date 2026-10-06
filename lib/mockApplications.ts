@@ -2,7 +2,7 @@ import type { Application, AppStatus, MarksMode } from '@/types'
 
 const STATUSES:  AppStatus[] = ['Pending', 'Under Review', 'Shortlisted', 'Accepted', 'Rejected']
 const NATS   = ['Indian', 'Nigerian', 'Bangladeshi', 'Pakistani', 'Indonesian', 'Kenyan', 'Brazilian', 'Vietnamese']
-const DESTS  = ['United Kingdom', 'United States', 'Germany', 'France', 'Japan', 'Australia', 'Canada', 'South Korea']
+const DESTS  = ['Middle East', 'North America', 'Europe', 'Asia', 'Oceania', 'South America', 'Africa']
 const LEVELS = ["Bachelor's", "Master's", 'PhD', 'Short Course']
 const FIELDS = ['Computer Science', 'Medicine', 'Engineering', 'Business Administration', 'Architecture', 'Law', 'Data Science', 'Public Policy']
 const FNAME  = ['Anika', 'Emeka', 'Priya', 'Nadia', 'Arjun', 'Fatima', 'Chen', 'Kofi', 'Leila', 'Marcus', 'Soo-Jin', 'Amara']

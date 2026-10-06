@@ -368,15 +368,19 @@ export default function ScholarshipChatbot() {
                 {savedApplications.length > 0 ? (
                   <div className="space-y-2 text-[13px] text-navy/70">
                     <p>{savedApplications.length} scholarship application{savedApplications.length === 1 ? '' : 's'} saved in chat.</p>
+                    {/* Home page application form is hidden — restore with it
                     <p>Visit the homepage application form if you want to complete the GlobalReach application as well.</p>
+                    */}
                   </div>
                 ) : (
                   <p className="text-[13px] text-navy/50">No quick chat applications saved yet. Use the chat to recommend and apply to scholarships.</p>
                 )}
+                {/* Home page application form is hidden — restore with it
                 <Link href="/#application"
                   className="mt-4 inline-flex items-center justify-center rounded-full bg-gold px-4 py-2 text-[13px] font-semibold text-navy transition-all hover:bg-gold/90">
                   Go to Application Form
                 </Link>
+                */}
               </div>
             </div>
 

@@ -7,10 +7,10 @@ import { motion } from 'framer-motion'
 import { useAuth } from '@/context/AuthContext'
 
 const FEATURES = [
-  { icon: '🔍', text: 'Browse 35+ world-class scholarships' },
-  { icon: '✨', text: 'Get personalised matches by your scores' },
-  { icon: '📋', text: 'Apply through our guided smart form'   },
-  { icon: '📊', text: 'Track application status in real time' },
+  'Browse 35+ world-class scholarships',
+  'Get personalised matches by your scores',
+  'Apply through our guided smart form',
+  'Track application status in real time',
 ]
 
 export default function SignupPage() {
@@ -80,11 +80,13 @@ export default function SignupPage() {
           </h2>
           <div className="flex flex-col gap-4 mt-8">
             {FEATURES.map(f => (
-              <div key={f.text} className="flex items-center gap-3.5">
-                <div className="w-9 h-9 rounded-xl bg-white/8 flex items-center justify-center text-lg flex-shrink-0">
-                  {f.icon}
+              <div key={f} className="flex items-center gap-3.5">
+                <div className="w-9 h-9 rounded-xl bg-white/8 text-gold flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m5 12 5 5 9-10" />
+                  </svg>
                 </div>
-                <span className="text-white/65 text-[14px] leading-snug">{f.text}</span>
+                <span className="text-white/65 text-[14px] leading-snug">{f}</span>
               </div>
             ))}
           </div>
@@ -115,7 +117,9 @@ export default function SignupPage() {
             <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
               className="bg-red-50 border border-red-200 text-red-700 text-[13px] font-medium
                 rounded-xl px-4 py-3 mb-5 flex items-center gap-2">
-              <span>⚠️</span> {error}
+              <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
+                <circle cx="12" cy="12" r="9" /><path strokeLinecap="round" d="M12 7.5v5.5M12 16.5v.01" />
+              </svg> {error}
             </motion.div>
           )}
 

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useAuth } from '@/context/AuthContext'
+import { atlasStats } from '@/lib/data'
 
 export default function LoginPage() {
   const { login } = useAuth()
@@ -64,12 +65,12 @@ export default function LoginPage() {
             Your global<br /><em className="text-gold">future awaits</em>
           </h2>
           <p className="text-white/55 text-[15px] leading-[1.75] max-w-sm mb-10">
-            Sign in to track your scholarship application, browse 35+ global programmes, and connect with the GlobalReach community.
+            Sign in to explore universities worldwide, browse 35+ scholarships, and track your applications.
           </p>
 
           {/* Stats row */}
           <div className="flex gap-8">
-            {[['35+', 'Scholarships'], ['40+', 'Countries'], ['$12M', 'Awarded']].map(([n, l]) => (
+            {[[atlasStats.universities, 'Universities'], [atlasStats.countries, 'Countries'], ['35+', 'Scholarships']].map(([n, l]) => (
               <div key={l}>
                 <div className="font-display font-bold text-white text-[28px] leading-none">{n}</div>
                 <div className="text-white/40 text-[12px] font-medium mt-1.5">{l}</div>
@@ -80,11 +81,13 @@ export default function LoginPage() {
           {/* Feature list */}
           <div className="flex flex-col gap-3 mt-10">
             {[
-              '🔍  Browse personalised scholarship matches',
-              '📋  Track your application in real time',
-              '📊  Admin review & status updates',
+              'Browse personalised scholarship matches',
+              'Track your application in real time',
+              'Admin review & status updates',
             ].map(f => (
-              <div key={f} className="flex items-center gap-3 text-white/60 text-[13px]">{f}</div>
+              <div key={f} className="flex items-center gap-3 text-white/60 text-[13px]">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />{f}
+              </div>
             ))}
           </div>
         </div>
@@ -115,12 +118,12 @@ export default function LoginPage() {
             <button type="button" onClick={() => fillDemo('admin')}
               className="py-3 px-4 text-[12px] font-bold border-2 border-gold/35 rounded-xl
                 text-navy/70 hover:border-gold hover:bg-gold-pale hover:text-navy transition-all flex items-center justify-center gap-1.5">
-              🔑 Demo Admin
+              Demo Admin
             </button>
             <button type="button" onClick={() => fillDemo('applicant')}
               className="py-3 px-4 text-[12px] font-bold border-2 border-navy/12 rounded-xl
                 text-navy/70 hover:border-navy/30 hover:bg-navy/5 hover:text-navy transition-all flex items-center justify-center gap-1.5">
-              🎓 Demo Scholar
+              Demo Scholar
             </button>
           </div>
 
@@ -174,7 +177,7 @@ export default function LoginPage() {
           <Link href="/scholarships"
             className="mt-4 w-full py-3 text-[13px] font-semibold border border-gold/30 rounded-xl
               text-gold hover:bg-gold-pale transition-all flex items-center justify-center gap-2">
-            🔍 Browse Scholarships without signing in
+            Browse Scholarships without signing in
           </Link>
 
           <p className="text-center text-[11px] text-navy/30 mt-8 leading-relaxed">
@@ -195,7 +198,9 @@ function AnimatedError({ message }: { message: string }) {
       exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.25 }}
       className="bg-red-50 border border-red-200 text-red-700 text-[13px] font-medium
         rounded-xl px-4 py-3 mb-4 flex items-center gap-2">
-      <span className="text-base">⚠️</span> {message}
+      <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
+        <circle cx="12" cy="12" r="9" /><path strokeLinecap="round" d="M12 7.5v5.5M12 16.5v.01" />
+      </svg> {message}
     </motion.div>
   )
 }

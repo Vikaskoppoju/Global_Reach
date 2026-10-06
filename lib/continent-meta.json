@@ -1,0 +1,93 @@
+[
+  {
+    "id": "middle-east",
+    "name": "Middle East",
+    "tagline": "Gulf innovation hubs to historic centres of learning",
+    "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80",
+    "top": [
+      "King Abdullah University of Science and Technology (KAUST)",
+      "Khalifa University",
+      "King Fahd University of Petroleum and Minerals",
+      "Qatar University",
+      "American University of Beirut"
+    ]
+  },
+  {
+    "id": "north-america",
+    "name": "North America",
+    "tagline": "Research powerhouses, Ivy League campuses and Caribbean medical schools",
+    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "top": [
+      "Massachusetts Institute of Technology",
+      "Harvard University",
+      "Stanford University",
+      "University of Toronto",
+      "McGill University"
+    ]
+  },
+  {
+    "id": "europe",
+    "name": "Europe",
+    "tagline": "Centuries-old universities and low-tuition options",
+    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "top": [
+      "University of Oxford",
+      "University of Cambridge",
+      "Imperial College London",
+      "ETH Zurich",
+      "Université PSL"
+    ]
+  },
+  {
+    "id": "asia",
+    "name": "Asia",
+    "tagline": "Fast-rising tech and research ecosystems",
+    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "top": [
+      "National University of Singapore",
+      "Peking University",
+      "Tsinghua University",
+      "University of Tokyo",
+      "University of Hong Kong"
+    ]
+  },
+  {
+    "id": "oceania",
+    "name": "Oceania",
+    "tagline": "High quality of life and post-study work rights",
+    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "top": [
+      "University of Melbourne",
+      "University of Sydney",
+      "University of New South Wales",
+      "Australian National University",
+      "University of Auckland"
+    ]
+  },
+  {
+    "id": "south-america",
+    "name": "South America",
+    "tagline": "Affordable study across vibrant, diverse cultures",
+    "imageUrl": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80",
+    "top": [
+      "University of Buenos Aires",
+      "University of São Paulo",
+      "Pontifical Catholic University of Chile",
+      "State University of Campinas",
+      "University of Chile"
+    ]
+  },
+  {
+    "id": "africa",
+    "name": "Africa",
+    "tagline": "Leading research universities and growing tech hubs",
+    "imageUrl": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80",
+    "top": [
+      "University of Cape Town",
+      "University of the Witwatersrand",
+      "Stellenbosch University",
+      "University of Nairobi",
+      "University of Ibadan"
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, DM_Sans } from 'next/font/google'
 import { AuthProvider } from '@/context/AuthContext'
 import ChatLauncher from '@/components/ui/ChatLauncher'
+import { atlasStats } from '@/lib/data'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -20,9 +21,9 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'GlobalReach Scholarship — Study Abroad Excellence',
-  description: 'GlobalReach awards merit-based, need-aware scholarships to ambitious students at world-class universities across 40+ countries.',
-  keywords: ['scholarship', 'study abroad', 'international education', 'financial aid'],
+  title: 'GlobalReach — World University Atlas',
+  description: `Explore ${atlasStats.universities} universities that welcome international students across ${atlasStats.countries} countries, and find the scholarships to get you there.`,
+  keywords: ['university atlas', 'study abroad', 'international universities', 'international education', 'scholarships'],
 }
 
 export default function RootLayout({

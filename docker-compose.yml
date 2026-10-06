@@ -1,0 +1,26 @@
+# Local PostgreSQL for the atlas masters and the admin activity log.
+#   npm run db:up     start the database (data persists in the globalreach-pgdata volume)
+#   npm run db:seed   load the spreadsheet data the first time
+#   npm run db:down   stop it; the data stays in the volume
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: globalreach-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: globalreach
+      POSTGRES_USER: globalreach
+      POSTGRES_PASSWORD: globalreach   # local development only
+    ports:
+      - "5433:5432"   # 5433 on the host so it can't clash with a locally installed PostgreSQL
+    volumes:
+      - globalreach-pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U globalreach -d globalreach"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  globalreach-pgdata:

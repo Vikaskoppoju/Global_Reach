@@ -24,7 +24,7 @@ const daysUntil = (deadline: string) => {
 function deadlineBadge(deadline: string) {
   const days = daysUntil(deadline)
   if (days < 0) return <span className="text-[11px] text-red-500 font-semibold">Closed</span>
-  if (days < 30) return <span className="text-[11px] text-orange-500 font-bold">⚡ {days}d left</span>
+  if (days < 30) return <span className="text-[11px] text-orange-500 font-bold">{days}d left</span>
   return <span className="text-[11px] text-navy/50">{new Date(deadline).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
 }
 
@@ -103,7 +103,6 @@ export default function ScholarshipShowcase() {
                     </span>
                   ))}
                 </div>
-                <div className="absolute top-3 right-3 text-2xl">{s.flag}</div>
               </div>
 
               <div className="p-5">

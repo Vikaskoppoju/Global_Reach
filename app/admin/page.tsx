@@ -6,6 +6,9 @@ import { useAuth } from '@/context/AuthContext'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { MOCK_APPLICATIONS } from '@/lib/mockApplications'
+import AtlasMasters from '@/components/admin/AtlasMasters'
+import AdminSidebar, { type AdminView } from '@/components/admin/AdminSidebar'
+import ActivityLog from '@/components/admin/ActivityLog'
 import scholarshipsData from '@/lib/scholarships.json'
 import type { Application, AppStatus, Scholarship } from '@/types'
 
@@ -50,7 +53,7 @@ const blankScholarshipForm: ScholarshipFormState = {
   provider: 'GlobalReach',
   country: 'International',
   region: 'Global',
-  flag: '🌍',
+  flag: '',
   imageUrl: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
   levels: "Master's",
   fields: 'All Fields',
@@ -81,13 +84,9 @@ function formatScore(a: Application): string {
 }
 
 /* ─── Stat Card ─────────────────────────────────────────── */
-function StatCard({ icon, label, value, border }: { icon: string; label: string; value: number; border: string }) {
+function StatCard({ label, value, border }: { label: string; value: number; border: string }) {
   return (
     <div className={`bg-white rounded-2xl p-5 border ${border} flex items-center gap-4`}>
-      <div className="w-12 h-12 rounded-xl bg-current/5 flex items-center justify-center text-2xl flex-shrink-0"
-        style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
-        {icon}
-      </div>
       <div>
         <div className="text-[12px] text-navy/45 font-medium mb-0.5">{label}</div>
         <div className="font-display font-bold text-navy text-[26px] leading-none">{value}</div>
@@ -101,6 +100,7 @@ export default function AdminDashboard() {
   const { user, logout, loading } = useAuth()
   const router = useRouter()
 
+  const [view, setView] = useState<AdminView>('applications')
   const [apps,         setApps]         = useState<Application[]>(MOCK_APPLICATIONS)
   const [search,       setSearch]       = useState('')
   const [statusFilter, setStatusFilter] = useState<AppStatus | 'All'>('All')
@@ -122,6 +122,18 @@ export default function AdminDashboard() {
   const mergeScholarships = (custom: Scholarship[]) => {
     const customIds = new Set(custom.map(s => s.id))
     return [...custom, ...scholarshipsData.filter(s => !customIds.has(s.id))]
+  }
+
+  // The open section lives in ?view= so refreshes and shared links land on the same screen
+  useEffect(() => {
+    const v = new URLSearchParams(window.location.search).get('view')
+    if (v === 'continents' || v === 'countries' || v === 'universities' || v === 'activity') setView(v)
+  }, [])
+
+  const selectView = (next: AdminView) => {
+    setView(next)
+    window.history.replaceState(null, '', next === 'applications' ? '/admin' : `/admin?view=${next}`)
+    window.scrollTo({ top: 0 })
   }
 
   // Guard: admin only
@@ -193,7 +205,7 @@ export default function AdminDashboard() {
       provider: scholarshipForm.provider.trim() || 'GlobalReach',
       country: scholarshipForm.country.trim() || 'International',
       region: scholarshipForm.region.trim() || 'Global',
-      flag: scholarshipForm.flag.trim() || '🌍',
+      flag: '',
       imageUrl: scholarshipForm.imageUrl.trim() || 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
       levels: parseList(scholarshipForm.levels),
       fields: parseList(scholarshipForm.fields),
@@ -309,7 +321,17 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      <div className="px-5 md:px-8 py-8 max-w-[1440px] mx-auto">
+      <div className="flex flex-col lg:flex-row">
+      <AdminSidebar view={view} onSelect={selectView} />
+
+      <main className="flex-1 min-w-0 px-5 md:px-8 py-8">
+      <div className="max-w-[1280px] mx-auto">
+
+        {(view === 'continents' || view === 'countries' || view === 'universities') && <AtlasMasters view={view} />}
+
+        {view === 'activity' && <ActivityLog />}
+
+        {view === 'applications' && (<>
 
         {/* Page header */}
         <div className="mb-7">
@@ -334,12 +356,12 @@ export default function AdminDashboard() {
 
         {/* ── Stat cards ── */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
-          <StatCard icon="📋" label="Total"       value={stats.total}       border="border-gold/20" />
-          <StatCard icon="⏳" label="Pending"     value={stats.pending}     border="border-amber-200" />
-          <StatCard icon="🔍" label="In Review"   value={stats.review}      border="border-blue-200" />
-          <StatCard icon="⭐" label="Shortlisted" value={stats.shortlisted} border="border-violet-200" />
-          <StatCard icon="✅" label="Accepted"    value={stats.accepted}    border="border-emerald-200" />
-          <StatCard icon="❌" label="Rejected"    value={stats.rejected}    border="border-red-200" />
+          <StatCard label="Total"       value={stats.total}       border="border-gold/20" />
+          <StatCard label="Pending"     value={stats.pending}     border="border-amber-200" />
+          <StatCard label="In Review"   value={stats.review}      border="border-blue-200" />
+          <StatCard label="Shortlisted" value={stats.shortlisted} border="border-violet-200" />
+          <StatCard label="Accepted"    value={stats.accepted}    border="border-emerald-200" />
+          <StatCard label="Rejected"    value={stats.rejected}    border="border-red-200" />
         </div>
 
         {/* ── Filter / search bar ── */}
@@ -347,7 +369,9 @@ export default function AdminDashboard() {
           <div className="flex flex-wrap gap-3 items-center">
             {/* Search */}
             <div className="relative flex-1 min-w-[200px]">
-              <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-navy/30 text-[15px]">🔍</span>
+              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy/30" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
+                <circle cx="11" cy="11" r="7" /><path strokeLinecap="round" d="m20 20-4-4" />
+              </svg>
               <input
                 className="w-full pl-9 pr-4 py-2 rounded-xl border border-gold/20 text-[13px] text-navy outline-none focus:border-gold transition-all"
                 placeholder="Search name, email, ID, nationality…"
@@ -524,6 +548,10 @@ export default function AdminDashboard() {
           </div>
         </div>
 
+        </>)}
+
+      </div>
+      </main>
       </div>{/* /main container */}
 
       {/* ── Detail Modal ── */}
@@ -599,7 +627,6 @@ export default function AdminDashboard() {
                 <div className="flex flex-col gap-4 mb-7">
                   <div>
                     <h4 className="font-bold text-navy text-[13px] mb-2 flex items-center gap-2">
-                      <span className="w-5 h-5 bg-navy/8 rounded-full flex items-center justify-center text-[11px]">✍️</span>
                       Personal Statement
                     </h4>
                     <p className="text-[13px] text-navy/60 leading-relaxed bg-[#F7F5F0] rounded-xl p-4">
@@ -608,7 +635,6 @@ export default function AdminDashboard() {
                   </div>
                   <div>
                     <h4 className="font-bold text-navy text-[13px] mb-2 flex items-center gap-2">
-                      <span className="w-5 h-5 bg-navy/8 rounded-full flex items-center justify-center text-[11px]">💼</span>
                       Financial Need Statement
                     </h4>
                     <p className="text-[13px] text-navy/60 leading-relaxed bg-[#F7F5F0] rounded-xl p-4">
@@ -703,11 +729,6 @@ export default function AdminDashboard() {
                   <label className="block text-[12px] text-navy/50">
                     Region
                     <input value={scholarshipForm.region} onChange={e => setScholarshipForm(prev => ({ ...prev, region: e.target.value }))}
-                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
-                  </label>
-                  <label className="block text-[12px] text-navy/50">
-                    Flag emoji
-                    <input value={scholarshipForm.flag} onChange={e => setScholarshipForm(prev => ({ ...prev, flag: e.target.value }))}
                       className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
                   </label>
                   <label className="block text-[12px] text-navy/50">

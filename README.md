@@ -55,7 +55,35 @@ yarn install
 pnpm install
 ```
 
-### 2. Run the development server
+### 2. Start the database
+
+The atlas masters (continents, countries, universities) and the admin activity log live in
+PostgreSQL, run with Docker. Data is kept in the `globalreach-pgdata` volume, so it survives
+restarts and `npm run db:down`.
+
+```bash
+cp .env.example .env.local   # DATABASE_URL for the local container
+npm run db:up                # start PostgreSQL 16 on localhost:5433
+npm run db:seed              # first time only: load the spreadsheet data
+```
+
+| Script | What it does |
+|---|---|
+| `npm run db:up` / `db:down` | Start / stop the container (data is kept) |
+| `npm run db:seed -- --force` | Wipe the masters and reload the spreadsheet data (the activity log is kept) |
+| `npm run db:export` | Write the database into the static snapshot used in production |
+| `npm run db:psql` | Open a `psql` shell in the database |
+
+**Development uses the database; production uses a static snapshot.** `next dev` reads and writes
+PostgreSQL. `next build` / `next start` serve the JSON snapshot in `lib/` (plus `public/logos/`)
+with the admin masters read-only. Set `ATLAS_SOURCE=db` or `ATLAS_SOURCE=static` to override.
+If the database is down in development, pages fall back to the snapshot too.
+
+To publish admin edits, run `npm run db:export` (it writes the snapshot from the database), commit the
+changed files, and rebuild. `npm run build` also runs the export automatically when the database is up.
+The full rules are in `.claude/skills/atlas-data/SKILL.md`.
+
+### 3. Run the development server
 
 ```bash
 npm run dev
@@ -63,7 +91,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 3. Build for production
+### 4. Build for production
 
 ```bash
 npm run build

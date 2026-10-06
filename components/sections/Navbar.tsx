@@ -2,15 +2,21 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useAuth } from '@/context/AuthContext'
 
+// Home-page sections are linked as "/#…" so the navbar also works on other pages
 const navLinks = [
-  { label: 'Destinations', href: '#countries' },
-  { label: 'Policies', href: '#policies' },
-  { label: 'How to Apply', href: '#process' },
-  { label: 'Alumni', href: '#testimonials' },
+  { label: 'Destinations', href: '/#countries' },
+  { label: 'Universities', href: '/universities' },
+  // Sections hidden on the home page
+  // { label: 'Policies', href: '#policies' },
+  // { label: 'How to Apply', href: '#process' },
+  { label: 'Alumni', href: '/#testimonials' },
 ]
 
 export default function Navbar() {
+  const { user } = useAuth()
+  const links = user?.role === 'admin' ? [...navLinks, { label: 'Admin', href: '/admin' }] : navLinks
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -36,13 +42,13 @@ export default function Navbar() {
           ${scrolled ? 'py-3 shadow-sm' : 'py-5'}`}
       >
         {/* Logo */}
-        <a href="#home" className="font-display text-xl font-bold text-navy tracking-tight">
+        <a href="/" className="font-display text-xl font-bold text-navy tracking-tight">
           Global<span className="text-gold">Reach</span>
         </a>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -53,11 +59,11 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#application"
+            href="/scholarships"
             className="bg-navy text-white text-[13px] font-semibold px-5 py-2.5 rounded-full
               transition-all duration-300 hover:bg-navy-mid hover:-translate-y-0.5"
           >
-            Apply Now
+            Find Scholarships
           </a>
         </div>
 
@@ -86,7 +92,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 bg-cream flex flex-col items-center justify-center gap-2 md:hidden"
           >
-            {navLinks.map((link, i) => (
+            {links.map((link, i) => (
               <motion.a
                 key={link.href}
                 href={link.href}
@@ -100,14 +106,14 @@ export default function Navbar() {
               </motion.a>
             ))}
             <motion.a
-              href="#application"
+              href="/scholarships"
               onClick={closeMobile}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
               className="mt-5 bg-navy text-white text-base font-semibold px-10 py-4 rounded-full"
             >
-              Apply Now
+              Find Scholarships
             </motion.a>
           </motion.div>
         )}

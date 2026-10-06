@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { atlasStats } from '@/lib/data'
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 30 },
@@ -30,35 +31,44 @@ export default function Hero() {
             text-[#8A6A1A] mb-7"
         >
           <span className="w-1.5 h-1.5 bg-gold rounded-full" />
-          2025–26 Applications Open
+          World University Atlas
         </motion.div>
 
         <motion.h1 {...fadeUp(0.35)}
           className="font-display font-bold text-navy leading-[1.08] mb-6"
           style={{ fontSize: 'clamp(40px, 6vw, 68px)', letterSpacing: '-2px' }}
         >
-          Study Abroad with<br />
-          <em className="text-gold not-italic">Full Scholarship</em><br />
-          Support
+          Build Your Career<br />
+          at <em className="text-gold not-italic">Universities</em><br />
+          Across the Globe
         </motion.h1>
 
         <motion.p {...fadeUp(0.5)}
           className="text-[17px] leading-[1.7] text-navy/60 max-w-[460px] mb-11"
         >
-          GlobalReach awards merit-based, need-aware scholarships to ambitious students
-          ready to shape their futures at world-class universities across 40+ countries.
+          Explore {atlasStats.universities} universities that welcome international students across{' '}
+          {atlasStats.countries} countries. Start with a region, compare countries, and find the
+          scholarships that get you there.
         </motion.p>
 
         <motion.div {...fadeUp(0.65)} className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-          <a href="#application" className="btn-primary shadow-[0_8px_24px_rgba(15,31,61,0.25)] text-center sm:text-left">
-            Apply for Scholarship
+          <a href="#countries" className="btn-primary shadow-[0_8px_24px_rgba(15,31,61,0.25)] text-center sm:text-left">
+            Explore Universities
           </a>
+          <a href="/scholarships" className="inline-flex items-center gap-2 text-navy/60 font-medium hover:text-navy transition-colors group">
+            Find scholarships
+            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          {/* Process section is hidden — restore with it
           <a href="#process" className="inline-flex items-center gap-2 text-navy/60 font-medium hover:text-navy transition-colors group">
             See how it works
             <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
+          */}
         </motion.div>
 
         {/* Stats */}
@@ -67,9 +77,9 @@ export default function Hero() {
             sm:border-0 sm:gap-10 sm:rounded-none sm:overflow-visible"
         >
           {[
-            { num: '4K+', label: 'Scholars Placed' },
-            { num: '40+', label: 'Countries' },
-            { num: '$12M', label: 'Awarded Annually' },
+            { num: atlasStats.universities, label: 'Universities' },
+            { num: atlasStats.countries, label: 'Countries' },
+            { num: atlasStats.regions, label: 'World Regions' },
           ].map((s, i) => (
             <div key={s.label}
               className={`flex-1 text-center sm:text-left py-5 sm:py-0
@@ -111,19 +121,29 @@ export default function Hero() {
 
           {/* Badge top */}
           <div className="absolute top-7 left-[-28px] bg-white rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3 animate-float-badge">
-            <span className="text-2xl">🏆</span>
+            <span className="w-10 h-10 rounded-full bg-gold-pale text-gold flex items-center justify-center shrink-0">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4 2 9l10 5 10-5-10-5Z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 11v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5M22 9v6" />
+              </svg>
+            </span>
             <div>
-              <div className="text-[15px] font-bold text-navy">Top Ranked</div>
-              <div className="text-[12px] text-navy/50">Scholarship Program</div>
+              <div className="text-[15px] font-bold text-navy">{atlasStats.universities} Universities</div>
+              <div className="text-[12px] text-navy/50">Open to international students</div>
             </div>
           </div>
 
           {/* Badge bottom */}
           <div className="absolute bottom-10 right-[-28px] bg-white rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3 animate-float-badge-rev">
-            <span className="text-2xl">🌍</span>
+            <span className="w-10 h-10 rounded-full bg-gold-pale text-gold flex items-center justify-center shrink-0">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>
+                <circle cx="12" cy="12" r="9" />
+                <path strokeLinecap="round" d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" />
+              </svg>
+            </span>
             <div>
-              <div className="text-[15px] font-bold text-navy">Global Network</div>
-              <div className="text-[12px] text-navy/50">500+ Partner Institutions</div>
+              <div className="text-[15px] font-bold text-navy">{atlasStats.regions} World Regions</div>
+              <div className="text-[12px] text-navy/50">{atlasStats.countries} countries mapped</div>
             </div>
           </div>
         </div>

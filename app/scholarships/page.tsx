@@ -29,7 +29,7 @@ const daysUntil = (deadline: string) => {
 function deadlineBadge(deadline: string) {
   const days = daysUntil(deadline)
   if (days < 0) return <span className="text-[11px] text-red-500 font-semibold">Closed</span>
-  if (days < 30) return <span className="text-[11px] text-orange-500 font-bold">⚡ {days}d left</span>
+  if (days < 30) return <span className="text-[11px] text-orange-500 font-bold">{days}d left</span>
   return <span className="text-[11px] text-navy/50">{new Date(deadline).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
 }
 
@@ -179,7 +179,7 @@ export default function ScholarshipsPage() {
             <div>
               <label className="text-[11px] font-bold text-navy/50 uppercase tracking-wide block mb-2">Funding Type</label>
               <div className="flex flex-col gap-2">
-                {[['', 'All Types'], ['fully-funded', '✅ Fully Funded'], ['partially-funded', '🔵 Partial']].map(([val, label]) => (
+                {[['', 'All Types'], ['fully-funded', 'Fully Funded'], ['partially-funded', 'Partial']].map(([val, label]) => (
                   <label key={val} className="flex items-center gap-2 text-[13px] text-navy/65 cursor-pointer">
                     <input type="radio" name="funding" checked={filters.funding === val}
                       onChange={() => setF('funding', val)} className="accent-[#C9A84C]" />
@@ -215,7 +215,9 @@ export default function ScholarshipsPage() {
 
             {filtered.length === 0 ? (
               <div className="text-center py-20">
-                <div className="text-5xl mb-4">🔍</div>
+                <svg className="w-12 h-12 mx-auto mb-4 text-gold" fill="none" stroke="currentColor" strokeWidth={1.6} viewBox="0 0 24 24" aria-hidden>
+                  <circle cx="11" cy="11" r="7" /><path strokeLinecap="round" d="m20 20-4-4" />
+                </svg>
                 <div className="font-display font-bold text-navy text-2xl mb-2">No matches found</div>
                 <p className="text-navy/50 text-[14px]">Try adjusting your filters or lowering your marks threshold.</p>
               </div>
@@ -237,7 +239,6 @@ export default function ScholarshipsPage() {
                           </span>
                         ))}
                       </div>
-                      <div className="absolute top-3 right-3 text-2xl">{s.flag}</div>
                     </div>
                     <div className="p-5">
                       <div className="text-[11px] font-bold text-gold uppercase tracking-wide mb-1">{s.provider}</div>
@@ -288,7 +289,6 @@ export default function ScholarshipsPage() {
                   <div className="text-gold text-[11px] font-bold uppercase tracking-wide mb-1">{selected.provider}</div>
                   <h2 className="font-display font-bold text-white text-[22px] leading-tight">{selected.name}</h2>
                   <div className="flex items-center gap-2 mt-2">
-                    <span className="text-2xl">{selected.flag}</span>
                     <span className="text-white/70 text-[13px]">{selected.country}</span>
                   </div>
                 </div>
@@ -312,18 +312,22 @@ export default function ScholarshipsPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <h4 className="font-bold text-navy text-[14px] mb-3">✅ Benefits</h4>
+                    <h4 className="font-bold text-navy text-[14px] mb-3">Benefits</h4>
                     <ul className="flex flex-col gap-2">
                       {selected.benefits.map(b => (
                         <li key={b} className="flex items-start gap-2 text-[13px] text-navy/65">
-                          <span className="w-4 h-4 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">✓</span>
+                          <span className="w-4 h-4 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">
+                          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth={3} viewBox="0 0 24 24" aria-hidden>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m5 12 5 5 9-10" />
+                          </svg>
+                          </span>
                           {b}
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-bold text-navy text-[14px] mb-3">📋 Requirements</h4>
+                    <h4 className="font-bold text-navy text-[14px] mb-3">Requirements</h4>
                     <ul className="flex flex-col gap-2 text-[13px] text-navy/65">
                       <li>Min GPA: <strong>{selected.requirements.minGPA ? selected.requirements.minGPA : 'Not specified'}</strong></li>
                       <li>Min %: <strong>{selected.requirements.minPercentage ? `${selected.requirements.minPercentage}%` : 'Not specified'}</strong></li>
@@ -347,10 +351,12 @@ export default function ScholarshipsPage() {
                     className="flex-1 py-3.5 bg-navy text-white font-bold text-[14px] rounded-xl text-center transition-all hover:bg-navy-mid hover:-translate-y-0.5">
                     Apply on Official Site →
                   </a>
+                  {/* Home page application form is hidden — restore with it
                   <Link href="/#application" onClick={() => setSelected(null)}
                     className="flex-1 py-3.5 border-2 border-gold text-gold font-bold text-[14px] rounded-xl text-center transition-all hover:bg-gold hover:text-white">
                     Apply via GlobalReach
                   </Link>
+                  */}
                 </div>
               </div>
             </motion.div>
