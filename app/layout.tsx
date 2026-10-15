@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, DM_Sans } from 'next/font/google'
 import { AuthProvider } from '@/context/AuthContext'
-import ChatLauncher from '@/components/ui/ChatLauncher'
 import { atlasStats } from '@/lib/data'
 import './globals.css'
 
@@ -36,7 +35,6 @@ export default function RootLayout({
       <body>
         <AuthProvider>
           {children}
-          <ChatLauncher />
         </AuthProvider>
       </body>
     </html>

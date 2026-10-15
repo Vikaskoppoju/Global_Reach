@@ -1,7 +1,18 @@
-const footerLinks = {
-  Scholarships: ['Full Scholarships', 'Partial Awards', 'Research Grants', 'Emergency Funds'],
-  Resources: ['University Partners', 'Visa Guidance', 'Pre-Departure Kit', 'Alumni Network'],
-  Organisation: ['About Us', 'Our Team', 'Press & Media', 'Contact'],
+const footerLinks: Record<string, { label: string; href: string }[]> = {
+  Explore: [
+    { label: 'Scholarships', href: '/scholarships' },
+    { label: 'Universities', href: '/universities' },
+    { label: 'Destinations', href: '/#countries' },
+  ],
+  'By level': [
+    { label: 'Bachelor’s scholarships', href: "/scholarships?level=Bachelor's" },
+    { label: 'Master’s scholarships', href: "/scholarships?level=Master's" },
+    { label: 'PhD scholarships', href: '/scholarships?level=PhD' },
+  ],
+  Help: [
+    { label: 'How it works', href: '/#how-it-works' },
+    { label: 'Scholarship words explained', href: '/#how-it-works' },
+  ],
 }
 
 export default function Footer() {
@@ -14,7 +25,7 @@ export default function Footer() {
             Global<span className="text-gold">Reach</span>
           </div>
           <p className="text-sm leading-[1.7] max-w-[280px]">
-            An atlas of the world&apos;s universities for students building careers across borders.
+            Helping students discover universities around the world and the scholarships that can take them there.
           </p>
         </div>
         {Object.entries(footerLinks).map(([title, links]) => (
@@ -22,9 +33,9 @@ export default function Footer() {
             <div className="text-white text-sm font-bold mb-5">{title}</div>
             <div className="flex flex-col gap-2.5">
               {links.map(link => (
-                <a key={link} href="#"
+                <a key={link.label} href={link.href}
                   className="text-sm text-white/50 hover:text-gold-light transition-colors duration-200">
-                  {link}
+                  {link.label}
                 </a>
               ))}
             </div>
@@ -33,7 +44,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 pt-7 text-[13px]">
         <span>© {new Date().getFullYear()} GlobalReach. All rights reserved.</span>
-        <span>Made for ambitious minds everywhere</span>
+        <span>Always confirm details on each scholarship’s official website.</span>
       </div>
     </footer>
   )

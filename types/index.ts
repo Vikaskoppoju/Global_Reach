@@ -125,10 +125,15 @@ export interface Scholarship {
   id: string
   name: string
   provider: string
+  // Listing country and region (for country-specific editions this is the applicant's country)
   country: string
   region: string
-  flag: string
-  imageUrl: string
+  // Atlas countries where the scholarship is used; empty = not tied to one destination.
+  // Optional because admin-created scholarships in localStorage may predate these fields.
+  studyIn?: string[]
+  // Atlas university names it is tied to; empty = any eligible institution in studyIn.
+  // Checked against the atlas by scripts/check-scholarships.mjs
+  universities?: string[]
   levels: string[]
   fields: string[]
   amount: string
@@ -140,20 +145,6 @@ export interface Scholarship {
   requirements: ScholarshipRequirements
   tags: string[]
   link: string
-}
-
-export interface ScholarshipFilters {
-  search: string
-  region: string
-  level: string
-  field: string
-  exam: string
-  funding: string
-  minGPA: number
-  marksMode: MarksMode
-  userPercentage: number
-  userMarks: number
-  sortBy: 'deadline' | 'amount' | 'name'
 }
 
 export interface User {

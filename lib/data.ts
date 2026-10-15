@@ -1,5 +1,6 @@
-import type { Continent, Country, Policy, Step, Testimonial, EligibilityItem } from '@/types'
+import type { Continent, Country, Policy, Scholarship, Step, Testimonial, EligibilityItem } from '@/types'
 import worldUniversities from './world-universities.json'
+import scholarships from './scholarships.json'
 import continentMeta from './continent-meta.json'
 import countryCosts from './country-costs.json'
 
@@ -29,6 +30,20 @@ export const atlasStats = {
   universities: roundedPlus(universityTotal, 100),
   countries: roundedPlus(countryTotal, 10),
   regions: String(continents.length),
+}
+
+// Study countries with the most scholarships, for the home page
+const scholarshipList = scholarships as Scholarship[]
+const scholarshipCount = new Map<string, number>()
+scholarshipList.forEach(s => (s.studyIn ?? []).forEach(c => scholarshipCount.set(c, (scholarshipCount.get(c) ?? 0) + 1)))
+const universityCount = new Map(continents.flatMap(c => c.countries.map(country => [country.name, country.universities.length])))
+
+export const scholarshipStats = {
+  total: String(scholarshipList.length),
+  topDestinations: Array.from(scholarshipCount)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6)
+    .map(([country, count]) => ({ country, scholarships: count, universities: universityCount.get(country) ?? 0 })),
 }
 
 export const policies: Policy[] = [

@@ -30,8 +30,8 @@ interface ScholarshipFormState {
   provider: string
   country: string
   region: string
-  flag: string
-  imageUrl: string
+  studyIn: string
+  universities: string
   levels: string
   fields: string
   amount: string
@@ -53,8 +53,8 @@ const blankScholarshipForm: ScholarshipFormState = {
   provider: 'GlobalReach',
   country: 'International',
   region: 'Global',
-  flag: '',
-  imageUrl: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
+  studyIn: '',
+  universities: '',
   levels: "Master's",
   fields: 'All Fields',
   amount: 'Full funding',
@@ -72,6 +72,8 @@ const blankScholarshipForm: ScholarshipFormState = {
 }
 
 const parseList = (value: string) => value.split(',').map(item => item.trim()).filter(Boolean)
+// University names can contain commas, so they are entered one per line
+const parseLines = (value: string) => value.split('\n').map(item => item.trim()).filter(Boolean)
 
 /* ─── Helper: format score ──────────────────────────────── */
 function formatScore(a: Application): string {
@@ -205,8 +207,8 @@ export default function AdminDashboard() {
       provider: scholarshipForm.provider.trim() || 'GlobalReach',
       country: scholarshipForm.country.trim() || 'International',
       region: scholarshipForm.region.trim() || 'Global',
-      flag: '',
-      imageUrl: scholarshipForm.imageUrl.trim() || 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
+      studyIn: parseList(scholarshipForm.studyIn),
+      universities: parseLines(scholarshipForm.universities),
       levels: parseList(scholarshipForm.levels),
       fields: parseList(scholarshipForm.fields),
       amount: scholarshipForm.amount.trim() || 'TBD',
@@ -264,6 +266,8 @@ export default function AdminDashboard() {
   const openEditScholarship = (scholarship: Scholarship) => {
     setScholarshipForm({
       ...scholarship,
+      studyIn: (scholarship.studyIn ?? []).join(', '),
+      universities: (scholarship.universities ?? []).join('\n'),
       levels: scholarship.levels.join(', '),
       fields: scholarship.fields.join(', '),
       benefits: scholarship.benefits.join(', '),
@@ -731,11 +735,6 @@ export default function AdminDashboard() {
                     <input value={scholarshipForm.region} onChange={e => setScholarshipForm(prev => ({ ...prev, region: e.target.value }))}
                       className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
                   </label>
-                  <label className="block text-[12px] text-navy/50">
-                    Image URL
-                    <input value={scholarshipForm.imageUrl} onChange={e => setScholarshipForm(prev => ({ ...prev, imageUrl: e.target.value }))}
-                      className="mt-2 w-full rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10" />
-                  </label>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -802,6 +801,19 @@ export default function AdminDashboard() {
                   <label className="block text-[12px] text-navy/50">
                     Exams (comma-separated)
                     <textarea value={scholarshipForm.exams} onChange={e => setScholarshipForm(prev => ({ ...prev, exams: e.target.value }))}
+                      className="mt-2 w-full min-h-[80px] rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 resize-y" />
+                  </label>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <label className="block text-[12px] text-navy/50">
+                    Study in (countries, comma-separated; empty = any destination)
+                    <textarea value={scholarshipForm.studyIn} onChange={e => setScholarshipForm(prev => ({ ...prev, studyIn: e.target.value }))}
+                      className="mt-2 w-full min-h-[80px] rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 resize-y" />
+                  </label>
+                  <label className="block text-[12px] text-navy/50">
+                    Universities (one per line, as named in Masters; empty = any in those countries)
+                    <textarea value={scholarshipForm.universities} onChange={e => setScholarshipForm(prev => ({ ...prev, universities: e.target.value }))}
                       className="mt-2 w-full min-h-[80px] rounded-2xl border border-gold/20 px-4 py-3 text-[13px] text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/10 resize-y" />
                   </label>
                 </div>

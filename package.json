@@ -12,7 +12,8 @@
     "db:seed": "node scripts/db-seed.mjs",
     "db:psql": "docker exec -it globalreach-db psql -U globalreach -d globalreach",
     "db:export": "node scripts/db-export.mjs",
-    "prebuild": "node scripts/db-export.mjs --if-available"
+    "scholarships:check": "node scripts/check-scholarships.mjs",
+    "prebuild": "node scripts/db-export.mjs --if-available && node scripts/check-scholarships.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

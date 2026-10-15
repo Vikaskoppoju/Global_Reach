@@ -72,6 +72,12 @@ Commit the updated snapshot files together with code changes. They are what prod
   5. `scripts/db-seed.mjs`
 
   Otherwise the dev and prod data drift apart.
+- **Scholarships reference atlas names.** `lib/scholarships.json` links each scholarship to atlas
+  countries (`studyIn`) and university names (`universities`). Renaming a country or university in the
+  masters breaks those links, so update the JSON too. `npm run scholarships:check` (also run by
+  `prebuild`) fails on unknown countries and lists university names missing from the atlas.
+- **Country flags** (scholarship cards) come from `lib/country-codes.json` + `public/flags/`. A new atlas
+  country needs its ISO code added there, then `node scripts/fetch-flags.mjs`; until then it shows no flag.
 - Keep `id`s optional in `types/index.ts`. The snapshot has no database ids, and code that needs ids
   (admin editing) must only run when `source === 'db'`.
 

@@ -7,7 +7,7 @@
 //   static mode (production): the bundled snapshot in lib/ only, no request is made.
 // See lib/atlas-source.ts and .claude/skills/atlas-data/SKILL.md.
 
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { continents as bundledContinents } from '@/lib/data'
 import { ATLAS_SOURCE } from '@/lib/atlas-source'
 import type { Continent, UniversityListing } from '@/types'
@@ -97,6 +97,18 @@ export function flattenUniversities(atlas: Continent[]): UniversityListing[] {
       country.universities.map(u => ({ ...u, country: country.name, continentId: c.id, continentName: c.name })),
     ),
   )
+}
+
+// University name → logo (undefined when it has none), for every university in the atlas
+export function useUniversityLogos(): Map<string, string | undefined> {
+  const atlas = useAtlas()
+  return useMemo(() => new Map(flattenUniversities(atlas).map(u => [u.name, u.logo])), [atlas])
+}
+
+// Country name → continent name
+export function useCountryContinents(): Map<string, string> {
+  const atlas = useAtlas()
+  return useMemo(() => new Map(atlas.flatMap(c => c.countries.map(country => [country.name, c.name]))), [atlas])
 }
 
 export function countUniversities(continent: Continent) {

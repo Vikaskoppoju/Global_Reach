@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { useAtlas, flattenUniversities, countUniversities } from '@/lib/atlas'
+import { baseScholarships, scholarshipsForUniversity } from '@/lib/scholarships'
 import SearchableSelect from '@/components/ui/SearchableSelect'
 import UniversityLogo from '@/components/ui/UniversityLogo'
 
@@ -12,6 +13,20 @@ const PAGE_SIZE = 60
 const rowClass = (active: boolean) =>
   `flex w-full items-baseline justify-between gap-3 border-b border-gold/15 py-2.5 text-left text-[14px] transition-colors
    ${active ? 'font-semibold text-navy' : 'text-navy/60 hover:text-navy'}`
+
+// Scholarships named for the university, plus those open to any university in its country
+function ScholarshipLink({ university, country }: { university: string; country: string }) {
+  const { named, countryWide } = scholarshipsForUniversity(baseScholarships, university, country)
+  const total = named.length + countryWide.length
+  if (!total) return null
+  return (
+    <Link href={`/scholarships?university=${encodeURIComponent(university)}&country=${encodeURIComponent(country)}`}
+      className="text-navy/55 hover:text-navy transition-colors">
+      {total} {total === 1 ? 'scholarship' : 'scholarships'}
+      {named.length > 0 && <span className="text-gold font-semibold"> · {named.length} for this university</span>}
+    </Link>
+  )
+}
 
 export default function UniversityDirectory() {
   const params = useSearchParams()
@@ -186,6 +201,7 @@ export default function UniversityDirectory() {
                         Visit website ↗
                       </a>
                     )}
+                    <ScholarshipLink university={u.name} country={u.country} />
                     {country !== u.country && (
                       <button type="button" onClick={() => selectCountry(u.country)}
                         className="text-navy/55 hover:text-navy transition-colors">

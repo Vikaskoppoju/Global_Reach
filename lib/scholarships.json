@@ -5,8 +5,10 @@
     "provider": "U.S. Department of State",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -58,8 +60,12 @@
     "provider": "Gates Cambridge Trust",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [
+      "University of Cambridge"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -109,8 +115,12 @@
     "provider": "Rhodes Trust",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [
+      "University of Oxford"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -160,8 +170,10 @@
     "provider": "UK Foreign Commonwealth & Development Office",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -210,8 +222,10 @@
     "provider": "German Academic Exchange Service",
     "country": "Germany",
     "region": "Europe",
-    "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [
+      "Germany"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -264,8 +278,10 @@
     "provider": "Australian Government (DFAT)",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -311,114 +327,15 @@
     "link": "https://www.australiaawards.gov.au"
   },
   {
-    "id": "s007",
-    "name": "Erasmus Mundus Joint Master Degrees",
-    "provider": "European Commission",
-    "country": "Europe (Multi-country)",
-    "region": "Europe",
-    "flag": "🇪🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 28000,
-    "deadline": "2026-01-15",
-    "duration": "1–2 years",
-    "description": "Erasmus Mundus Joint Master Degrees are integrated international study programmes delivered by a consortium of higher education institutions from different countries. Students study in at least two countries and gain double/multiple degrees.",
-    "benefits": [
-      "Full tuition waiver",
-      "Monthly allowance €1,400",
-      "Travel and installation costs",
-      "Insurance coverage",
-      "Unique multi-country study experience"
-    ],
-    "requirements": {
-      "minGPA": 3,
-      "minPercentage": 70,
-      "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
-      "minIELTS": 6.5,
-      "minTOEFL": 90,
-      "nationality": [
-        "All nationalities"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "european-commission",
-      "fully-funded",
-      "multi-country",
-      "prestigious"
-    ],
-    "link": "https://erasmus-plus.ec.europa.eu"
-  },
-  {
-    "id": "s008",
-    "name": "Japanese Government (MEXT) Scholarship",
-    "provider": "Ministry of Education, Japan",
-    "country": "Japan",
-    "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 18000,
-    "deadline": "2025-05-31",
-    "duration": "1–5 years",
-    "description": "The MEXT Scholarship is the Japanese government scholarship programme for international students, covering undergraduate, postgraduate, and research programs at Japanese national universities, with full financial support and Japanese language training.",
-    "benefits": [
-      "Full tuition",
-      "Monthly stipend ¥117,000–¥145,000",
-      "Round-trip airfare",
-      "Japanese language training"
-    ],
-    "requirements": {
-      "minGPA": 2.8,
-      "minPercentage": 65,
-      "minMarks": 650,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "JLPT (optional)"
-      ],
-      "minIELTS": 5.5,
-      "minTOEFL": 72,
-      "nationality": [
-        "All nationalities"
-      ],
-      "ageLimit": 34
-    },
-    "tags": [
-      "government",
-      "fully-funded",
-      "japan",
-      "research"
-    ],
-    "link": "https://www.mext.go.jp/en/policy/education/highered/title02/detail02/1373897.htm"
-  },
-  {
     "id": "s009",
     "name": "Commonwealth Scholarship",
     "provider": "Commonwealth Scholarship Commission (UK)",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -464,67 +381,15 @@
     "link": "https://cscuk.fcdo.gov.uk"
   },
   {
-    "id": "s010",
-    "name": "Korean Government Scholarship (KGSP)",
-    "provider": "National Institute for International Education (NIIED)",
-    "country": "South Korea",
-    "region": "Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 20000,
-    "deadline": "2026-02-28",
-    "duration": "1–4 years",
-    "description": "The Global Korea Scholarship (GKS) is offered by the Korean Government to international students to provide opportunities to study at higher educational institutions in Korea and to develop global leaders with a friendly view of Korea.",
-    "benefits": [
-      "Full tuition",
-      "Monthly allowance KRW 900,000",
-      "Settlement allowance",
-      "Korean language training",
-      "Airfare",
-      "Medical insurance"
-    ],
-    "requirements": {
-      "minGPA": 2.64,
-      "minPercentage": 65,
-      "minMarks": 650,
-      "exams": [
-        "TOPIK (Korean preferred)",
-        "IELTS",
-        "TOEFL"
-      ],
-      "minIELTS": 5.5,
-      "minTOEFL": 71,
-      "nationality": [
-        "All nationalities"
-      ],
-      "ageLimit": 25
-    },
-    "tags": [
-      "government",
-      "fully-funded",
-      "korea",
-      "undergraduate"
-    ],
-    "link": "https://www.studyinkorea.go.kr"
-  },
-  {
     "id": "s011",
     "name": "Chinese Government Scholarship (CSC)",
     "provider": "China Scholarship Council",
     "country": "China",
     "region": "Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -575,8 +440,10 @@
     "provider": "Government of Canada",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [],
     "levels": [
       "PhD"
     ],
@@ -628,8 +495,8 @@
     "provider": "Rotary International",
     "country": "Global",
     "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -683,8 +550,8 @@
     "provider": "Aga Khan Foundation",
     "country": "Global",
     "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -731,8 +598,12 @@
     "provider": "Schwarzman Scholars Program",
     "country": "China",
     "region": "Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [
+      "Tsinghua University"
+    ],
     "levels": [
       "Master's"
     ],
@@ -782,62 +653,15 @@
     "link": "https://www.schwarzmanscholars.org"
   },
   {
-    "id": "s016",
-    "name": "Swedish Institute Scholarship",
-    "provider": "Swedish Institute",
-    "country": "Sweden",
-    "region": "Europe",
-    "flag": "🇸🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 24000,
-    "deadline": "2026-02-10",
-    "duration": "1–2 years",
-    "description": "The Swedish Institute Study Scholarships are highly competitive scholarships for global professionals who want to pursue a Master's degree in Sweden. The programme targets future leaders and change-makers who want to make a difference in their home countries.",
-    "benefits": [
-      "SEK 11,000/month living costs",
-      "Full tuition",
-      "Travel grant",
-      "Insurance",
-      "Leadership network access"
-    ],
-    "requirements": {
-      "minGPA": 3,
-      "minPercentage": 70,
-      "minMarks": 700,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
-      "minIELTS": 6.5,
-      "minTOEFL": 90,
-      "nationality": [
-        "Non-EU/EEA nationalities (eligible countries)"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "government",
-      "fully-funded",
-      "sweden",
-      "leadership"
-    ],
-    "link": "https://si.se/en/apply/scholarships"
-  },
-  {
     "id": "s017",
     "name": "Orange Tulip Scholarship (Netherlands)",
     "provider": "Nuffic Neso Netherlands",
     "country": "Netherlands",
     "region": "Europe",
-    "flag": "🇳🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "studyIn": [
+      "Netherlands"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -885,8 +709,10 @@
     "provider": "State Secretariat for Education, Research and Innovation (SERI)",
     "country": "Switzerland",
     "region": "Europe",
-    "flag": "🇨🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "studyIn": [
+      "Switzerland"
+    ],
+    "universities": [],
     "levels": [
       "PhD",
       "Research",
@@ -936,8 +762,10 @@
     "provider": "Education New Zealand",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -985,8 +813,10 @@
     "provider": "Eni S.p.A. (Italy)",
     "country": "Italy",
     "region": "Europe",
-    "flag": "🇮🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "studyIn": [
+      "Italy"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -1039,8 +869,8 @@
     "provider": "Asian Development Bank (ADB)",
     "country": "Japan",
     "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -1094,8 +924,10 @@
     "provider": "Heinrich Böll Foundation (Germany)",
     "country": "Germany",
     "region": "Europe",
-    "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    "studyIn": [
+      "Germany"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1145,115 +977,15 @@
     "link": "https://www.boell.de/en/foundation/scholarships"
   },
   {
-    "id": "s023",
-    "name": "Turkish Government Scholarship (Türkiye Burslari)",
-    "provider": "Presidency for Turks Abroad and Related Communities",
-    "country": "Turkey",
-    "region": "Europe",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD",
-      "Research"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 8000,
-    "deadline": "2026-02-20",
-    "duration": "1–5 years",
-    "description": "Türkiye Bursları is a prestigious government scholarship offered to international students for academic degrees at Turkish universities. It covers undergraduate through doctoral programs and includes language training.",
-    "benefits": [
-      "Full tuition",
-      "Monthly stipend TRY 3,700–6,500",
-      "Accommodation",
-      "Health insurance",
-      "Turkish language course",
-      "Return airfare"
-    ],
-    "requirements": {
-      "minGPA": 2.8,
-      "minPercentage": 70,
-      "minMarks": 700,
-      "exams": [
-        "YÖS (Turkish)"
-      ],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "All non-Turkish nationalities"
-      ],
-      "ageLimit": 30
-    },
-    "tags": [
-      "government",
-      "fully-funded",
-      "turkey",
-      "undergraduate"
-    ],
-    "link": "https://turkiyeburslari.gov.tr"
-  },
-  {
-    "id": "s024",
-    "name": "Stipendium Hungaricum",
-    "provider": "Hungarian Government",
-    "country": "Hungary",
-    "region": "Europe",
-    "flag": "🇭🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 9000,
-    "deadline": "2026-01-15",
-    "duration": "1–5 years",
-    "description": "The Stipendium Hungaricum Scholarship Programme is designed to increase the number of foreign students in Hungary and strengthen educational cooperation between Hungary and partner countries worldwide.",
-    "benefits": [
-      "Full tuition",
-      "Monthly stipend HUF 43,700",
-      "Accommodation",
-      "Health insurance"
-    ],
-    "requirements": {
-      "minGPA": 2.5,
-      "minPercentage": 60,
-      "minMarks": 600,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
-      "minIELTS": 5.5,
-      "minTOEFL": 72,
-      "nationality": [
-        "Eligible countries per programme"
-      ],
-      "ageLimit": 45
-    },
-    "tags": [
-      "government",
-      "fully-funded",
-      "hungary",
-      "eastern-europe"
-    ],
-    "link": "https://stipendiumhungaricum.hu"
-  },
-  {
     "id": "s025",
     "name": "Taiwan MOE Scholarship",
     "provider": "Ministry of Education, Taiwan",
     "country": "Taiwan",
     "region": "Asia",
-    "flag": "🇹🇼",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    "studyIn": [
+      "Taiwan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1297,70 +1029,13 @@
     "link": "https://www.studyintaiwan.org/scholarship"
   },
   {
-    "id": "s026",
-    "name": "Knight-Hennessy Scholars (Stanford)",
-    "provider": "Stanford University",
-    "country": "United States",
-    "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD",
-      "JD",
-      "MD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 80000,
-    "deadline": "2025-10-09",
-    "duration": "Up to 3 years",
-    "description": "Knight-Hennessy Scholars is one of the world's largest fully endowed graduate scholarship programs, providing funding for graduate students at Stanford University. It selects future leaders committed to creating positive change in the world.",
-    "benefits": [
-      "Full tuition at Stanford",
-      "Living stipend",
-      "Travel allowance",
-      "Community-focused enrichment programs",
-      "Access to Silicon Valley network"
-    ],
-    "requirements": {
-      "minGPA": 3.7,
-      "minPercentage": 85,
-      "minMarks": 850,
-      "exams": [
-        "IELTS",
-        "TOEFL",
-        "GRE",
-        "GMAT",
-        "LSAT",
-        "MCAT"
-      ],
-      "minIELTS": 7,
-      "minTOEFL": 100,
-      "nationality": [
-        "All nationalities"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "university",
-      "fully-funded",
-      "prestigious",
-      "leadership",
-      "stanford"
-    ],
-    "link": "https://knight-hennessy.stanford.edu"
-  },
-  {
     "id": "s027",
     "name": "MasterCard Foundation Scholars Program",
     "provider": "Mastercard Foundation",
     "country": "Global (Africa focus)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -1411,8 +1086,12 @@
     "provider": "Harvard University",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Harvard University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1467,8 +1146,11 @@
     "provider": "Franco-British Council",
     "country": "France",
     "region": "Europe",
-    "flag": "🇫🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80",
+    "studyIn": [
+      "France",
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -1519,8 +1201,15 @@
     "provider": "Agency for Science, Technology and Research (A*STAR)",
     "country": "Singapore",
     "region": "Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [
+      "National University of Singapore",
+      "Nanyang Technological University",
+      "Singapore University of Technology and Design",
+      "Singapore Management University"
+    ],
     "levels": [
       "PhD"
     ],
@@ -1573,8 +1262,8 @@
     "provider": "World Bank & Japan",
     "country": "Japan",
     "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -1628,8 +1317,10 @@
     "provider": "Australian Government",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1680,8 +1371,10 @@
     "provider": "Russian Government / Rossotrudnichestvo",
     "country": "Russia",
     "region": "Europe",
-    "flag": "🇷🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&q=80",
+    "studyIn": [
+      "Russia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1725,69 +1418,17 @@
     "link": "https://studyinrussia.ru/en/study-in-russia/scholarships"
   },
   {
-    "id": "s034",
-    "name": "Eiffel Excellence Scholarship (France)",
-    "provider": "Campus France / French Ministry of Foreign Affairs",
-    "country": "France",
-    "region": "Europe",
-    "flag": "🇫🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Engineering",
-      "Economics",
-      "Political Science",
-      "Law"
-    ],
-    "amount": "€1,181/month",
-    "amountUSD": 15000,
-    "deadline": "2026-01-08",
-    "duration": "1–3 years",
-    "description": "The Eiffel Excellence Scholarship Program was established by the French Ministry for Europe and Foreign Affairs to enable French higher education institutions to attract top foreign students to pursue master's or doctoral degree programs.",
-    "benefits": [
-      "Monthly allowance €1,181 (Master's)",
-      "Monthly allowance €1,400 (PhD)",
-      "Round-trip airfare",
-      "Health insurance",
-      "Cultural activities"
-    ],
-    "requirements": {
-      "minGPA": 3.5,
-      "minPercentage": 80,
-      "minMarks": 800,
-      "exams": [
-        "DALF",
-        "DELF",
-        "IELTS",
-        "TOEFL"
-      ],
-      "minIELTS": 6.5,
-      "minTOEFL": 88,
-      "nationality": [
-        "All non-French nationalities"
-      ],
-      "ageLimit": 25
-    },
-    "tags": [
-      "government",
-      "fully-funded",
-      "france",
-      "merit",
-      "engineering"
-    ],
-    "link": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence"
-  },
-  {
     "id": "s035",
     "name": "NUS Research Scholarship",
     "provider": "National University of Singapore",
     "country": "Singapore",
     "region": "Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [
+      "National University of Singapore"
+    ],
     "levels": [
       "PhD",
       "Research"
@@ -1838,8 +1479,12 @@
     "provider": "King Abdulaziz University, Deanship of Student Affairs",
     "country": "Saudi Arabia",
     "region": "Middle East",
-    "flag": "🇸🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80",
+    "studyIn": [
+      "Saudi Arabia"
+    ],
+    "universities": [
+      "King Abdulaziz University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1850,9 +1495,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "External track for applicants outside Saudi Arabia and internal track for non-Saudi residents already in-Kingdom; max age 25 (Bachelor's), 30 (Master's), 35 (PhD); no application fee. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "King Abdulaziz University in Jeddah offers fully funded scholarships to international students for Bachelor's, Master's and PhD study, covering tuition, housing, health insurance and a return airfare. There is an external track for applicants outside Saudi Arabia and an internal track for non-Saudi residents; age limits are 25 (Bachelor's), 30 (Master's) and 35 (PhD), and there is no application fee.",
     "benefits": [
       "Free tuition",
       "Free housing",
@@ -1883,8 +1528,12 @@
     "provider": "King Abdullah University of Science and Technology",
     "country": "Saudi Arabia",
     "region": "Middle East",
-    "flag": "🇸🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+    "studyIn": [
+      "Saudi Arabia"
+    ],
+    "universities": [
+      "King Abdullah University of Science and Technology (KAUST)"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -1894,9 +1543,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "Every admitted MS/PhD student is automatically awarded the KAUST Fellowship; no separate scholarship application beyond admission is required. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Every student admitted to a KAUST Master's or PhD programme automatically receives the KAUST Fellowship, which covers full tuition, on-campus housing, medical and dental cover, relocation support and an annual living allowance. No separate scholarship application is needed beyond admission.",
     "benefits": [
       "Full tuition exemption",
       "On-campus housing/accommodation",
@@ -1926,8 +1575,12 @@
     "provider": "King Fahd University of Petroleum and Minerals",
     "country": "Saudi Arabia",
     "region": "Middle East",
-    "flag": "🇸🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=600&q=80",
+    "studyIn": [
+      "Saudi Arabia"
+    ],
+    "universities": [
+      "King Fahd University of Petroleum and Minerals"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1938,9 +1591,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "No separate scholarship application; admitted international students are automatically considered. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "KFUPM in Dhahran funds admitted international students with free on-campus housing, textbooks and medical care, plus airfare, meal subsidies and research assistantships at graduate level. Admitted international students are considered automatically; there is no separate scholarship application.",
     "benefits": [
       "Free on-campus housing/utilities",
       "Free course texts",
@@ -1972,8 +1625,12 @@
     "provider": "King Saud University, International Students Department",
     "country": "Saudi Arabia",
     "region": "Middle East",
-    "flag": "🇸🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&q=80",
+    "studyIn": [
+      "Saudi Arabia"
+    ],
+    "universities": [
+      "King Saud University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -1984,9 +1641,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Applications go through the national External Scholarships Portal (studyinsaudi.moe.gov.sa); age limit 25, medical fitness required. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "King Saud University in Riyadh offers fully funded places to international students covering tuition, a monthly stipend and furnished on-campus housing. Applications go through Saudi Arabia's national External Scholarships Portal (studyinsaudi.moe.gov.sa); the age limit is 25 and medical fitness is required.",
     "benefits": [
       "Full tuition coverage",
       "Monthly living stipend",
@@ -2015,8 +1672,12 @@
     "provider": "Alfaisal University",
     "country": "Saudi Arabia",
     "region": "Middle East",
-    "flag": "🇸🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80",
+    "studyIn": [
+      "Saudi Arabia"
+    ],
+    "universities": [
+      "Alfaisal University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -2025,9 +1686,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Merit-based and need-based scholarship tracks are mutually exclusive. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Alfaisal University in Riyadh awards undergraduate tuition discounts and waivers on the basis of merit (test scores) or demonstrated financial need. The merit and need-based tracks are mutually exclusive.",
     "benefits": [
       "Tuition discount/waiver amount varies by merit-based test scores or demonstrated financial need"
     ],
@@ -2054,8 +1715,12 @@
     "provider": "Hamad Bin Khalifa University (Qatar Foundation)",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Hamad Bin Khalifa University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -2066,9 +1731,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "Scholarships are merit- and need-based, awarded through the normal admissions process rather than a separate application. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Hamad Bin Khalifa University (Qatar Foundation) awards merit- and need-based tuition waivers of 35-100% to graduate students and full waivers to exceptional undergraduates. Awards are made through the normal admissions process rather than a separate application.",
     "benefits": [
       "Tuition waivers ranging 35%-100% (graduate)",
       "Full tuition waiver for exceptional undergraduates"
@@ -2096,8 +1761,12 @@
     "provider": "Qatar University",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Qatar University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -2108,9 +1777,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Arabic-medium programs waive the English test requirement; scholarship continuity requires maintaining GPA >=3.0. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Qatar University offers international students scholarships covering tuition, university accommodation, annual return airfare, textbook fees and medical allowance, with a living allowance for selected students. Arabic-medium programmes waive the English test, and students must keep a GPA of 3.0 or above to retain the award.",
     "benefits": [
       "Tuition fees",
       "University accommodation",
@@ -2145,8 +1814,12 @@
     "provider": "Doha Institute for Graduate Studies",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Doha Institute for Graduate Studies"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -2156,9 +1829,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Two named tracks: Tamim (merit-based) and Sanad (financial-need-based); open to Qatari nationals, residents, and international applicants. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "The Doha Institute for Graduate Studies funds Master's and PhD students through two tracks, Tamim (merit-based) and Sanad (need-based), covering tuition, free accommodation, a monthly stipend, health insurance and return airfare. Qatari nationals, residents and international applicants can apply.",
     "benefits": [
       "Full/partial tuition coverage",
       "Free accommodation",
@@ -2189,8 +1862,12 @@
     "provider": "Khalifa University of Science and Technology",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Khalifa University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -2201,9 +1878,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by intake (graduate: ~2 March for Fall, ~15 September for Spring)",
     "duration": "1–4 years",
-    "description": "Undergraduate awards assessed automatically at admission; graduate scholarships require a formal application and interview. Application window: Fall semester deadline typically ~March 2; Spring semester ~September 15.",
+    "description": "Khalifa University in Abu Dhabi awards tiered tuition waivers from 25% to 100%, with textbooks, medical insurance, accommodation and conference support for funded graduate scholars. Undergraduate awards are assessed automatically at admission; graduate scholarships need a separate application and interview.",
     "benefits": [
       "Tuition waiver (Tier I: 100%, Tier II: 75%, Tier III: 50%, Tier IV: 25%, Tier V: textbooks only)",
       "Textbooks",
@@ -2237,8 +1914,12 @@
     "provider": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Mohamed bin Zayed University of Artificial Intelligence"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -2249,7 +1930,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
     "description": "All admitted full-time graduate students receive a full scholarship automatically as part of admission.",
     "benefits": [
@@ -2275,7 +1956,7 @@
     },
     "tags": [
       "fully-funded",
-      "government"
+      "university"
     ],
     "link": "https://mbzuai.ac.ae/study/admissions/scholarship-financial-aid"
   },
@@ -2285,8 +1966,12 @@
     "provider": "Al Qasimia University, Sharjah",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Al Qasimia University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -2296,9 +1981,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year (applications typically open April-July)",
     "duration": "1–4 years",
-    "description": "Restricted to international students admitted from outside the UAE; ~400 undergraduate scholarships approved for 2023/2024. Application window: Applications typically open April through July for the following academic year.",
+    "description": "Al Qasimia University in Sharjah offers fully funded Bachelor's and Master's scholarships to international students admitted from outside the UAE, covering tuition, on-campus housing, health insurance, transport, visa costs, a monthly stipend and a return ticket after half the programme.",
     "benefits": [
       "Full tuition",
       "Free on-campus housing in Sharjah",
@@ -2333,8 +2018,12 @@
     "provider": "Al Ain University (AAU)",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Al Ain University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -2344,9 +2033,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Bundle of separate merit-based grants plus a needs-based Humanitarian Aid grant, not one single named scholarship. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Al Ain University offers a set of merit-based tuition grants worth 10-100% plus a need-based Humanitarian Aid grant covering up to 50% for students in hardship. It is a bundle of separate grants rather than one named scholarship.",
     "benefits": [
       "Tuition discounts ranging 10%-100% depending on grant type",
       "Student visa for international applicants",
@@ -2375,8 +2064,12 @@
     "provider": "Hamdan Bin Mohammed Smart University (HBMSU)",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Hamdan Bin Mohammed Smart University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -2385,7 +2078,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
     "description": "Flagship award is the H.H. Sheikh Hamdan Bin Mohammed Scholarship, a competitive merit-based full scholarship for fresh high school graduates.",
     "benefits": [
@@ -2416,8 +2109,12 @@
     "provider": "Abu Dhabi University (ADU)",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Abu Dhabi University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -2427,9 +2124,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "Eligible scholarships auto-identified on a student's account after admission; specific stipend amounts and English-test thresholds not published. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Abu Dhabi University offers merit-based tuition scholarships for undergraduate and graduate students and Sanabil-Qutoof need-based aid covering 10-30% of tuition. Eligible scholarships appear on the student's account automatically after admission.",
     "benefits": [
       "Merit-based tuition scholarships (undergraduate and graduate)",
       "Sanabil-Qutoof need-based Financial Aid covering 10%-30% of tuition",
@@ -2458,8 +2155,12 @@
     "provider": "Birla Institute of Technology and Science (BITS Pilani), Dubai Campus",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "BITS Pilani Dubai Campus"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -2468,9 +2169,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "Tuition-based merit/board-rank scholarship scheme, open to students of all nationalities; not a fixed-amount stipend program. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "BITS Pilani Dubai awards merit scholarships on B.E. (Hons.) tuition based on Class 12 board results: 100%, 75% and 50% of first-semester fees for the top three rank holders, 20% for students above 90%, and up to 75% tuition waivers for international students.",
     "benefits": [
       "Merit scholarships based on Class 12/board exam rank (100%/75%/50% of first-semester tuition for top 3 rank holders)",
       "20% first-semester tuition scholarship for 90%+ aggregate",
@@ -2494,59 +2195,17 @@
     "link": "https://www.bitspilanidubai.ac.ae"
   },
   {
-    "id": "s051",
-    "name": "Türkiye Bursları Scholarships (Turkiye Scholarships)",
-    "provider": "Republic of Türkiye (Presidency for Turks Abroad and Related Communities - YTB)",
-    "country": "Turkey",
-    "region": "Middle East",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 0,
-    "deadline": "2026-06-01",
-    "duration": "1–4 years",
-    "description": "Fully government-funded program; application window already closed as of Aug 2026, next cycle expected Jan 2027. Application window: 2026 cycle: 10 Jan - 20 Feb 2026.",
-    "benefits": [
-      "Tuition fees",
-      "Dormitory accommodation",
-      "General health insurance",
-      "One-off round-trip flight ticket",
-      "1-year Turkish language course"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "All nationalities"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "fully-funded",
-      "government"
-    ],
-    "link": "https://www.turkiyeburslari.gov.tr/"
-  },
-  {
     "id": "s052",
     "name": "Sabancı University Graduate Scholarships",
     "provider": "Sabancı University",
     "country": "Turkey",
     "region": "Middle East",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=600&q=80",
+    "studyIn": [
+      "Turkey"
+    ],
+    "universities": [
+      "Sabanci University"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -2556,9 +2215,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "Scholarship decisions made jointly with admissions decisions; no separate scholarship application. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Sabancı University in Istanbul grants nearly all admitted graduate students on academic programmes a full tuition exemption, together with free dormitory accommodation. Scholarship decisions are made with the admission decision, so no separate application is needed.",
     "benefits": [
       "Full tuition fee exemption for almost all academic graduate program admits",
       "Free dormitory accommodation"
@@ -2577,7 +2236,7 @@
     },
     "tags": [
       "fully-funded",
-      "government"
+      "university"
     ],
     "link": "https://www.sabanciuniv.edu/en/graduate-scholarships"
   },
@@ -2587,8 +2246,12 @@
     "provider": "Özyeğin University",
     "country": "Turkey",
     "region": "Middle East",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600&q=80",
+    "studyIn": [
+      "Turkey"
+    ],
+    "universities": [
+      "Ozyegin University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -2599,9 +2262,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Scholarship tiers differ notably between undergraduate and graduate/PhD tracks. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Özyeğin University in Istanbul offers merit-based tuition waivers of 25-50% for undergraduates and up to 100% for graduate and PhD students.",
     "benefits": [
       "Tuition waiver 25%-50% (undergraduate, merit-based) up to 100% for graduate/PhD"
     ],
@@ -2628,8 +2291,12 @@
     "provider": "Koç University",
     "country": "Turkey",
     "region": "Middle East",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "studyIn": [
+      "Turkey"
+    ],
+    "universities": [
+      "Koc University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -2640,9 +2307,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Automatic consideration upon admission",
     "duration": "1–4 years",
-    "description": "GPA thresholds vary by program and are not published centrally. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Koç University in Istanbul awards merit scholarships of 25%, 50%, 75% or 100% of undergraduate tuition (excluding the School of Medicine), evaluated automatically with the admission application. GPA thresholds vary by programme.",
     "benefits": [
       "Merit-based tuition scholarships of 25%, 50%, 75%, or 100% (undergraduate; excludes School of Medicine)",
       "No separate scholarship application - evaluated automatically with admission"
@@ -2670,8 +2337,12 @@
     "provider": "Bilkent University",
     "country": "Turkey",
     "region": "Middle East",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "studyIn": [
+      "Turkey"
+    ],
+    "universities": [
+      "Bilkent University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -2680,9 +2351,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "About 44% of the student body receives some form of scholarship; none carry post-graduation obligations. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Bilkent University in Ankara offers undergraduate tuition waivers at five levels from 20% to 100%, with accommodation, laptop, meal and travel support for top award holders. About 44% of students receive some form of scholarship, and none carry post-graduation obligations.",
     "benefits": [
       "Tuition waiver scholarships at five levels: 20%, 40%, 60%, 80%, 100%",
       "Accommodation scholarships for top full-tuition-waiver students",
@@ -2712,8 +2383,10 @@
     "provider": "DAAD (German Academic Exchange Service)",
     "country": "Germany",
     "region": "Europe",
-    "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [
+      "Germany"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -2722,9 +2395,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by course (typically June-October)",
     "duration": "1–4 years",
-    "description": "CSV's ~€934/month figure was outdated; current official figure is €992/month (Master's). Application window: Deadlines vary by individual course, generally June-October window.",
+    "description": "DAAD's EPOS programme funds professionals from developing countries to take development-related postgraduate courses at German universities. Scholars receive a monthly stipend (around €992 for Master's), insurance and a travel allowance, with possible rent and family allowances.",
     "benefits": [
       "Health, accident, and personal liability insurance coverage",
       "Travel allowance",
@@ -2757,8 +2430,10 @@
     "provider": "Commonwealth Scholarship Commission in the UK (CSC)",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "PhD"
     ],
@@ -2769,7 +2444,7 @@
     "amountUSD": 0,
     "deadline": "2026-06-01",
     "duration": "1–4 years",
-    "description": "From 2026/27, restructured into Professional Fellowships (continuing) and new Academic Fellowships strands. Application window: 2026/27 cycle: 28 Jul - 25 Aug 2026.",
+    "description": "Commonwealth Professional Fellowships bring mid-career professionals from Commonwealth countries to a UK host organisation for a short placement, covering return airfare, visa fees, an arrival allowance and funding for conferences or short courses. From 2026/27 the scheme is split into Professional and Academic Fellowship strands.",
     "benefits": [
       "Return airfare",
       "Visa application fee reimbursement",
@@ -2800,8 +2475,10 @@
     "provider": "Commonwealth Scholarship Commission in the UK (CSC)",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "PhD"
     ],
@@ -2810,9 +2487,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Restricted to citizens of specific least-developed/fragile-state Commonwealth countries; applications via national nominating agencies only. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Commonwealth PhD Scholarships fund doctoral study at UK universities for citizens of selected least-developed and fragile Commonwealth countries, covering tuition, return airfare, study travel, fieldwork and family allowances. Applications are made through national nominating agencies only.",
     "benefits": [
       "Full tuition fees",
       "Return airfare",
@@ -2846,8 +2523,10 @@
     "provider": "Commonwealth Scholarship Commission in the UK (CSC)",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -2856,9 +2535,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "For candidates who remain in their home country while studying part-time; does NOT include a monthly living stipend, unlike the full-time Master's scheme. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Commonwealth Distance Learning Scholarships fund part-time Master's degrees from UK universities studied from the candidate's home country, covering tuition, a study-cost grant and any UK residential component. There is no monthly living stipend.",
     "benefits": [
       "Tuition fees for the distance-learning Master's course",
       "Study-related cost grant",
@@ -2884,53 +2563,15 @@
     "link": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-distance-learning-scholarships-candidates/"
   },
   {
-    "id": "s060",
-    "name": "Commonwealth Shared Scholarships",
-    "provider": "Commonwealth Scholarship Commission in the UK (CSC), jointly with UK universities",
-    "country": "United Kingdom",
-    "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 0,
-    "deadline": "2026-06-01",
-    "duration": "1–4 years",
-    "description": "CSV's garbled title 'Commonwealth Startup Fellowship' corrected to 'Commonwealth Shared Scholarships' - distinct from the Fellowships program in row 49. Application window: Current cycle closed; universities invited to bid for 2027/28 places.",
-    "benefits": [
-      "Full tuition fees",
-      "Living costs (jointly funded by CSC and host UK university)"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "All nationalities"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "fully-funded"
-    ],
-    "link": "https://cscuk.fcdo.gov.uk/commonwealth-shared-scholarships-eligible-courses/"
-  },
-  {
     "id": "s061",
     "name": "Commonwealth Master's Scholarships",
     "provider": "Commonwealth Scholarship Commission in the UK (CSC)",
     "country": "United Kingdom",
     "region": "Europe",
-    "flag": "🇬🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -2939,9 +2580,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Restricted to citizens of specific least-developed Commonwealth countries; distinct named award under the CSFP umbrella - compare against site's existing generic 'Commonwealth Scholarship' entry before merging. Deadlines vary or are not fixed — confirm exact dates on the official site.",
+    "description": "Commonwealth Master's Scholarships fund one-year taught Master's degrees at approved UK universities for citizens of selected least-developed Commonwealth countries, covering tuition, return airfare, a study travel grant and child allowance where applicable.",
     "benefits": [
       "Approved return airfare",
       "Full tuition fees at approved UK universities",
@@ -2974,8 +2615,12 @@
     "provider": "Dutch Ministry of Education, Culture and Science, co-financed with Radboud University",
     "country": "Netherlands",
     "region": "Europe",
-    "flag": "🇳🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [
+      "Netherlands"
+    ],
+    "universities": [
+      "Radboud University"
+    ],
     "levels": [
       "Master's"
     ],
@@ -2984,9 +2629,9 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year (typically 1 February, complete file by mid-February)",
     "duration": "1–4 years",
-    "description": "Genuine, internationally-known national NL/Holland Scholarship; only 12 available for 2026-2027 at Radboud. Not a full scholarship - living/study costs remain the student's responsibility. Application window: For Sept 1 2026 intake: initial submission by 31 Jan 2026, complete application 14 Feb 2026.",
+    "description": "The NL Scholarship (formerly Holland Scholarship), co-financed by the Dutch Ministry of Education and Radboud University, gives non-EEA Master's students a one-off €5,000 grant towards first-year costs. It is not a full scholarship; only around 12 are available at Radboud each year.",
     "benefits": [
       "One-time EUR 5,000 grant toward first-year costs"
     ],
@@ -3014,8 +2659,10 @@
     "provider": "New Zealand Ministry of Foreign Affairs and Trade",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -3027,7 +2674,7 @@
     "amountUSD": 0,
     "deadline": "2026-06-01",
     "duration": "1–4 years",
-    "description": "Named track within Manaaki New Zealand Scholarships; official page states tertiary applications 'have now closed'. Specific funding amounts/country lists not broken out on this page.",
+    "description": "Manaaki New Zealand Scholarships, funded by New Zealand's Ministry of Foreign Affairs and Trade, support citizens of eligible developing countries to complete undergraduate or postgraduate study in New Zealand, covering tuition, living costs and travel.",
     "benefits": [
       "Full tertiary scholarship for fulltime study at a New Zealand (or Pacific) education institution"
     ],
@@ -3054,8 +2701,10 @@
     "provider": "New Zealand Ministry of Foreign Affairs and Trade",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [],
     "levels": [
       "Vocational"
     ],
@@ -3064,9 +2713,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–4 years",
-    "description": "Distinct named scholarship for cohorts from eligible Pacific/ASEAN/African/Latin America countries; nominated via employer through NZ embassies, not direct online application.",
+    "description": "Manaaki Thematic Short Term Training Scholarships fund short professional courses in New Zealand for cohorts from eligible Pacific, ASEAN, African and Latin American countries. Candidates are nominated by their employer through the local New Zealand embassy rather than applying online.",
     "benefits": [
       "Short skills-training courses (2-4 weeks) in governance, climate/resilience sectors"
     ],
@@ -3093,8 +2742,10 @@
     "provider": "New Zealand Ministry of Foreign Affairs and Trade",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [],
     "levels": [
       "Vocational"
     ],
@@ -3103,9 +2754,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by country (via local NZ Embassy/High Commission)",
     "duration": "1–4 years",
-    "description": "Distinct named scholarship for citizens of ~18 eligible Pacific nations; applied for via local NZ Embassy/High Commission with employer endorsement. Application window: Country-specific; contact local NZ Embassy/High Commission.",
+    "description": "Manaaki Vocational Short Term Training Scholarships fund short vocational courses in New Zealand for citizens of around 18 eligible Pacific nations, covering tuition, training costs, living allowance and travel. Applications go through the local New Zealand Embassy or High Commission with employer endorsement.",
     "benefits": [
       "Full tuition fees",
       "Training-related costs",
@@ -3135,8 +2786,12 @@
     "provider": "University of Toronto",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "University of Toronto"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -3145,9 +2800,9 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year (school nomination ~October, scholarship application ~early November)",
     "duration": "1–4 years",
-    "description": "Genuinely distinct, well-known, fully international scholarship open to non-Canadian students requiring a study permit; must be in final year of secondary school, nominated by school. Application window: Nominations open ~July 6; school nomination deadline ~Oct 9; admission app ~Oct 16; scholarship app ~Nov 6; decisions Jan-Apr.",
+    "description": "The Lester B. Pearson International Scholarship at the University of Toronto covers full tuition, books, incidental fees and residence for four years of undergraduate study. It is open to international students who need a study permit and are in their final year of secondary school; candidates must be nominated by their school.",
     "benefits": [
       "Full tuition",
       "Books",
@@ -3169,7 +2824,7 @@
     },
     "tags": [
       "fully-funded",
-      "government"
+      "university"
     ],
     "link": "https://future.utoronto.ca/pearson-scholarships"
   },
@@ -3179,8 +2834,10 @@
     "provider": "Mandela Rhodes Foundation",
     "country": "South Africa",
     "region": "Africa",
-    "flag": "🇿🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [
+      "South Africa"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -3215,7 +2872,7 @@
     },
     "tags": [
       "fully-funded",
-      "government"
+      "foundation"
     ],
     "link": "https://www.mandelarhodes.org/scholarship/apply/"
   },
@@ -3225,8 +2882,12 @@
     "provider": "African Leadership Academy",
     "country": "South Africa",
     "region": "Africa",
-    "flag": "🇿🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [
+      "South Africa"
+    ],
+    "universities": [
+      "African Leadership Academy"
+    ],
     "levels": [
       "Vocational"
     ],
@@ -3258,7 +2919,7 @@
     },
     "tags": [
       "need-based",
-      "government"
+      "ngo"
     ],
     "link": "https://www.africanleadershipacademy.org/apply/"
   },
@@ -3268,8 +2929,10 @@
     "provider": "UK Foreign, Commonwealth & Development Office (FCDO)",
     "country": "Nigeria",
     "region": "Africa",
-    "flag": "🇳🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -3314,8 +2977,10 @@
     "provider": "Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan",
     "country": "Pan-African",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -3327,7 +2992,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "A scholarship from the Japanese government administered through Japanese embassies in each African country, covering undergraduate, research, and graduate study at Japanese universities. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3359,8 +3024,10 @@
     "provider": "National Research Foundation (NRF), South Africa",
     "country": "South Africa",
     "region": "Africa",
-    "flag": "🇿🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "studyIn": [
+      "South Africa"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -3373,7 +3040,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "A South African government-funded postgraduate research scholarship for Honours, Master's, and Doctoral students. International students are eligible for Partial Cost of Study funding, limited to 5% of total awards. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3405,8 +3072,8 @@
     "provider": "German Academic Exchange Service (DAAD)",
     "country": "Pan-African",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3416,7 +3083,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "A DAAD program funding full-time Master's and PhD study for Sub-Saharan African graduates either in their home country or at a university in another Sub-Saharan African country. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3448,8 +3115,10 @@
     "provider": "Moroccan Agency for International Cooperation (AMCI)",
     "country": "Morocco",
     "region": "Africa",
-    "flag": "🇲🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "studyIn": [
+      "Morocco"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -3494,8 +3163,10 @@
     "provider": "Ministry of Higher Education and Scientific Research, Egypt",
     "country": "Egypt",
     "region": "Africa",
-    "flag": "🇪🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
+    "studyIn": [
+      "Egypt"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -3506,7 +3177,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Egypt's government scholarship program for non-Egyptian nationals to study at Egyptian public universities across undergraduate, Master's, and PhD levels, plus Arabic-language study. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3536,8 +3207,8 @@
     "provider": "Organization of American States (OAS)",
     "country": "Multiple (OAS Member States)",
     "region": "Latin America",
-    "flag": "🌎",
-    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3547,7 +3218,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "12–24 months",
     "description": "Provides funding for citizens and permanent residents of OAS Member States to pursue graduate studies, prioritizing tuition and fees, health insurance, a living allowance, airfare, and books. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3581,8 +3252,10 @@
     "provider": "U.S. Department of State (Fulbright), administered by LASPAU",
     "country": "United States",
     "region": "Latin America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3592,7 +3265,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Funds graduate study in the US for university faculty and prospective professors from Latin America and the Caribbean, aiming to strengthen higher education institutions in the region. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3625,8 +3298,8 @@
     "provider": "Agencia Nacional de Investigación y Desarrollo (ANID), Chile",
     "country": "Chile",
     "region": "Latin America",
-    "flag": "🇨🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3636,7 +3309,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Master's up to 24 months; PhD up to 48 months",
     "description": "Chile's flagship scholarship funding Chilean citizens and permanent residents to pursue master's and doctoral degrees at high-ranking universities abroad. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3670,8 +3343,10 @@
     "provider": "Agencia Mexicana de Cooperación Internacional para el Desarrollo (AMEXCID)",
     "country": "Mexico",
     "region": "Latin America",
-    "flag": "🇲🇽",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    "studyIn": [
+      "Mexico"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -3682,7 +3357,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to 12–24 months",
     "description": "Offers foreign nationals from over 170 partner countries funding to pursue academic mobility, full degree programs, or research stays at Mexican higher education institutions. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3716,8 +3391,10 @@
     "provider": "CAPES, Brazilian Ministry of Foreign Affairs (MRE), and CNPq",
     "country": "Brazil",
     "region": "Latin America",
-    "flag": "🇧🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
+    "studyIn": [
+      "Brazil"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3727,7 +3404,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Master's up to 24 months; PhD up to 48 months",
     "description": "Brazil's postgraduate scholarship program for foreign nationals from partner countries, funding full master's and doctoral degrees at Brazilian universities. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3760,8 +3437,10 @@
     "provider": "ICETEX and Ministerio de Relaciones Exteriores de Colombia",
     "country": "Colombia",
     "region": "Latin America",
-    "flag": "🇨🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600&q=80",
+    "studyIn": [
+      "Colombia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -3804,8 +3483,10 @@
     "provider": "Ministerio de Capital Humano, Government of Argentina",
     "country": "Argentina",
     "region": "Latin America",
-    "flag": "🇦🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    "studyIn": [
+      "Argentina"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3815,7 +3496,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Argentina's official portal coordinating scholarship and exchange opportunities for foreign nationals to study or conduct research in Argentina. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3846,8 +3527,8 @@
     "provider": "Ministry of Social Justice and Empowerment, Government of India",
     "country": "India",
     "region": "South Asia",
-    "flag": "🇮🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -3857,7 +3538,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Full program duration",
     "description": "Funds Master's and PhD study abroad for Indian students from Scheduled Castes, Denotified/Nomadic Tribes, landless agricultural laborers, and traditional artisan families. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3892,8 +3573,10 @@
     "provider": "Indian Council for Cultural Relations (ICCR)",
     "country": "India",
     "region": "South Asia",
-    "flag": "🇮🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    "studyIn": [
+      "India"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -3904,7 +3587,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Full program duration",
     "description": "Funds international students from over 180 countries to pursue undergraduate, postgraduate, PhD, and diploma programs at Indian universities. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3937,8 +3620,10 @@
     "provider": "United States-India Educational Foundation (USIEF)",
     "country": "United States",
     "region": "South Asia",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -3947,7 +3632,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to two years",
     "description": "Funds Indian professionals with leadership potential and at least three years of work experience to pursue a Master's degree at a US university. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -3981,8 +3666,8 @@
     "provider": "Higher Education Commission (HEC), Pakistan",
     "country": "Pakistan",
     "region": "South Asia",
-    "flag": "🇵🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4025,8 +3710,10 @@
     "provider": "Deutscher Akademischer Austauschdienst (DAAD)",
     "country": "Germany",
     "region": "South Asia",
-    "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&q=80",
+    "studyIn": [
+      "Germany"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4036,7 +3723,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years (Master's); up to 3-4 years (PhD)",
     "description": "Funds professionals from developing countries including Pakistan, India, Bangladesh, Nepal, and Sri Lanka to pursue development-related postgraduate degrees and doctoral research at German universities. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4068,8 +3755,10 @@
     "provider": "Ministry of Higher Education (MOHE), Malaysia",
     "country": "Malaysia",
     "region": "Southeast Asia",
-    "flag": "🇲🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=600&q=80",
+    "studyIn": [
+      "Malaysia"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4111,8 +3800,12 @@
     "provider": "Royal Thai Government / Asian Institute of Technology",
     "country": "Thailand",
     "region": "Southeast Asia",
-    "flag": "🇹🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&q=80",
+    "studyIn": [
+      "Thailand"
+    ],
+    "universities": [
+      "Asian Institute of Technology"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -4157,8 +3850,10 @@
     "provider": "Ministry of Higher Education, Science and Technology, Indonesia",
     "country": "Indonesia",
     "region": "Southeast Asia",
-    "flag": "🇮🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80",
+    "studyIn": [
+      "Indonesia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -4204,8 +3899,12 @@
     "provider": "Chulabhorn Graduate Institute and the ASEAN Foundation",
     "country": "Thailand",
     "region": "Southeast Asia",
-    "flag": "🇹🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+    "studyIn": [
+      "Thailand"
+    ],
+    "universities": [
+      "Chulabhorn Graduate Institute"
+    ],
     "levels": [
       "Master's"
     ],
@@ -4214,7 +3913,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "6-week refresher plus 2-year Master's",
     "description": "A joint programme funding postgraduate study in science and technology fields for nationals of ASEAN member states. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4250,8 +3949,10 @@
     "provider": "Ministry of Foreign Affairs, Brunei Darussalam",
     "country": "Brunei",
     "region": "Southeast Asia",
-    "flag": "🇧🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=600&q=80",
+    "studyIn": [
+      "Brunei"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -4300,8 +4001,8 @@
     "provider": "ASEAN University Network / SEED-Net, supported by JICA",
     "country": "Multiple (ASEAN region)",
     "region": "Southeast Asia",
-    "flag": "🌏",
-    "imageUrl": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4312,7 +4013,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "A cooperative framework among engineering universities in ASEAN member states and supporting universities in Japan, providing Master's and Doctoral scholarships in engineering and STEM fields. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4344,8 +4045,12 @@
     "provider": "Massachusetts Institute of Technology",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Massachusetts Institute of Technology"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4354,7 +4059,7 @@
     ],
     "amount": "Need-based aid",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to 4 years",
     "description": "MIT is need-blind and meets 100% of demonstrated financial need for undergraduate applicants regardless of citizenship. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4377,7 +4082,7 @@
     },
     "tags": [
       "need-based",
-      "government"
+      "university"
     ],
     "link": "https://sfs.mit.edu/undergraduate-students/apply-for-aid/international/"
   },
@@ -4387,8 +4092,12 @@
     "provider": "Yale University",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Yale University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4397,7 +4106,7 @@
     ],
     "amount": "Need-based aid",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to 4 years",
     "description": "Yale is need-blind for all applicants regardless of citizenship and meets 100% of demonstrated financial need without requiring loans. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4420,7 +4129,7 @@
     },
     "tags": [
       "need-based",
-      "government"
+      "university"
     ],
     "link": "https://admissions.yale.edu/financial-aid-international-applicants"
   },
@@ -4430,8 +4139,12 @@
     "provider": "Princeton University",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Princeton University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4440,7 +4153,7 @@
     ],
     "amount": "Need-based aid",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to 4 years",
     "description": "Princeton is need-blind in admission and meets the full demonstrated need of every admitted international student, on the same terms as US students. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4462,7 +4175,7 @@
     },
     "tags": [
       "need-based",
-      "government"
+      "university"
     ],
     "link": "https://admission.princeton.edu/apply/international-students"
   },
@@ -4472,8 +4185,12 @@
     "provider": "Amherst College",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Amherst College"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4482,7 +4199,7 @@
     ],
     "amount": "Need-based aid",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to 4 years",
     "description": "Amherst College is need-blind for international applicants and offers no merit-based scholarships, instead meeting the full calculated financial need of all admitted students. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4504,7 +4221,7 @@
     },
     "tags": [
       "need-based",
-      "government"
+      "university"
     ],
     "link": "https://www.amherst.edu/offices/financialaid/international_students"
   },
@@ -4514,8 +4231,12 @@
     "provider": "Dartmouth College",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Dartmouth College"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4524,7 +4245,7 @@
     ],
     "amount": "Need-based aid",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Up to 4 years",
     "description": "Dartmouth extends need-blind admissions to all international citizens and guarantees to meet 100% of demonstrated need for every admitted student regardless of citizenship. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4547,7 +4268,7 @@
     },
     "tags": [
       "need-based",
-      "government"
+      "university"
     ],
     "link": "https://financialaid.dartmouth.edu/apply-aid/international-students"
   },
@@ -4557,8 +4278,12 @@
     "provider": "University of British Columbia",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "University of British Columbia"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4598,8 +4323,12 @@
     "provider": "McGill University",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "McGill University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -4608,7 +4337,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Renewable up to 4 years",
     "description": "McGill's centrally administered scholarships recognize incoming undergraduate students, including international applicants, for outstanding academic achievement and leadership. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4639,8 +4368,10 @@
     "provider": "Higher Education Authority (HEA), Ireland",
     "country": "Ireland",
     "region": "Europe",
-    "flag": "🇮🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80",
+    "studyIn": [
+      "Ireland"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4681,8 +4412,10 @@
     "provider": "Danish Ministry of Higher Education and Science",
     "country": "Denmark",
     "region": "Europe",
-    "flag": "🇩🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80",
+    "studyIn": [
+      "Denmark"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -4692,7 +4425,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Length of degree programme",
     "description": "A limited number of government-funded scholarships allocated each year to Danish universities to support highly qualified full-degree students from outside the EU/EEA and Switzerland. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4722,8 +4455,10 @@
     "provider": "Ministry of Foreign Affairs and International Cooperation (MAECI), Italy",
     "country": "Italy",
     "region": "Europe",
-    "flag": "🇮🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600&q=80",
+    "studyIn": [
+      "Italy"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -4766,8 +4501,10 @@
     "provider": "Polish National Agency for Academic Exchange (NAWA)",
     "country": "Poland",
     "region": "Europe",
-    "flag": "🇵🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=600&q=80",
+    "studyIn": [
+      "Poland"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -4808,8 +4545,10 @@
     "provider": "Polish National Agency for Academic Exchange (NAWA)",
     "country": "Poland",
     "region": "Europe",
-    "flag": "🇵🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80",
+    "studyIn": [
+      "Poland"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -4818,7 +4557,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Length of Master's studies",
     "description": "A NAWA scholarship aimed at encouraging talented young people from abroad to enrol in full-time Master's studies at leading Polish higher education institutions. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4848,8 +4587,16 @@
     "provider": "Flemish Interuniversity Council (VLIR-UOS), Belgium",
     "country": "Belgium",
     "region": "Europe",
-    "flag": "🇧🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=600&q=80",
+    "studyIn": [
+      "Belgium"
+    ],
+    "universities": [
+      "KU Leuven",
+      "Ghent University",
+      "University of Antwerp",
+      "Vrije Universiteit Brussel",
+      "Hasselt University"
+    ],
     "levels": [
       "Master's"
     ],
@@ -4858,7 +4605,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "12 to 36 months",
     "description": "Funded by Belgium's development cooperation directorate, enabling students from eligible developing countries in Africa, Asia and Latin America to pursue English-taught Master's programmes at Flemish universities. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4892,8 +4639,10 @@
     "provider": "Spanish Agency for International Development Cooperation (AECID)",
     "country": "Spain",
     "region": "Europe",
-    "flag": "🇪🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600&q=80",
+    "studyIn": [
+      "Spain"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4903,7 +4652,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Typically 1 academic year",
     "description": "Spain's flagship government cooperation scholarship funding in-person Master's study and other academic programmes in Spain for students from partner countries, primarily in Latin America, Africa, and Asia. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -4935,8 +4684,10 @@
     "provider": "OeAD – Austria's Agency for Education and Internationalisation",
     "country": "Austria",
     "region": "Europe",
-    "flag": "🇦🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "studyIn": [
+      "Austria"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -4971,55 +4722,17 @@
     "link": "https://oead.at/en/study-research-teaching/overview-grants-and-scholarships/ernst-mach-grant"
   },
   {
-    "id": "s108",
-    "name": "Rothberg International School Scholarships and Financial Aid",
-    "provider": "Hebrew University of Jerusalem",
-    "country": "Israel",
-    "region": "Middle East",
-    "flag": "🇮🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Partial funding",
-    "amountUSD": 0,
-    "deadline": "2027-12-31",
-    "duration": "1–2 years",
-    "description": "Offers merit-based, need-based, and country-of-origin scholarships and financial aid to non-US international students across undergraduate, graduate, and summer programs. Deadlines vary or are rolling — confirm exact dates on the official site.",
-    "benefits": [
-      "Merit, need, and country-of-origin based tuition scholarships",
-      "Up to 100% tuition coverage for select graduate programs"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "International students who are not US citizens"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "partially-funded"
-    ],
-    "link": "https://overseas.huji.ac.il/scholarships-and-financial-aid/scholarships-and-financial-aid-for-international-students-non-us/"
-  },
-  {
     "id": "s109",
     "name": "University of Jordan International Student Scholarships",
     "provider": "University of Jordan",
     "country": "Jordan",
     "region": "Middle East",
-    "flag": "🇯🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [
+      "Jordan"
+    ],
+    "universities": [
+      "University of Jordan"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5030,7 +4743,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Administers scholarship and tuition-exemption opportunities for international students at undergraduate and postgraduate levels, terms varying by bilateral agreement and merit. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5060,8 +4773,12 @@
     "provider": "Kuwait University",
     "country": "Kuwait",
     "region": "Middle East",
-    "flag": "🇰🇼",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [
+      "Kuwait"
+    ],
+    "universities": [
+      "Kuwait University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5072,7 +4789,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Kuwait University's Department of Scholarships and Cultural Relations manages scholarship announcements and applications, including for foreign nationals. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5102,8 +4819,12 @@
     "provider": "Sultan Qaboos University",
     "country": "Oman",
     "region": "Middle East",
-    "flag": "🇴🇲",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [
+      "Oman"
+    ],
+    "universities": [
+      "Sultan Qaboos University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5114,7 +4835,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Oman's flagship public university offers scholarships and sponsorship support to international students at undergraduate and postgraduate levels. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5144,8 +4865,12 @@
     "provider": "American University of Bahrain (AUBH)",
     "country": "Bahrain",
     "region": "Middle East",
-    "flag": "🇧🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [
+      "Bahrain"
+    ],
+    "universities": [
+      "American University of Bahrain"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -5155,7 +4880,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Merit-based scholarship awards exclusively for international students, including the Early Enrollees Award and the Inspire, Lead, and Compete Award. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5186,8 +4911,12 @@
     "provider": "American University of Beirut, with the Mastercard Foundation",
     "country": "Lebanon",
     "region": "Middle East",
-    "flag": "🇱🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
+    "studyIn": [
+      "Lebanon"
+    ],
+    "universities": [
+      "American University of Beirut"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5223,7 +4952,7 @@
     },
     "tags": [
       "fully-funded",
-      "government"
+      "foundation"
     ],
     "link": "https://www.aub.edu.lb/mcf/Pages/default.aspx"
   },
@@ -5233,8 +4962,12 @@
     "provider": "The American University in Cairo",
     "country": "Egypt",
     "region": "Middle East",
-    "flag": "🇪🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "studyIn": [
+      "Egypt"
+    ],
+    "universities": [
+      "American University in Cairo"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -5267,7 +5000,7 @@
     },
     "tags": [
       "fully-funded",
-      "government"
+      "university"
     ],
     "link": "https://www.aucegypt.edu/admissions/scholarships/donor-funded"
   },
@@ -5277,8 +5010,12 @@
     "provider": "Al-Azhar University",
     "country": "Egypt",
     "region": "Middle East",
-    "flag": "🇪🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [
+      "Egypt"
+    ],
+    "universities": [
+      "Al-Azhar University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5289,7 +5026,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Offers full tuition-waiver scholarships to international students for study in Islamic studies, Arabic, and select secular faculties, allocated annually by nationality. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5319,8 +5056,19 @@
     "provider": "Research Grants Council (RGC) of Hong Kong",
     "country": "Hong Kong",
     "region": "East Asia",
-    "flag": "🇭🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "studyIn": [
+      "Hong Kong"
+    ],
+    "universities": [
+      "University of Hong Kong",
+      "Chinese University of Hong Kong",
+      "Hong Kong University of Science and Technology",
+      "City University of Hong Kong",
+      "Hong Kong Polytechnic University",
+      "Hong Kong Baptist University",
+      "Lingnan University",
+      "Education University of Hong Kong"
+    ],
     "levels": [
       "PhD"
     ],
@@ -5361,8 +5109,12 @@
     "provider": "University of Macau",
     "country": "Macau",
     "region": "East Asia",
-    "flag": "🇲🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [
+      "Macau"
+    ],
+    "universities": [
+      "University of Macau"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -5372,7 +5124,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Normal period of study",
     "description": "Automatically considers eligible international applicants to full-time Bachelor's and Master's programmes, with priority to students who studied outside mainland China, Macao, Hong Kong, and Taiwan. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5401,58 +5153,15 @@
     "link": "https://gao.um.edu.mo/international-admission/scholarship-assistantship-academic-prizes/admission-scholarship/"
   },
   {
-    "id": "s118",
-    "name": "UNESCO Great Wall Fellowship Programme",
-    "provider": "UNESCO and Ministry of Education of China",
-    "country": "China",
-    "region": "East Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Full funding",
-    "amountUSD": 0,
-    "deadline": "2026-01-23",
-    "duration": "1-year visiting scholar; 2-5 years for degrees",
-    "description": "Co-sponsored by UNESCO and China, funds nationals of 135 developing UNESCO Member States to undertake visiting scholar, Master's, or Doctoral study in China.",
-    "benefits": [
-      "Tuition waiver",
-      "Accommodation",
-      "Monthly stipend",
-      "Comprehensive medical insurance"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "Nationals of 135 developing UNESCO Member States"
-      ],
-      "ageLimit": 45
-    },
-    "tags": [
-      "fully-funded",
-      "government"
-    ],
-    "link": "https://www.unesco.org/en/fellowships/greatwall"
-  },
-  {
     "id": "s119",
     "name": "Confucius Institute Scholarship (CIS)",
     "provider": "Center for Language Education and Cooperation (CLEC), China",
     "country": "China",
     "region": "East Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -5494,8 +5203,10 @@
     "provider": "Japan Student Services Organization (JASSO)",
     "country": "Japan",
     "region": "East Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -5505,7 +5216,7 @@
     ],
     "amount": "Partial funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "8 days to 1 year",
     "description": "Provides monthly stipends to international students accepted into a Japanese institution under a formal student exchange agreement for short-term study. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5535,8 +5246,10 @@
     "provider": "Ministry of Education of China / China Scholarship Council",
     "country": "China",
     "region": "Oceania",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5547,7 +5260,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "Full degree programme duration",
     "description": "Established specifically for citizens of Pacific Islands Forum member countries, funding undergraduate, graduate, and scholar-level study and research in China. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5580,8 +5293,10 @@
     "provider": "Government of Taiwan, with the Pacific Islands Forum Secretariat",
     "country": "Taiwan",
     "region": "Oceania",
-    "flag": "🇹🇼",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "studyIn": [
+      "Taiwan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -5591,7 +5306,7 @@
     ],
     "amount": "Full funding",
     "amountUSD": 0,
-    "deadline": "2027-12-31",
+    "deadline": "Varies by year",
     "duration": "1–2 years",
     "description": "Supports citizens of Pacific Islands Forum member countries in fields such as commerce, medicine, engineering, marine science, information systems, and agriculture, including a preparatory Mandarin year. Deadlines vary or are rolling — confirm exact dates on the official site.",
     "benefits": [
@@ -5622,8 +5337,8 @@
     "provider": "Ghana Scholarship Secretariat, Office of the President",
     "country": "Ghana",
     "region": "Africa",
-    "flag": "🇬🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -5666,8 +5381,16 @@
     "provider": "African Union Commission / Pan African University",
     "country": "Multiple (Pan-African)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "studyIn": [
+      "Nigeria",
+      "Kenya",
+      "Algeria",
+      "Cameroon"
+    ],
+    "universities": [
+      "University of Ibadan",
+      "Jomo Kenyatta University of Agriculture and Technology"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -5716,8 +5439,17 @@
     "provider": "Federal Scholarship Board, Federal Ministry of Education, Nigeria",
     "country": "Nigeria",
     "region": "Africa",
-    "flag": "🇳🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [
+      "Russia",
+      "China",
+      "Hungary",
+      "Serbia",
+      "Romania",
+      "Morocco",
+      "Algeria",
+      "Egypt"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -5762,8 +5494,13 @@
     "provider": "Petroleum Technology Development Fund (PTDF), Nigeria",
     "country": "Nigeria",
     "region": "Africa",
-    "flag": "🇳🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [
+      "United Kingdom",
+      "France",
+      "Germany",
+      "Malaysia"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -5812,8 +5549,13 @@
     "provider": "West African Science Service Centre on Climate Change and Adapted Land Use (WASCAL)",
     "country": "Multiple (West Africa)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [
+      "Côte d'Ivoire",
+      "Ghana",
+      "Nigeria",
+      "Senegal"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -5873,8 +5615,14 @@
     "provider": "African Institute for Mathematical Sciences (AIMS)",
     "country": "Multiple (Pan-African)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [
+      "South Africa",
+      "Senegal",
+      "Ghana",
+      "Cameroon",
+      "Rwanda"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -5920,8 +5668,8 @@
     "provider": "Regional Universities Forum for Capacity Building in Agriculture (RUFORUM)",
     "country": "Multiple (Pan-African)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -5967,8 +5715,8 @@
     "provider": "Islamic Development Bank (IsDB)",
     "country": "Multiple (IsDB Member Countries)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "PhD",
       "Postdoc"
@@ -6014,8 +5762,8 @@
     "provider": "Organization for Women in Science for the Developing World (OWSD)",
     "country": "Multiple (Developing Countries)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "PhD"
     ],
@@ -6063,8 +5811,8 @@
     "provider": "Organization for Women in Science for the Developing World (OWSD)",
     "country": "Multiple (Developing Countries)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Postdoc",
       "Research"
@@ -6110,8 +5858,10 @@
     "provider": "African Development Bank (AfDB) and Government of Japan",
     "country": "Multiple (Pan-African)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -6157,8 +5907,8 @@
     "provider": "Namibia Students Financial Assistance Fund, Ministry of Higher Education",
     "country": "Namibia",
     "region": "Africa",
-    "flag": "🇳🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -6202,8 +5952,14 @@
     "provider": "Zawadi Africa Education Fund",
     "country": "Multiple (Pan-African)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [
+      "United States",
+      "Uganda",
+      "Ghana",
+      "South Africa",
+      "Kenya"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -6247,8 +6003,10 @@
     "provider": "Australian Government Department of Foreign Affairs and Trade (DFAT)",
     "country": "Multiple (Africa)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -6293,8 +6051,8 @@
     "provider": "Council for the Development of Social Science Research in Africa (CODESRIA)",
     "country": "Multiple (Pan-African)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -6339,8 +6097,10 @@
     "provider": "Allan Gray Orbis Foundation",
     "country": "South Africa",
     "region": "Africa",
-    "flag": "🇿🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "studyIn": [
+      "South Africa"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -6381,10 +6141,12 @@
     "id": "s139",
     "name": "Commonwealth Shared Scholarship Scheme",
     "provider": "UK Government - Commonwealth Scholarship Commission (FCDO)",
-    "country": "Multiple (African Commonwealth Countries)",
-    "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -6449,8 +6211,11 @@
     "provider": "The Beit Trust",
     "country": "Multiple (Zambia, Zimbabwe, Malawi)",
     "region": "Africa",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "studyIn": [
+      "United Kingdom",
+      "South Africa"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -6497,8 +6262,10 @@
     "provider": "Higher Education Students' Loans Board (HESLB), Tanzania",
     "country": "Tanzania",
     "region": "Africa",
-    "flag": "🇹🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "studyIn": [
+      "Tanzania"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -6538,8 +6305,10 @@
     "provider": "Higher Education Students' Loans Board (HESLB), Tanzania",
     "country": "Tanzania",
     "region": "Africa",
-    "flag": "🇹🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "studyIn": [
+      "Tanzania"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -6580,8 +6349,8 @@
     "provider": "Tertiary Education Trust Fund (TETFund), Nigeria",
     "country": "Nigeria",
     "region": "Africa",
-    "flag": "🇳🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -6624,8 +6393,10 @@
     "provider": "Higher Education Loans Board (HELB), Kenya",
     "country": "Kenya",
     "region": "Africa",
-    "flag": "🇰🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    "studyIn": [
+      "Kenya"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -6667,8 +6438,10 @@
     "provider": "Rotary Yoneyama Memorial Foundation",
     "country": "Japan",
     "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -6712,8 +6485,10 @@
     "provider": "Honjo International Scholarship Foundation",
     "country": "Japan",
     "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -6756,8 +6531,10 @@
     "provider": "Ajinomoto Scholarship Foundation",
     "country": "Japan",
     "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -6808,8 +6585,10 @@
     "provider": "Japan Student Services Organization (JASSO)",
     "country": "Japan",
     "region": "Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -6854,8 +6633,10 @@
     "provider": "Korea International Cooperation Agency (KOICA)",
     "country": "South Korea",
     "region": "Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600&q=80",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -6907,8 +6688,10 @@
     "provider": "POSCO TJ Park Foundation",
     "country": "South Korea",
     "region": "Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -6956,8 +6739,12 @@
     "provider": "Korea Advanced Institute of Science and Technology (KAIST)",
     "country": "South Korea",
     "region": "Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [
+      "KAIST"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7006,8 +6793,10 @@
     "provider": "UNESCO and China Scholarship Council",
     "country": "China",
     "region": "Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7054,8 +6843,10 @@
     "provider": "Beijing Municipal Education Commission",
     "country": "China",
     "region": "Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7103,8 +6894,10 @@
     "provider": "Shanghai Education Commission",
     "country": "China",
     "region": "Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7151,8 +6944,12 @@
     "provider": "Yenching Academy of Peking University",
     "country": "China",
     "region": "Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [
+      "Peking University"
+    ],
     "levels": [
       "Master's"
     ],
@@ -7201,8 +6998,10 @@
     "provider": "Agency for Science, Technology and Research (A*STAR)",
     "country": "Singapore",
     "region": "Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [],
     "levels": [
       "PhD"
     ],
@@ -7248,8 +7047,12 @@
     "provider": "Nanyang Technological University (NTU Singapore)",
     "country": "Singapore",
     "region": "Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [
+      "Nanyang Technological University"
+    ],
     "levels": [
       "PhD"
     ],
@@ -7295,8 +7098,12 @@
     "provider": "Nanyang Technological University (NTU Singapore)",
     "country": "Singapore",
     "region": "Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [
+      "Nanyang Technological University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -7343,8 +7150,8 @@
     "provider": "Center for International Programs, Government of Kazakhstan",
     "country": "Kazakhstan",
     "region": "Asia",
-    "flag": "🇰🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7392,8 +7199,12 @@
     "provider": "Nazarbayev University",
     "country": "Kazakhstan",
     "region": "Asia",
-    "flag": "🇰🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=600&q=80",
+    "studyIn": [
+      "Kazakhstan"
+    ],
+    "universities": [
+      "Nazarbayev University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7440,8 +7251,10 @@
     "provider": "Slovak Academic Information Agency (SAIA), Ministry of Education of the Slovak Republic",
     "country": "Slovakia",
     "region": "Europe",
-    "flag": "🇸🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&q=80",
+    "studyIn": [
+      "Slovakia"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -7487,8 +7300,10 @@
     "provider": "Public Scholarship, Development, Disability and Maintenance Fund of the Republic of Slovenia (SRIPS)",
     "country": "Slovenia",
     "region": "Europe",
-    "flag": "🇸🇮",
-    "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80",
+    "studyIn": [
+      "Slovenia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7537,8 +7352,10 @@
     "provider": "Ministry of Science, Education and Youth of the Republic of Croatia / Agency for Mobility and EU Programmes",
     "country": "Croatia",
     "region": "Europe",
-    "flag": "🇭🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=600&q=80",
+    "studyIn": [
+      "Croatia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7584,8 +7401,10 @@
     "provider": "Romanian Ministry of Foreign Affairs / Ministry of Education",
     "country": "Romania",
     "region": "Europe",
-    "flag": "🇷🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+    "studyIn": [
+      "Romania"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7629,8 +7448,10 @@
     "provider": "Government of Bulgaria / Ministry of Education and Science",
     "country": "Bulgaria",
     "region": "Europe",
-    "flag": "🇧🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+    "studyIn": [
+      "Bulgaria"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7674,8 +7495,10 @@
     "provider": "State Scholarships Foundation (IKY), Greece",
     "country": "Greece",
     "region": "Europe",
-    "flag": "🇬🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80",
+    "studyIn": [
+      "Greece"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -7720,8 +7543,10 @@
     "provider": "Estonian Education and Youth Board (Haridus- ja Noorteamet / HARNO)",
     "country": "Estonia",
     "region": "Europe",
-    "flag": "🇪🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&q=80",
+    "studyIn": [
+      "Estonia"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -7767,8 +7592,10 @@
     "provider": "State Education Development Agency (VIAA), Latvia",
     "country": "Latvia",
     "region": "Europe",
-    "flag": "🇱🇻",
-    "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=600&q=80",
+    "studyIn": [
+      "Latvia"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7813,8 +7640,10 @@
     "provider": "Government of the Republic of Lithuania / Ministry of Education, Science and Sport",
     "country": "Lithuania",
     "region": "Europe",
-    "flag": "🇱🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80",
+    "studyIn": [
+      "Lithuania"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -7860,8 +7689,10 @@
     "provider": "Finnish National Agency for Education (EDUFI)",
     "country": "Finland",
     "region": "Europe",
-    "flag": "🇫🇮",
-    "imageUrl": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80",
+    "studyIn": [
+      "Finland"
+    ],
+    "universities": [],
     "levels": [
       "PhD",
       "Research"
@@ -7904,8 +7735,10 @@
     "provider": "Ministry for Education, Sport, Youth, Research and Innovation (MEYR), Malta / co-financed by ESF+",
     "country": "Malta",
     "region": "Europe",
-    "flag": "🇲🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600&q=80",
+    "studyIn": [
+      "Malta"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -7948,8 +7781,11 @@
     "provider": "Fundación \"la Caixa\"",
     "country": "Spain",
     "region": "Europe",
-    "flag": "🇪🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=600&q=80",
+    "studyIn": [
+      "Spain",
+      "Portugal"
+    ],
+    "universities": [],
     "levels": [
       "Postdoc"
     ],
@@ -7991,8 +7827,12 @@
     "provider": "ETH Zurich",
     "country": "Switzerland",
     "region": "Europe",
-    "flag": "🇨🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80",
+    "studyIn": [
+      "Switzerland"
+    ],
+    "universities": [
+      "ETH Zurich"
+    ],
     "levels": [
       "Master's"
     ],
@@ -8034,8 +7874,12 @@
     "provider": "University of Amsterdam",
     "country": "Netherlands",
     "region": "Europe",
-    "flag": "🇳🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=600&q=80",
+    "studyIn": [
+      "Netherlands"
+    ],
+    "universities": [
+      "University of Amsterdam"
+    ],
     "levels": [
       "Master's"
     ],
@@ -8080,8 +7924,10 @@
     "provider": "German Federal Ministry of Education and Research, in partnership with individual German universities",
     "country": "Germany",
     "region": "Europe",
-    "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600&q=80",
+    "studyIn": [
+      "Germany"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -8125,8 +7971,10 @@
     "provider": "Italian Ministry of Foreign Affairs and International Cooperation",
     "country": "Italy",
     "region": "Europe",
-    "flag": "🇮🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "studyIn": [
+      "Italy"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -8173,8 +8021,10 @@
     "provider": "Árni Magnússon Institute for Icelandic Studies / Ministry of Culture, Innovation and Higher Education",
     "country": "Iceland",
     "region": "Europe",
-    "flag": "🇮🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "studyIn": [
+      "Iceland"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -8216,8 +8066,10 @@
     "provider": "Norwegian Directorate for Higher Education and Skills (HK-dir), Norwegian Ministry of Education and Research",
     "country": "Norway",
     "region": "Europe",
-    "flag": "🇳🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [
+      "Norway"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -8261,8 +8113,10 @@
     "provider": "Fundação Calouste Gulbenkian",
     "country": "Portugal",
     "region": "Europe",
-    "flag": "🇵🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [
+      "Portugal"
+    ],
+    "universities": [],
     "levels": [
       "PhD",
       "Research"
@@ -8308,8 +8162,13 @@
     "provider": "International Visegrad Fund",
     "country": "Czech Republic, Hungary, Poland, Slovakia (V4 region)",
     "region": "Europe",
-    "flag": "🇪🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [
+      "Czech Republic",
+      "Hungary",
+      "Poland",
+      "Slovakia"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "Postdoc",
@@ -8355,8 +8214,12 @@
     "provider": "Leiden University",
     "country": "Netherlands",
     "region": "Europe",
-    "flag": "🇳🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [
+      "Netherlands"
+    ],
+    "universities": [
+      "Leiden University"
+    ],
     "levels": [
       "Master's"
     ],
@@ -8401,8 +8264,12 @@
     "provider": "Sciences Po",
     "country": "France",
     "region": "Europe",
-    "flag": "🇫🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
+    "studyIn": [
+      "France"
+    ],
+    "universities": [
+      "Sciences Po"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -8449,8 +8316,10 @@
     "provider": "U.S. Department of State / Institute of International Education (IIE)",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -8497,8 +8366,10 @@
     "provider": "American Association of University Women (AAUW)",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -8543,8 +8414,11 @@
     "provider": "P.E.O. International Peace Scholarship Fund",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "studyIn": [
+      "United States",
+      "Canada"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -8585,8 +8459,10 @@
     "provider": "Davis United World College Scholars Program",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -8627,8 +8503,12 @@
     "provider": "University of British Columbia",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "University of British Columbia"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -8669,8 +8549,10 @@
     "provider": "Pierre Elliott Trudeau Foundation",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [],
     "levels": [
       "PhD"
     ],
@@ -8712,8 +8594,10 @@
     "provider": "Government of Canada (CIHR, NSERC, SSHRC)",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [],
     "levels": [
       "Postdoc"
     ],
@@ -8754,8 +8638,25 @@
     "provider": "Government of Ontario (administered by Ontario universities)",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "University of Toronto",
+      "McMaster University",
+      "University of Waterloo",
+      "Western University",
+      "Queen's University",
+      "University of Ottawa",
+      "York University",
+      "Toronto Metropolitan University",
+      "Carleton University",
+      "University of Guelph",
+      "University of Windsor",
+      "Wilfrid Laurier University",
+      "Brock University",
+      "Lakehead University"
+    ],
     "levels": [
       "PhD"
     ],
@@ -8798,8 +8699,15 @@
     "provider": "Fonds de recherche du Québec (FRQNT), Gouvernement du Québec",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "McGill University",
+      "Université de Montréal",
+      "Concordia University",
+      "Université Laval"
+    ],
     "levels": [
       "PhD",
       "Postdoc"
@@ -8841,8 +8749,12 @@
     "provider": "University of Waterloo",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "University of Waterloo"
+    ],
     "levels": [
       "Master's"
     ],
@@ -8882,8 +8794,23 @@
     "provider": "The Rotary Foundation",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "studyIn": [
+      "United States",
+      "Japan",
+      "United Kingdom",
+      "Sweden",
+      "Thailand",
+      "Uganda"
+    ],
+    "universities": [
+      "International Christian University",
+      "Uppsala University",
+      "Chulalongkorn University",
+      "Makerere University",
+      "Duke University",
+      "University of North Carolina at Chapel Hill",
+      "University of Bradford"
+    ],
     "levels": [
       "Master's"
     ],
@@ -8930,8 +8857,12 @@
     "provider": "American University",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "American University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -8976,8 +8907,12 @@
     "provider": "Wesleyan University",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Wesleyan University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9022,8 +8957,12 @@
     "provider": "Clark University",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Clark University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9066,8 +9005,12 @@
     "provider": "Berea College",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Berea College"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9115,8 +9058,12 @@
     "provider": "Simon Fraser University",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "Simon Fraser University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9159,8 +9106,12 @@
     "provider": "University of Alberta",
     "country": "Canada",
     "region": "North America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [
+      "University of Alberta"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -9203,8 +9154,12 @@
     "provider": "Kalamazoo College",
     "country": "United States",
     "region": "North America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Kalamazoo College"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9247,8 +9202,12 @@
     "provider": "University of Melbourne",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "University of Melbourne"
+    ],
     "levels": [
       "Master's",
       "PhD",
@@ -9295,8 +9254,12 @@
     "provider": "Australian National University",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "Australian National University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9342,8 +9305,12 @@
     "provider": "University of Queensland",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "University of Queensland"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9388,8 +9355,12 @@
     "provider": "Monash University",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "Monash University"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9433,8 +9404,12 @@
     "provider": "UNSW Sydney",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "University of New South Wales"
+    ],
     "levels": [
       "PhD",
       "Research"
@@ -9481,8 +9456,12 @@
     "provider": "University of Auckland",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [
+      "University of Auckland"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9527,8 +9506,12 @@
     "provider": "University of Otago",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [
+      "University of Otago"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -9572,8 +9555,12 @@
     "provider": "Victoria University of Wellington (Te Herenga Waka)",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [
+      "Victoria University of Wellington"
+    ],
     "levels": [
       "PhD",
       "Research"
@@ -9619,8 +9606,12 @@
     "provider": "James Cook University",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "James Cook University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9665,8 +9656,12 @@
     "provider": "Griffith University",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "Griffith University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9711,8 +9706,12 @@
     "provider": "Curtin University",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "Curtin University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9757,8 +9756,12 @@
     "provider": "University of Adelaide",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "Adelaide University (formerly University of Adelaide and UniSA)"
+    ],
     "levels": [
       "Master's",
       "PhD",
@@ -9805,8 +9808,10 @@
     "provider": "Australian Government / Department of Education",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -9853,8 +9858,12 @@
     "provider": "Queensland University of Technology",
     "country": "Australia",
     "region": "Oceania",
-    "flag": "🇦🇺",
-    "imageUrl": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [
+      "Queensland University of Technology"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9905,8 +9914,12 @@
     "provider": "University of Waikato",
     "country": "New Zealand",
     "region": "Oceania",
-    "flag": "🇳🇿",
-    "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80",
+    "studyIn": [
+      "New Zealand"
+    ],
+    "universities": [
+      "University of Waikato"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -9951,8 +9964,12 @@
     "provider": "Peking University",
     "country": "China",
     "region": "East Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [
+      "Peking University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -9998,8 +10015,12 @@
     "provider": "Tsinghua University",
     "country": "China",
     "region": "East Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [
+      "Tsinghua University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10044,8 +10065,12 @@
     "provider": "Fudan University",
     "country": "China",
     "region": "East Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+    "studyIn": [
+      "China"
+    ],
+    "universities": [
+      "Fudan University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10085,60 +10110,17 @@
     "link": "http://iso.fudan.edu.cn/isoenglish/16210/list.htm"
   },
   {
-    "id": "s219",
-    "name": "Shanghai Government Scholarship",
-    "provider": "Shanghai Municipal Education Commission",
-    "country": "China",
-    "region": "East Asia",
-    "flag": "🇨🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Tuition waiver + accommodation + monthly stipend (varies by type)",
-    "amountUSD": 12000,
-    "deadline": "Varies by host university (typically Mar-Jun)",
-    "duration": "1-4 years depending on degree level",
-    "description": "The Shanghai Government Scholarship is funded by the Shanghai Municipal Education Commission and administered through partner universities in Shanghai, including Fudan University and Shanghai Jiao Tong University. It supports international students pursuing degree programs, with Type A providing full support and Type B partial support.",
-    "benefits": [
-      "Tuition waiver",
-      "Accommodation subsidy or on-campus housing",
-      "Monthly living stipend for full awardees"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [
-        "HSK"
-      ],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "All non-Chinese nationalities"
-      ],
-      "ageLimit": 40
-    },
-    "tags": [
-      "government",
-      "partially-funded",
-      "bilateral"
-    ],
-    "link": "http://iso.fudan.edu.cn/isoenglish/16210/list.htm"
-  },
-  {
     "id": "s220",
     "name": "Vice-Chancellor's PhD Scholarship Scheme",
     "provider": "The Chinese University of Hong Kong (CUHK)",
     "country": "Hong Kong",
     "region": "East Asia",
-    "flag": "🇭🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&q=80",
+    "studyIn": [
+      "Hong Kong"
+    ],
+    "universities": [
+      "Chinese University of Hong Kong"
+    ],
     "levels": [
       "PhD"
     ],
@@ -10183,8 +10165,12 @@
     "provider": "The University of Hong Kong",
     "country": "Hong Kong",
     "region": "East Asia",
-    "flag": "🇭🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=600&q=80",
+    "studyIn": [
+      "Hong Kong"
+    ],
+    "universities": [
+      "University of Hong Kong"
+    ],
     "levels": [
       "PhD"
     ],
@@ -10229,8 +10215,12 @@
     "provider": "Hong Kong University of Science and Technology",
     "country": "Hong Kong",
     "region": "East Asia",
-    "flag": "🇭🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80",
+    "studyIn": [
+      "Hong Kong"
+    ],
+    "universities": [
+      "Hong Kong University of Science and Technology"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10279,8 +10269,12 @@
     "provider": "The University of Tokyo",
     "country": "Japan",
     "region": "East Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [
+      "University of Tokyo"
+    ],
     "levels": [
       "Master's",
       "PhD",
@@ -10325,8 +10319,12 @@
     "provider": "Keio University",
     "country": "Japan",
     "region": "East Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [
+      "Keio University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -10373,8 +10371,12 @@
     "provider": "Waseda University",
     "country": "Japan",
     "region": "East Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [
+      "Waseda University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10419,8 +10421,12 @@
     "provider": "Kyoto University",
     "country": "Japan",
     "region": "East Asia",
-    "flag": "🇯🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [
+      "Kyoto University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10465,8 +10471,12 @@
     "provider": "Korea University",
     "country": "South Korea",
     "region": "East Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=600&q=80",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [
+      "Korea University"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -10512,8 +10522,12 @@
     "provider": "Seoul National University",
     "country": "South Korea",
     "region": "East Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?w=600&q=80",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [
+      "Seoul National University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10555,63 +10569,17 @@
     "link": "https://oga.snu.ac.kr/"
   },
   {
-    "id": "s229",
-    "name": "KAIST International Student Scholarship",
-    "provider": "Korea Advanced Institute of Science and Technology (KAIST)",
-    "country": "South Korea",
-    "region": "East Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Science",
-      "Engineering",
-      "Technology"
-    ],
-    "amount": "Tuition waiver + stipend, varies by level",
-    "amountUSD": 18000,
-    "deadline": "Varies by semester intake",
-    "duration": "Duration of degree program (subject to academic performance)",
-    "description": "KAIST provides financial support to admitted international undergraduate and graduate students in science and engineering fields, covering tuition and, for many graduate students, a monthly stipend funded through the institute or research labs.",
-    "benefits": [
-      "Tuition fee waiver",
-      "Monthly stipend for graduate researchers"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [
-        "TOEFL",
-        "IELTS",
-        "TOPIK"
-      ],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "All non-Korean nationalities"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "university",
-      "partially-funded",
-      "merit-based"
-    ],
-    "link": "https://admission.kaist.ac.kr/"
-  },
-  {
     "id": "s230",
     "name": "Yonsei University International Scholarship",
     "provider": "Yonsei University",
     "country": "South Korea",
     "region": "East Asia",
-    "flag": "🇰🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [
+      "Yonsei University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10658,8 +10626,12 @@
     "provider": "National Taiwan University",
     "country": "Taiwan",
     "region": "East Asia",
-    "flag": "🇹🇼",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [
+      "Taiwan"
+    ],
+    "universities": [
+      "National Taiwan University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10704,8 +10676,12 @@
     "provider": "National Tsing Hua University",
     "country": "Taiwan",
     "region": "East Asia",
-    "flag": "🇹🇼",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [
+      "Taiwan"
+    ],
+    "universities": [
+      "National Tsing Hua University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10753,8 +10729,10 @@
     "provider": "Macao Special Administrative Region Government",
     "country": "Macau",
     "region": "East Asia",
-    "flag": "🇲🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [
+      "Macau"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -10797,8 +10775,12 @@
     "provider": "Nanyang Technological University",
     "country": "Singapore",
     "region": "Southeast Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [
+      "Nanyang Technological University"
+    ],
     "levels": [
       "Master's",
       "PhD",
@@ -10843,8 +10825,17 @@
     "provider": "Ministry of Education, Singapore",
     "country": "Singapore",
     "region": "Southeast Asia",
-    "flag": "🇸🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
+    "studyIn": [
+      "Singapore"
+    ],
+    "universities": [
+      "National University of Singapore",
+      "Nanyang Technological University",
+      "Singapore Management University",
+      "Singapore University of Technology and Design",
+      "Singapore Institute of Technology",
+      "Singapore University of Social Sciences"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -10885,8 +10876,10 @@
     "provider": "Ministry of Foreign Affairs, Malaysia",
     "country": "Malaysia",
     "region": "Southeast Asia",
-    "flag": "🇲🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "studyIn": [
+      "Malaysia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -10928,8 +10921,12 @@
     "provider": "Universiti Malaya",
     "country": "Malaysia",
     "region": "Southeast Asia",
-    "flag": "🇲🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [
+      "Malaysia"
+    ],
+    "universities": [
+      "Universiti Malaya"
+    ],
     "levels": [
       "Master's",
       "PhD",
@@ -10975,8 +10972,12 @@
     "provider": "Universiti Putra Malaysia",
     "country": "Malaysia",
     "region": "Southeast Asia",
-    "flag": "🇲🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "studyIn": [
+      "Malaysia"
+    ],
+    "universities": [
+      "Universiti Putra Malaysia"
+    ],
     "levels": [
       "PhD"
     ],
@@ -11021,8 +11022,10 @@
     "provider": "Thailand International Cooperation Agency (TICA), Ministry of Foreign Affairs",
     "country": "Thailand",
     "region": "Southeast Asia",
-    "flag": "🇹🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [
+      "Thailand"
+    ],
+    "universities": [],
     "levels": [
       "Vocational"
     ],
@@ -11069,8 +11072,12 @@
     "provider": "Chulalongkorn University",
     "country": "Thailand",
     "region": "Southeast Asia",
-    "flag": "🇹🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "studyIn": [
+      "Thailand"
+    ],
+    "universities": [
+      "Chulalongkorn University"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -11113,8 +11120,12 @@
     "provider": "Mahidol University",
     "country": "Thailand",
     "region": "Southeast Asia",
-    "flag": "🇹🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [
+      "Thailand"
+    ],
+    "universities": [
+      "Mahidol University"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -11155,8 +11166,8 @@
     "provider": "Lembaga Pengelola Dana Pendidikan (LPDP), Ministry of Finance, Indonesia",
     "country": "Indonesia",
     "region": "Southeast Asia",
-    "flag": "🇮🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -11199,8 +11210,8 @@
     "provider": "Ministry of Education, Culture, Research, and Technology (Kemdikbudristek), Indonesia",
     "country": "Indonesia",
     "region": "Southeast Asia",
-    "flag": "🇮🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Vocational"
@@ -11243,8 +11254,10 @@
     "provider": "Ministry of Education and Culture, Indonesia",
     "country": "Indonesia",
     "region": "Southeast Asia",
-    "flag": "🇮🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "studyIn": [
+      "Indonesia"
+    ],
+    "universities": [],
     "levels": [
       "Vocational"
     ],
@@ -11286,8 +11299,12 @@
     "provider": "VinUniversity",
     "country": "Vietnam",
     "region": "Southeast Asia",
-    "flag": "🇻🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "studyIn": [
+      "Vietnam"
+    ],
+    "universities": [
+      "VinUniversity"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -11330,8 +11347,8 @@
     "provider": "Department of Science and Technology - Science Education Institute (DOST-SEI), Philippines",
     "country": "Philippines",
     "region": "Southeast Asia",
-    "flag": "🇵🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -11376,8 +11393,8 @@
     "provider": "Southeast Asian Regional Center for Graduate Study and Research in Agriculture (SEARCA)",
     "country": "Philippines",
     "region": "Southeast Asia",
-    "flag": "🌏",
-    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -11426,8 +11443,8 @@
     "provider": "Jabatan Perkhidmatan Awam (Public Service Department), Malaysia",
     "country": "Malaysia",
     "region": "Southeast Asia",
-    "flag": "🇲🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -11471,8 +11488,8 @@
     "provider": "Office of the Civil Service Commission (OCSC), Thailand",
     "country": "Thailand",
     "region": "Southeast Asia",
-    "flag": "🇹🇭",
-    "imageUrl": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -11516,8 +11533,8 @@
     "provider": "ASEAN Foundation",
     "country": "Indonesia",
     "region": "Southeast Asia",
-    "flag": "🌏",
-    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11558,8 +11575,10 @@
     "provider": "UK Foreign, Commonwealth & Development Office (FCDO)",
     "country": "Pakistan",
     "region": "South Asia",
-    "flag": "🇵🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11607,8 +11626,10 @@
     "provider": "UK Foreign, Commonwealth & Development Office (FCDO)",
     "country": "Bangladesh",
     "region": "South Asia",
-    "flag": "🇧🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11656,8 +11677,10 @@
     "provider": "UK Foreign, Commonwealth & Development Office (FCDO)",
     "country": "Sri Lanka",
     "region": "South Asia",
-    "flag": "🇱🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11705,8 +11728,10 @@
     "provider": "UK Foreign, Commonwealth & Development Office (FCDO)",
     "country": "Nepal",
     "region": "South Asia",
-    "flag": "🇳🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11754,8 +11779,10 @@
     "provider": "Australian Government Department of Foreign Affairs and Trade (DFAT)",
     "country": "Bangladesh",
     "region": "South Asia",
-    "flag": "🇧🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11802,8 +11829,10 @@
     "provider": "Australian Government Department of Foreign Affairs and Trade (DFAT)",
     "country": "Nepal",
     "region": "South Asia",
-    "flag": "🇳🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11850,8 +11879,10 @@
     "provider": "Australian Government Department of Foreign Affairs and Trade (DFAT)",
     "country": "Sri Lanka",
     "region": "South Asia",
-    "flag": "🇱🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11898,8 +11929,10 @@
     "provider": "Australian Government Department of Foreign Affairs and Trade (DFAT)",
     "country": "Bhutan",
     "region": "South Asia",
-    "flag": "🇧🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11946,8 +11979,10 @@
     "provider": "Australian Government Department of Foreign Affairs and Trade (DFAT)",
     "country": "Maldives",
     "region": "South Asia",
-    "flag": "🇲🇻",
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    "studyIn": [
+      "Australia"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -11994,8 +12029,8 @@
     "provider": "Inlaks Shivdasani Foundation",
     "country": "India",
     "region": "South Asia",
-    "flag": "🇮🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -12046,8 +12081,12 @@
     "provider": "The Rhodes Trust, University of Oxford",
     "country": "Pakistan",
     "region": "South Asia",
-    "flag": "🇵🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [
+      "University of Oxford"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -12096,8 +12135,10 @@
     "provider": "United States Educational Foundation (USEF-Nepal) / U.S. Department of State",
     "country": "Nepal",
     "region": "South Asia",
-    "flag": "🇳🇵",
-    "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -12144,8 +12185,10 @@
     "provider": "United States Educational Foundation in Bangladesh (USEFB) / U.S. Department of State",
     "country": "Bangladesh",
     "region": "South Asia",
-    "flag": "🇧🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -12192,8 +12235,10 @@
     "provider": "United States-Sri Lanka Fulbright Commission / U.S. Department of State",
     "country": "Sri Lanka",
     "region": "South Asia",
-    "flag": "🇱🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -12240,8 +12285,10 @@
     "provider": "U.S. Department of State (Bureau of Educational and Cultural Affairs) / IREX",
     "country": "Pakistan",
     "region": "South Asia",
-    "flag": "🇵🇰",
-    "imageUrl": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -12288,8 +12335,10 @@
     "provider": "British Council / GREAT Britain Campaign, in partnership with UK universities",
     "country": "Bangladesh",
     "region": "South Asia",
-    "flag": "🇧🇩",
-    "imageUrl": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=600&q=80",
+    "studyIn": [
+      "United Kingdom"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -12332,8 +12381,8 @@
     "provider": "UNHCR (UN Refugee Agency)",
     "country": "Afghanistan",
     "region": "South Asia",
-    "flag": "🇦🇫",
-    "imageUrl": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -12375,10 +12424,12 @@
     "id": "s268",
     "name": "Eiffel Excellence Scholarship Programme",
     "provider": "French Ministry for Europe and Foreign Affairs / Campus France",
-    "country": "Global",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80",
+    "country": "France",
+    "region": "Europe",
+    "studyIn": [
+      "France"
+    ],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -12420,10 +12471,12 @@
     "id": "s269",
     "name": "Turkiye Scholarships (Turkiye Burslari)",
     "provider": "Republic of Turkiye, Presidency for Turks Abroad and Related Communities (YTB)",
-    "country": "Global",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=600&q=80",
+    "country": "Turkey",
+    "region": "Middle East",
+    "studyIn": [
+      "Turkey"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -12468,10 +12521,12 @@
     "id": "s270",
     "name": "Global Korea Scholarship (GKS)",
     "provider": "National Institute for International Education (NIIED), Ministry of Education, Republic of Korea",
-    "country": "Global",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80",
+    "country": "South Korea",
+    "region": "Asia",
+    "studyIn": [
+      "South Korea"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -12519,10 +12574,12 @@
     "id": "s271",
     "name": "MEXT Japanese Government Scholarship",
     "provider": "Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan",
-    "country": "Global",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+    "country": "Japan",
+    "region": "Asia",
+    "studyIn": [
+      "Japan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -12569,13 +12626,19 @@
     "id": "s272",
     "name": "Knight-Hennessy Scholars",
     "provider": "Knight-Hennessy Scholars Program, Stanford University",
-    "country": "Global",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80",
+    "country": "United States",
+    "region": "North America",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [
+      "Stanford University"
+    ],
     "levels": [
       "Master's",
-      "PhD"
+      "PhD",
+      "JD",
+      "MD"
     ],
     "fields": [
       "All Fields"
@@ -12621,10 +12684,12 @@
     "id": "s273",
     "name": "Swedish Institute Scholarships for Global Professionals (SISGP)",
     "provider": "Swedish Institute (SI)",
-    "country": "Multiple countries",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&q=80",
+    "country": "Sweden",
+    "region": "Europe",
+    "studyIn": [
+      "Sweden"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -12670,10 +12735,12 @@
     "id": "s274",
     "name": "Stipendium Hungaricum Scholarship",
     "provider": "Tempus Public Foundation / Government of Hungary",
-    "country": "Multiple countries",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1481253127861-534498168948?w=600&q=80",
+    "country": "Hungary",
+    "region": "Europe",
+    "studyIn": [
+      "Hungary"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -12716,10 +12783,10 @@
     "id": "s275",
     "name": "Erasmus Mundus Joint Master Degrees (EMJMD)",
     "provider": "European Commission / European Education and Culture Executive Agency (EACEA)",
-    "country": "Multiple countries",
-    "region": "Global",
-    "flag": "🌍",
-    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80",
+    "country": "Europe (Multi-country)",
+    "region": "Europe",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -12765,8 +12832,8 @@
     "provider": "PRONABEC (Programa Nacional de Becas y Crédito Educativo, Ministerio de Educación)",
     "country": "Peru",
     "region": "Latin America",
-    "flag": "🇵🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -12815,8 +12882,8 @@
     "provider": "SENESCYT (Secretaría de Educación Superior, Ciencia, Tecnología e Innovación)",
     "country": "Ecuador",
     "region": "Latin America",
-    "flag": "🇪🇨",
-    "imageUrl": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -12865,8 +12932,8 @@
     "provider": "IFARHU (Instituto para la Formación y Aprovechamiento de Recursos Humanos)",
     "country": "Panama",
     "region": "Latin America",
-    "flag": "🇵🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1516573398682-4f3437eccb86?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -12910,8 +12977,8 @@
     "provider": "Programa Nacional de Becas de Posgrado en el Exterior BECAL, Gobierno de Paraguay",
     "country": "Paraguay",
     "region": "Latin America",
-    "flag": "🇵🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -12960,8 +13027,8 @@
     "provider": "Ministerio de Educación Superior, Ciencia y Tecnología (MESCyT)",
     "country": "Dominican Republic",
     "region": "Latin America",
-    "flag": "🇩🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -13012,8 +13079,8 @@
     "provider": "Fundación Gran Mariscal de Ayacucho (Fundayacucho), Ministerio de Educación Universitaria de Venezuela",
     "country": "Venezuela",
     "region": "Latin America",
-    "flag": "🇻🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -13057,8 +13124,8 @@
     "provider": "Ministry of Education, Scholarship and Advanced Training Division, Government of Trinidad and Tobago",
     "country": "Trinidad and Tobago",
     "region": "Latin America",
-    "flag": "🇹🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -13101,8 +13168,8 @@
     "provider": "Government of Jamaica, Ministry of Education and Youth",
     "country": "Jamaica",
     "region": "Latin America",
-    "flag": "🇯🇲",
-    "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -13146,8 +13213,10 @@
     "provider": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID), Gobierno de España",
     "country": "Spain",
     "region": "Latin America",
-    "flag": "🇪🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&q=80",
+    "studyIn": [
+      "Spain"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -13203,8 +13272,10 @@
     "provider": "Taiwan International Cooperation and Development Fund (TaiwanICDF)",
     "country": "Guatemala",
     "region": "Latin America",
-    "flag": "🇬🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    "studyIn": [
+      "Taiwan"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -13258,8 +13329,8 @@
     "provider": "ANII (Agencia Nacional de Investigación e Innovación), Gobierno de Uruguay",
     "country": "Uruguay",
     "region": "Latin America",
-    "flag": "🇺🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -13311,8 +13382,8 @@
     "provider": "DAAD (German Academic Exchange Service)",
     "country": "Germany",
     "region": "Latin America",
-    "flag": "🇩🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD"
@@ -13358,8 +13429,10 @@
     "provider": "Global Affairs Canada",
     "country": "Canada",
     "region": "Latin America",
-    "flag": "🇨🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&q=80",
+    "studyIn": [
+      "Canada"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -13408,8 +13481,8 @@
     "provider": "Fondo Nacional de Becas, Gobierno de Guatemala",
     "country": "Guatemala",
     "region": "Latin America",
-    "flag": "🇬🇹",
-    "imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -13453,8 +13526,8 @@
     "provider": "Secretaría de Desarrollo Social (SEDESOL), Gobierno de Honduras",
     "country": "Honduras",
     "region": "Latin America",
-    "flag": "🇭🇳",
-    "imageUrl": "https://images.unsplash.com/photo-1531565637446-32307b194362?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Vocational"
@@ -13496,8 +13569,8 @@
     "provider": "Government of Guyana, Ministry of Education",
     "country": "Guyana",
     "region": "Latin America",
-    "flag": "🇬🇾",
-    "imageUrl": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -13541,8 +13614,8 @@
     "provider": "Ministry of Education, Technological and Vocational Training, Government of Barbados",
     "country": "Barbados",
     "region": "Latin America",
-    "flag": "🇧🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -13584,8 +13657,8 @@
     "provider": "CONACYT El Salvador (Consejo Nacional de Ciencia y Tecnología)",
     "country": "El Salvador",
     "region": "Latin America",
-    "flag": "🇸🇻",
-    "imageUrl": "https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=600&q=80",
+    "studyIn": [],
+    "universities": [],
     "levels": [
       "Master's",
       "PhD",
@@ -13629,8 +13702,10 @@
     "provider": "Embajada de Francia en Bolivia / Campus France",
     "country": "Bolivia",
     "region": "Latin America",
-    "flag": "🇧🇴",
-    "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&q=80",
+    "studyIn": [
+      "France"
+    ],
+    "universities": [],
     "levels": [
       "Master's"
     ],
@@ -13675,8 +13750,12 @@
     "provider": "CAF - Development Bank of Latin America and the Caribbean, in alliance with Universidad Internacional de La Rioja (UNIR)",
     "country": "Regional (Latin America and Caribbean)",
     "region": "Latin America",
-    "flag": "🌎",
-    "imageUrl": "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=80",
+    "studyIn": [
+      "Spain"
+    ],
+    "universities": [
+      "Universidad Internacional de La Rioja (UNIR)"
+    ],
     "levels": [
       "Master's"
     ],
@@ -13726,8 +13805,10 @@
     "provider": "U.S. Department of State, administered by World Learning",
     "country": "Regional (Latin America)",
     "region": "Latin America",
-    "flag": "🇺🇸",
-    "imageUrl": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80",
+    "studyIn": [
+      "United States"
+    ],
+    "universities": [],
     "levels": [
       "Bachelor's"
     ],
@@ -13779,8 +13860,12 @@
     "provider": "American University of Sharjah (AUS)",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "American University of Sharjah"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -13826,8 +13911,12 @@
     "provider": "Zayed University",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Zayed University"
+    ],
     "levels": [
       "Master's"
     ],
@@ -13871,8 +13960,12 @@
     "provider": "Manipal Academy of Higher Education (MAHE), Dubai",
     "country": "United Arab Emirates",
     "region": "Middle East",
-    "flag": "🇦🇪",
-    "imageUrl": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80",
+    "studyIn": [
+      "United Arab Emirates"
+    ],
+    "universities": [
+      "Manipal Academy of Higher Education Dubai"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -13909,150 +14002,17 @@
     "link": "https://www.manipaldubai.com/international-students/international-students-scholarships"
   },
   {
-    "id": "s300",
-    "name": "Albert Katz International School Scholarship",
-    "provider": "Ben-Gurion University of the Negev",
-    "country": "Israel",
-    "region": "Middle East",
-    "flag": "🇮🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
-    "levels": [
-      "Master's",
-      "PhD"
-    ],
-    "fields": [
-      "Desert Studies",
-      "Environmental Science"
-    ],
-    "amount": "$20,000 per year (Master's/PhD); $25,000 per year (select PhD)",
-    "amountUSD": 20000,
-    "deadline": "Varies by year",
-    "duration": "2-4 years",
-    "description": "The Albert Katz International School for Desert Studies at Ben-Gurion University offers international Master's and PhD students annual scholarships covering tuition, housing and other living expenses for the duration of their degree.",
-    "benefits": [
-      "Tuition coverage",
-      "Housing allowance",
-      "Living expense stipend"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [
-        "IELTS",
-        "TOEFL"
-      ],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "International students"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "university",
-      "fully-funded",
-      "research"
-    ],
-    "link": "https://in.bgu.ac.il/en/akis/Pages/default.aspx"
-  },
-  {
-    "id": "s301",
-    "name": "Rothberg International School Graduate Merit Scholarship",
-    "provider": "Hebrew University of Jerusalem",
-    "country": "Israel",
-    "region": "Middle East",
-    "flag": "🇮🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
-    "levels": [
-      "Master's"
-    ],
-    "fields": [
-      "Jewish Studies",
-      "Islamic and Middle Eastern Studies",
-      "Religious Studies",
-      "Israeli Society and Politics",
-      "The Bible and the Ancient Near East"
-    ],
-    "amount": "Full tuition for 2 years",
-    "amountUSD": 30000,
-    "deadline": "2026-03-15",
-    "duration": "2 years",
-    "description": "The Rothberg International School offers a limited number of merit scholarships covering full tuition for two years to highly qualified international Master's applicants who have already completed a Bachelor's degree.",
-    "benefits": [
-      "Full tuition coverage for 2 years"
-    ],
-    "requirements": {
-      "minGPA": 3.8,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "International students worldwide"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "university",
-      "fully-funded",
-      "merit-based"
-    ],
-    "link": "https://overseas.huji.ac.il/scholarships-and-financial-aid/scholarships-and-financial-aid-for-international-students-non-us/graduate-students-scholarships-and-financial-aid/"
-  },
-  {
-    "id": "s302",
-    "name": "TAU International Merit Scholarship",
-    "provider": "Tel Aviv University",
-    "country": "Israel",
-    "region": "Middle East",
-    "flag": "🇮🇱",
-    "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600&q=80",
-    "levels": [
-      "Bachelor's",
-      "Master's"
-    ],
-    "fields": [
-      "All Fields"
-    ],
-    "amount": "Up to $8,000 (up to 50% of tuition) plus monthly allowance",
-    "amountUSD": 8000,
-    "deadline": "Varies by program",
-    "duration": "1 academic year",
-    "description": "Tel Aviv University's Lowy International School offers merit-based scholarships to eligible international undergraduate and graduate students, covering up to 50% of tuition along with a monthly allowance and basic health insurance for one academic year.",
-    "benefits": [
-      "Up to 50% tuition coverage",
-      "Monthly living allowance",
-      "Basic health insurance"
-    ],
-    "requirements": {
-      "minGPA": null,
-      "minPercentage": null,
-      "minMarks": null,
-      "exams": [],
-      "minIELTS": null,
-      "minTOEFL": null,
-      "nationality": [
-        "International students"
-      ],
-      "ageLimit": null
-    },
-    "tags": [
-      "university",
-      "partially-funded",
-      "merit-based"
-    ],
-    "link": "https://international.tau.ac.il/scholarship_programs"
-  },
-  {
     "id": "s303",
     "name": "President's Merit Scholarship Program",
     "provider": "American University of Beirut (AUB)",
     "country": "Lebanon",
     "region": "Middle East",
-    "flag": "🇱🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    "studyIn": [
+      "Lebanon"
+    ],
+    "universities": [
+      "American University of Beirut"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -14095,8 +14055,12 @@
     "provider": "Notre Dame University-Louaize (NDU)",
     "country": "Lebanon",
     "region": "Middle East",
-    "flag": "🇱🇧",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80",
+    "studyIn": [
+      "Lebanon"
+    ],
+    "universities": [
+      "Notre Dame University - Louaize"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -14138,8 +14102,12 @@
     "provider": "American University in Cairo (AUC)",
     "country": "Egypt",
     "region": "Middle East",
-    "flag": "🇪🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    "studyIn": [
+      "Egypt"
+    ],
+    "universities": [
+      "American University in Cairo"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -14179,8 +14147,12 @@
     "provider": "Egypt-Japan University of Science and Technology (E-JUST)",
     "country": "Egypt",
     "region": "Middle East",
-    "flag": "🇪🇬",
-    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+    "studyIn": [
+      "Egypt"
+    ],
+    "universities": [
+      "Egypt-Japan University of Science and Technology"
+    ],
     "levels": [
       "Master's",
       "PhD"
@@ -14232,8 +14204,12 @@
     "provider": "German University of Technology in Oman (GUtech)",
     "country": "Oman",
     "region": "Middle East",
-    "flag": "🇴🇲",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    "studyIn": [
+      "Oman"
+    ],
+    "universities": [
+      "German University of Technology in Oman"
+    ],
     "levels": [
       "Bachelor's",
       "Master's"
@@ -14280,8 +14256,12 @@
     "provider": "Işık University",
     "country": "Turkey",
     "region": "Middle East",
-    "flag": "🇹🇷",
-    "imageUrl": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&q=80",
+    "studyIn": [
+      "Turkey"
+    ],
+    "universities": [
+      "Işık University"
+    ],
     "levels": [
       "Bachelor's",
       "Master's",
@@ -14324,8 +14304,12 @@
     "provider": "Carnegie Mellon University in Qatar",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Carnegie Mellon University in Qatar"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -14371,8 +14355,12 @@
     "provider": "Georgetown University in Qatar",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Georgetown University in Qatar"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -14417,8 +14405,12 @@
     "provider": "Northwestern University in Qatar",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Northwestern University in Qatar"
+    ],
     "levels": [
       "Bachelor's"
     ],
@@ -14462,8 +14454,12 @@
     "provider": "Weill Cornell Medicine - Qatar",
     "country": "Qatar",
     "region": "Middle East",
-    "flag": "🇶🇦",
-    "imageUrl": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+    "studyIn": [
+      "Qatar"
+    ],
+    "universities": [
+      "Weill Cornell Medicine-Qatar"
+    ],
     "levels": [
       "Bachelor's"
     ],

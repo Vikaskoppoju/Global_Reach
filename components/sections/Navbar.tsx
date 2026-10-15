@@ -8,10 +8,7 @@ import { useAuth } from '@/context/AuthContext'
 const navLinks = [
   { label: 'Destinations', href: '/#countries' },
   { label: 'Universities', href: '/universities' },
-  // Sections hidden on the home page
-  // { label: 'Policies', href: '#policies' },
-  // { label: 'How to Apply', href: '#process' },
-  { label: 'Alumni', href: '/#testimonials' },
+  { label: 'How it works', href: '/#how-it-works' },
 ]
 
 export default function Navbar() {
