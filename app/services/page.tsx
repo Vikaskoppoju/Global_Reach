@@ -64,33 +64,31 @@ export default async function ServicesPage() {
       <Navbar />
       <main className="bg-cream">
         {/* ── Intro ── */}
-        <section className="relative overflow-hidden pt-40 pb-24 md:pt-44 md:pb-28">
+        <section className="relative overflow-hidden pt-28 pb-10 md:pt-32 md:pb-12">
           <div className="absolute w-[700px] h-[700px] rounded-full -top-40 left-1/2 -translate-x-1/2 pointer-events-none"
             style={{ background: 'radial-gradient(circle, rgba(201,168,76,0.14) 0%, transparent 65%)' }} />
           <div className={`${wrap} relative text-center`}>
-            <div className={`${eyebrow} mb-5`}>Student services</div>
-            <h1 className="font-display font-bold text-navy mx-auto max-w-[820px] text-balance"
-              style={{ fontSize: 'clamp(36px, 5vw, 60px)', letterSpacing: '-1.5px', lineHeight: 1.08 }}>
+            <h1 className="font-display font-bold text-navy mx-auto max-w-[1100px] text-balance"
+              style={{ fontSize: 'clamp(32px, 3.6vw, 48px)', letterSpacing: '-1px', lineHeight: 1.1 }}>
               Found your scholarship? <em className="text-gold">Let’s help you win it.</em>
             </h1>
-            <p className="mt-6 mx-auto max-w-[600px] text-[18px] leading-[1.7] text-navy/60">
-              Test preparation, help with your SOP and essays, and interview practice. Tell us what you need and a
-              counsellor will call you back.
+            <p className="mt-4 mx-auto max-w-[900px] text-[17px] leading-[1.7] text-navy/60">
+              Test prep, SOP and essay reviews and interview practice. Tell us what you need and we’ll call you back.
             </p>
-            <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <div className="mt-7 flex flex-wrap justify-center gap-3">
               <a href="#enquire"
-                className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-navy text-white text-[15px] font-semibold
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-navy text-white text-[15px] font-semibold
                   shadow-[0_10px_30px_rgba(15,31,61,0.25)] hover:bg-navy-mid hover:-translate-y-0.5 transition-all">
                 {PHONE_ICON}
                 Request a call back
               </a>
               <a href="#score-check"
-                className="inline-flex items-center px-7 py-4 rounded-full border border-navy/15 bg-white text-navy text-[15px] font-semibold
+                className="inline-flex items-center px-7 py-3.5 rounded-full border border-navy/15 bg-white text-navy text-[15px] font-semibold
                   hover:border-navy/40 transition-all">
                 Check your English score
               </a>
             </div>
-            <ul className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-2 text-[14px] text-navy/55">
+            <ul className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-2 text-[14px] text-navy/55">
               {TRUST.map(t => (
                 <li key={t} className="inline-flex items-center gap-2">
                   <ServiceIcon name="check" className="w-4 h-4 text-gold" />
