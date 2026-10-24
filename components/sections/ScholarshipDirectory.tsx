@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import ScholarshipCard from '@/components/ui/ScholarshipCard'
 import ScholarshipModal from '@/components/ui/ScholarshipModal'
@@ -143,6 +143,20 @@ export default function ScholarshipDirectory() {
 
   useEffect(() => setShown(PAGE_SIZE), [filters, university, grade])
 
+  // Load the next batch when the marker below the list scrolls into view.
+  // Re-runs after each batch, so if the marker is still visible it keeps loading.
+  const sentinelRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const el = sentinelRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      entries => { if (entries[0].isIntersecting) setShown(n => n + PAGE_SIZE) },
+      { rootMargin: '400px 0px' },
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [shown, filtered.length])
+
   const activeCount = Object.entries(filters).filter(([k, v]) => k !== 'sortBy' && k !== 'fieldOnly' && v).length
     + (university ? 1 : 0) + (score ? 1 : 0)
 
@@ -162,21 +176,20 @@ export default function ScholarshipDirectory() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Header */}
-      <div className="bg-navy px-5 md:px-10 lg:px-16 pt-32 pb-14 relative overflow-hidden">
+      <div className="bg-navy px-5 md:px-10 lg:px-16 pt-28 pb-8 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none"
           style={{ background: 'radial-gradient(ellipse at 70% 50%, #C9A84C 0%, transparent 60%)' }} />
-        <div className="relative z-10 max-w-4xl">
-          <nav className="text-[13px] text-white/50 mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+        <div className="relative z-10 max-w-[1200px]">
+          <nav className="text-[13px] text-white/50 mb-3" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-white transition-colors">Overview</Link>
             <span className="mx-2">/</span>
             <span className="text-white/75">Scholarships</span>
           </nav>
-          <div className="text-gold text-[11px] font-bold tracking-[2px] uppercase mb-3">Scholarship Database</div>
-          <h1 className="font-display font-bold text-white mb-4"
-            style={{ fontSize: 'clamp(32px, 5vw, 56px)', letterSpacing: '-1.5px', lineHeight: 1.1 }}>
-            Find Your Perfect<br /><em className="text-gold">Scholarship</em>
+          <h1 className="font-display font-bold text-white mb-2"
+            style={{ fontSize: 'clamp(28px, 3.4vw, 40px)', letterSpacing: '-1px', lineHeight: 1.15 }}>
+            Find your perfect <em className="text-gold">scholarship</em>
           </h1>
-          <p className="text-white/55 text-[16px] leading-relaxed max-w-2xl">
+          <p className="text-white/55 text-[15px] leading-relaxed">
             Browse {scholarships.length} scholarships by where you want to study, the university, your level,
             field and grades.
           </p>
@@ -305,7 +318,7 @@ export default function ScholarshipDirectory() {
             {filtered.length === 0 ? (
               <div className="text-center py-20">
                 <div className="font-display font-bold text-navy text-2xl mb-2">No matches found</div>
-                <p className="text-navy/50 text-[14px] mb-4">Try removing a filter or widening the destination.</p>
+                <p className="text-navy/50 text-[14px] mb-4">Try removing a filter or choosing another country.</p>
                 <button type="button" onClick={clearAll} className="btn-primary">Clear all filters</button>
               </div>
             ) : (
@@ -318,10 +331,8 @@ export default function ScholarshipDirectory() {
                   ))}
                 </ul>
                 {shown < filtered.length && (
-                  <div className="mt-8 text-center">
-                    <button type="button" onClick={() => setShown(n => n + PAGE_SIZE)} className="btn-primary">
-                      Show more ({filtered.length - shown} remaining)
-                    </button>
+                  <div ref={sentinelRef} className="mt-8 py-4 text-center text-[13px] text-navy/40">
+                    Loading more scholarships…
                   </div>
                 )}
               </>

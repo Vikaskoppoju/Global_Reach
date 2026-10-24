@@ -9,6 +9,8 @@ import { MOCK_APPLICATIONS } from '@/lib/mockApplications'
 import AtlasMasters from '@/components/admin/AtlasMasters'
 import AdminSidebar, { type AdminView } from '@/components/admin/AdminSidebar'
 import ActivityLog from '@/components/admin/ActivityLog'
+import Enquiries from '@/components/admin/Enquiries'
+import ServicePrices from '@/components/admin/ServicePrices'
 import scholarshipsData from '@/lib/scholarships.json'
 import type { Application, AppStatus, Scholarship } from '@/types'
 
@@ -129,7 +131,7 @@ export default function AdminDashboard() {
   // The open section lives in ?view= so refreshes and shared links land on the same screen
   useEffect(() => {
     const v = new URLSearchParams(window.location.search).get('view')
-    if (v === 'continents' || v === 'countries' || v === 'universities' || v === 'activity') setView(v)
+    if (v === 'continents' || v === 'countries' || v === 'universities' || v === 'activity' || v === 'enquiries' || v === 'prices') setView(v)
   }, [])
 
   const selectView = (next: AdminView) => {
@@ -334,6 +336,10 @@ export default function AdminDashboard() {
         {(view === 'continents' || view === 'countries' || view === 'universities') && <AtlasMasters view={view} />}
 
         {view === 'activity' && <ActivityLog />}
+
+        {view === 'enquiries' && <Enquiries />}
+
+        {view === 'prices' && <ServicePrices />}
 
         {view === 'applications' && (<>
 

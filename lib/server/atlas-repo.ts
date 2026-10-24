@@ -79,7 +79,7 @@ export async function listActivity(opts: {
 
 /* ─── Activity log helpers ───────────────────────────────────────────────── */
 
-async function log(
+export async function log(
   client: PoolClient, actor: string, action: ActivityAction, entity: ActivityEntity,
   entityId: string | number, summary: string, changes: Record<string, unknown> | null,
 ) {

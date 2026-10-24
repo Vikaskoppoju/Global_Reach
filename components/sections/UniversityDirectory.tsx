@@ -95,23 +95,22 @@ export default function UniversityDirectory() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Header */}
-      <div className="bg-navy px-5 md:px-10 lg:px-16 pt-32 pb-14 relative overflow-hidden">
+      <div className="bg-navy px-5 md:px-10 lg:px-16 pt-28 pb-8 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none"
           style={{ background: 'radial-gradient(ellipse at 70% 50%, #C9A84C 0%, transparent 60%)' }} />
-        <div className="relative z-10 max-w-4xl">
-          <nav className="text-[13px] text-white/50 mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+        <div className="relative z-10 max-w-[1200px]">
+          <nav className="text-[13px] text-white/50 mb-3" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-white transition-colors">Overview</Link>
             <span className="mx-2">/</span>
             <span className="text-white/75">Universities</span>
           </nav>
-          <div className="text-gold text-[11px] font-bold tracking-[2px] uppercase mb-3">University Directory</div>
-          <h1 className="font-display font-bold text-white mb-4"
-            style={{ fontSize: 'clamp(32px, 5vw, 56px)', letterSpacing: '-1.5px', lineHeight: 1.1 }}>
-            Every University,<br /><em className="text-gold">Region by Region</em>
+          <h1 className="font-display font-bold text-white mb-2"
+            style={{ fontSize: 'clamp(28px, 3.4vw, 40px)', letterSpacing: '-1px', lineHeight: 1.15 }}>
+            Every university, <em className="text-gold">region by region</em>
           </h1>
-          <p className="text-white/55 text-[16px] leading-relaxed max-w-2xl">
+          <p className="text-white/55 text-[15px] leading-relaxed">
             {allUniversities.length.toLocaleString('en-US')} universities across{' '}
-            {continents.reduce((sum, c) => sum + c.countries.length, 0)} countries that admit international
+            {continents.reduce((sum, c) => sum + c.countries.length, 0)} countries, all open to international
             students. Filter by region and country, or search by name.
           </p>
         </div>

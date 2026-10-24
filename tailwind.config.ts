@@ -33,6 +33,7 @@ const config: Config = {
         'float-badge': 'floatBadge 5s ease-in-out infinite',
         'float-badge-rev': 'floatBadge 5s ease-in-out infinite reverse',
         'fade-up': 'fadeUp 0.8s forwards',
+        'marquee': 'marquee 60s linear infinite',
       },
       keyframes: {
         float: {
@@ -46,6 +47,11 @@ const config: Config = {
         fadeUp: {
           from: { opacity: '0', transform: 'translateY(20px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        // Moves a list drawn twice by half its width, so it loops seamlessly
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
         },
       },
       backgroundImage: {

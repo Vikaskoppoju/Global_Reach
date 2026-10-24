@@ -3,7 +3,7 @@ import { handle } from '@/lib/server/api'
 
 export const dynamic = 'force-dynamic'
 
-const ENTITIES = new Set(['continent', 'country', 'university', 'atlas'])
+const ENTITIES = new Set(['continent', 'country', 'university', 'atlas', 'price'])
 const ACTIONS = new Set(['create', 'update', 'delete', 'seed'])
 
 export function GET(req: Request) {

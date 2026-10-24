@@ -5,6 +5,7 @@ import Link from 'next/link'
 import UniversityLogo from '@/components/ui/UniversityLogo'
 import { Flag, type LogoMap } from '@/components/ui/ScholarshipCard'
 import { deadlineInfo, fundingLabel } from '@/lib/scholarships'
+import { prepForScholarship } from '@/lib/services'
 import type { Scholarship } from '@/types'
 
 const show = (v: number | null | undefined) => (v ? String(v) : null)
@@ -32,7 +33,7 @@ export default function ScholarshipModal({ s, logos, onClose }: { s: Scholarship
                   <span key={c} className="inline-flex items-center gap-1.5 bg-white/10 rounded-full pl-1.5 pr-3 py-1">
                     <Flag country={c} className="w-5 h-3.5" />{c}
                   </span>
-                )) : <span>Various destinations</span>}
+                )) : <span>Various countries</span>}
                 {fundingLabel(s) && <span className="text-gold font-semibold">· {fundingLabel(s)}</span>}
               </div>
             </div>
@@ -79,7 +80,7 @@ export default function ScholarshipModal({ s, logos, onClose }: { s: Scholarship
                     ))}
                   </p>
                 ) : (
-                  <p>Not tied to one destination; check the official site for eligible institutions.</p>
+                  <p>Not tied to one country; check the official site for eligible institutions.</p>
                 )}
               </div>
 
@@ -117,6 +118,24 @@ export default function ScholarshipModal({ s, logos, onClose }: { s: Scholarship
                 {[...s.levels, ...s.fields].map((l, i) => (
                   <span key={`${i}-${l}`}className="text-[11px] bg-navy/5 text-navy/60 px-2.5 py-1 rounded-full border border-navy/10">{l}</span>
                 ))}
+              </div>
+
+              <div className="mb-6 rounded-xl bg-gold-pale border border-gold/25 p-4">
+                <h3 className="font-bold text-navy text-[14px] mb-1">Get ready for this scholarship</h3>
+                <p className="text-[13px] text-navy/60 mb-3">Prepare for the tests it asks for, and get feedback on your application.</p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    ...prepForScholarship(s).map(p => ({ slug: p.slug, label: p.name })),
+                    { slug: 'sop', label: 'SOP review' },
+                    { slug: 'scholarship-essay', label: 'Essay review' },
+                    { slug: 'scholarship-interview', label: 'Interview practice' },
+                  ].map(link => (
+                    <Link key={link.slug} href={`/services/${link.slug}?scholarship=${encodeURIComponent(s.id)}#enquire`}
+                      className="text-[12px] font-semibold text-navy bg-white border border-gold/30 rounded-full px-3 py-1.5 hover:border-gold hover:bg-gold/10 transition-colors">
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
 
               <a href={s.link} target="_blank" rel="noopener noreferrer"

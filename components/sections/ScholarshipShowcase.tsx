@@ -14,7 +14,7 @@ export default function ScholarshipShowcase() {
   const logos = useUniversityLogos()
   const [selected, setSelected] = useState<Scholarship | null>(null)
 
-  // Six open scholarships with a known destination, soonest deadline first
+  // Six open scholarships tied to a study country, soonest deadline first
   const featured = allScholarships
     .filter(s => {
       const d = deadlineInfo(s.deadline)
@@ -33,6 +33,9 @@ export default function ScholarshipShowcase() {
               style={{ fontSize: 'clamp(28px, 4vw, 44px)', letterSpacing: '-0.5px', lineHeight: 1.15 }}>
               Closing <em className="text-gold">soon</em>
             </h2>
+            <p className="text-[16px] leading-relaxed text-navy/60 mt-3 max-w-xl">
+              These deadlines are coming up first. Tap a card to see who can apply, what it pays and how to apply.
+            </p>
           </div>
           <Link href="/scholarships"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-navy text-white text-[14px] font-semibold

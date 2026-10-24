@@ -25,7 +25,7 @@ function joinCountries(countries: string[], max = 2) {
     : countries.join(', ')
 }
 
-// Header: the university the scholarship is for, else the study country, else "various destinations"
+// Header: the university the scholarship is for, else the study country, else "various countries"
 function Where({ s, logos }: { s: Scholarship; logos: LogoMap }) {
   const universities = s.universities ?? []
   const studyIn = s.studyIn ?? []
@@ -72,7 +72,7 @@ function Where({ s, logos }: { s: Scholarship; logos: LogoMap }) {
         </svg>
       </span>
       <div>
-        <div className="text-[13px] font-semibold text-navy">Various destinations</div>
+        <div className="text-[13px] font-semibold text-navy">Various countries</div>
         <div className="text-[11px] text-navy/55">Not tied to one country</div>
       </div>
     </div>
@@ -86,7 +86,7 @@ export function ScholarshipTile({ s, logos, onSelect }: { s: Scholarship; logos:
   const studyIn = s.studyIn ?? []
   const where = universities.length
     ? `${universities[0]}${universities.length > 1 ? ` +${universities.length - 1}` : ''}`
-    : studyIn.length ? `Any university in ${joinCountries(studyIn)}` : 'Various destinations'
+    : studyIn.length ? `Any university in ${joinCountries(studyIn)}` : 'Various countries'
 
   return (
     <button type="button" onClick={onSelect}

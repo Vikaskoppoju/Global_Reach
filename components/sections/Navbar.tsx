@@ -2,18 +2,25 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useAuth } from '@/context/AuthContext'
 
-// Home-page sections are linked as "/#…" so the navbar also works on other pages
 const navLinks = [
-  { label: 'Destinations', href: '/#countries' },
+  { label: 'Overview', href: '/' },
+  { label: 'Scholarships', href: '/scholarships' },
   { label: 'Universities', href: '/universities' },
-  { label: 'How it works', href: '/#how-it-works' },
+  { label: 'Services', href: '/services' },
 ]
 
+// The enquiry form on the services page; a counsellor calls the student back
+const CALLBACK_HREF = '/services#enquire'
+
+const PhoneIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
+    <path strokeLinejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" />
+  </svg>
+)
+
+// The admin panel isn't linked from the public site; admins open /admin directly
 export default function Navbar() {
-  const { user } = useAuth()
-  const links = user?.role === 'admin' ? [...navLinks, { label: 'Admin', href: '/admin' }] : navLinks
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -45,7 +52,7 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -56,11 +63,12 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/scholarships"
-            className="bg-navy text-white text-[13px] font-semibold px-5 py-2.5 rounded-full
+            href={CALLBACK_HREF}
+            className="inline-flex items-center gap-2 bg-navy text-white text-[13px] font-semibold px-5 py-2.5 rounded-full
               transition-all duration-300 hover:bg-navy-mid hover:-translate-y-0.5"
           >
-            Find Scholarships
+            <PhoneIcon className="w-4 h-4 text-gold-light" />
+            Request a free call
           </a>
         </div>
 
@@ -89,7 +97,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 bg-cream flex flex-col items-center justify-center gap-2 md:hidden"
           >
-            {links.map((link, i) => (
+            {navLinks.map((link, i) => (
               <motion.a
                 key={link.href}
                 href={link.href}
@@ -103,14 +111,15 @@ export default function Navbar() {
               </motion.a>
             ))}
             <motion.a
-              href="/scholarships"
+              href={CALLBACK_HREF}
               onClick={closeMobile}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="mt-5 bg-navy text-white text-base font-semibold px-10 py-4 rounded-full"
+              className="mt-5 inline-flex items-center gap-2.5 bg-navy text-white text-base font-semibold px-10 py-4 rounded-full"
             >
-              Find Scholarships
+              <PhoneIcon className="w-5 h-5 text-gold-light" />
+              Request a free call
             </motion.a>
           </motion.div>
         )}

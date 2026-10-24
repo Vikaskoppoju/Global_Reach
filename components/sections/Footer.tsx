@@ -2,7 +2,13 @@ const footerLinks: Record<string, { label: string; href: string }[]> = {
   Explore: [
     { label: 'Scholarships', href: '/scholarships' },
     { label: 'Universities', href: '/universities' },
-    { label: 'Destinations', href: '/#countries' },
+    { label: 'Services', href: '/services' },
+  ],
+  Services: [
+    { label: 'IELTS & TOEFL preparation', href: '/services#test-prep' },
+    { label: 'GRE & GMAT preparation', href: '/services/gre' },
+    { label: 'SOP review & coaching', href: '/services#application' },
+    { label: 'Interview preparation', href: '/services#interview' },
   ],
   'By level': [
     { label: 'Bachelor’s scholarships', href: "/scholarships?level=Bachelor's" },
@@ -11,14 +17,14 @@ const footerLinks: Record<string, { label: string; href: string }[]> = {
   ],
   Help: [
     { label: 'How it works', href: '/#how-it-works' },
-    { label: 'Scholarship words explained', href: '/#how-it-works' },
+    { label: 'Scholarship words explained', href: '/#scholarship-words' },
   ],
 }
 
 export default function Footer() {
   return (
     <footer className="bg-navy text-white/60 pt-16 pb-9 px-5 md:px-10 lg:px-16">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-10 pb-12
         border-b border-white/8">
         <div>
           <div className="font-display font-bold text-white text-2xl mb-4">

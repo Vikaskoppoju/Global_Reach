@@ -10,7 +10,7 @@ The atlas is the continents → countries → universities data behind the landi
 
 | | PostgreSQL (Docker) | Static snapshot |
 |---|---|---|
-| Files | `docker-compose.yml`, `db/schema.sql` | `lib/continent-meta.json`, `lib/world-universities.json`, `lib/country-costs.json`, `public/logos/` |
+| Files | `docker-compose.yml`, `db/schema.sql` | `lib/continent-meta.json`, `lib/world-universities.json`, `lib/country-costs.json`, `lib/service-prices.json`, `public/logos/` |
 | Used when | `next dev` (default) | `next build` / `next start` (default), or whenever the database is unreachable |
 | Editable | Yes, in `/admin` → Masters (every change is written to `activity_log`) | No, read-only |
 
@@ -80,6 +80,24 @@ Commit the updated snapshot files together with code changes. They are what prod
   country needs its ISO code added there, then `node scripts/fetch-flags.mjs`; until then it shows no flag.
 - Keep `id`s optional in `types/index.ts`. The snapshot has no database ids, and code that needs ids
   (admin editing) must only run when `source === 'db'`.
+
+## Service prices
+
+Prices on the services pages follow the same pattern as the atlas.
+
+| | Development (db mode) | Production (static mode) |
+|---|---|---|
+| Source | `service_prices` table, edited in `/admin` → Service Prices | `lib/service-prices.json` |
+| Changes logged | Yes, `activity_log` with entity `price` | No, read-only |
+
+- `lib/services.ts` holds the services, their options and their **default** prices.
+  - A row in `service_prices` (keyed `package:<service>:<option>` or `bundle:<bundle>`) replaces a default.
+  - Renaming a service slug or an option name orphans its saved price, so the default shows again.
+- Server pages get prices from `getCatalogue()` (`lib/server/catalogue.ts`):
+  - db mode reads the database, falling back to the snapshot if it's down.
+  - static mode reads the snapshot only.
+- Client components use `SERVICES` / `BUNDLES`, which carry the snapshot prices.
+- `npm run db:export` writes the table to `lib/service-prices.json`. `npm run db:seed` loads that file into a fresh database and keeps prices already set.
 
 ## Known gaps
 

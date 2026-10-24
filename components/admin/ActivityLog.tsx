@@ -13,7 +13,7 @@ const ACTION_STYLE: Record<ActivityAction, string> = {
 }
 
 const ENTITY_LABEL: Record<ActivityEntity, string> = {
-  continent: 'Continent', country: 'Country', university: 'University', atlas: 'Whole atlas',
+  continent: 'Continent', country: 'Country', university: 'University', atlas: 'Whole atlas', price: 'Service prices',
 }
 
 const FIELD_LABEL: Record<string, string> = {
@@ -112,7 +112,7 @@ export default function ActivityLog() {
             Activity Log
           </h1>
           <p className="mt-1 text-[14px] text-navy/45">
-            Every change made in the masters: who made it, when, and what changed. Stored in the database.
+            Every change made in the masters and service prices: who made it, when, and what changed. Stored in the database.
           </p>
         </div>
         <button type="button" onClick={() => load()}
@@ -128,6 +128,7 @@ export default function ActivityLog() {
           <option value="country">Countries</option>
           <option value="university">Universities</option>
           <option value="atlas">Whole atlas (seeding)</option>
+          <option value="price">Service prices</option>
         </select>
         <select className={selCls} value={action} onChange={e => setAction(e.target.value)} aria-label="Action">
           <option value="">All actions</option>

@@ -22,18 +22,18 @@ export default function Countries() {
   return (
     <section id="countries" className="bg-navy py-20 md:py-24 px-5 md:px-10 lg:px-16">
       <AnimatedSection className="text-center mb-14">
-        <div className="section-tag text-gold-light">Destinations</div>
-        <h2 className="font-display font-bold text-white leading-tight mb-4"
-          style={{ fontSize: 'clamp(34px, 4vw, 52px)', letterSpacing: '-1.5px' }}>
-          Where Will You Study?
-        </h2>
-        <p className="text-white/55 text-[17px] leading-relaxed max-w-xl mx-auto">
-          Pick a region to see its leading universities, then explore every university in our{' '}
-          <Link href="/universities" className="text-gold-light underline underline-offset-4 hover:text-gold">
-            directory of {atlasStats.universities}
-          </Link>.
-        </p>
-      </AnimatedSection>
+          <div className="section-tag text-gold-light">Countries</div>
+          <h2 className="font-display font-bold text-white leading-tight mb-4"
+            style={{ fontSize: 'clamp(34px, 4vw, 52px)', letterSpacing: '-1.5px' }}>
+            Where Will You Study?
+          </h2>
+          <p className="text-white/55 text-[17px] leading-relaxed max-w-xl mx-auto">
+            Pick a region to see its leading universities, then explore every university in our{' '}
+            <Link href="/universities" className="text-gold-light underline underline-offset-4 hover:text-gold">
+              directory of {atlasStats.universities}
+            </Link>.
+          </p>
+        </AnimatedSection>
 
       {/* Continents */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">

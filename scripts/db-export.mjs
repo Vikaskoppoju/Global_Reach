@@ -2,6 +2,7 @@
 //   lib/continent-meta.json     continents (order, tagline, image, top 5)
 //   lib/world-universities.json countries and universities per continent
 //   lib/country-costs.json      tuition notes
+//   lib/service-prices.json     prices set in admin → Service Prices
 //   public/logos/uploads/       logos uploaded in admin (served from the DB in dev)
 //
 //   npm run db:export                      export; fails if the database can't be reached
@@ -113,15 +114,20 @@ try {
   ]))
   const costs = Object.fromEntries(countries.rows.filter(k => k.cost).map(k => [k.name, k.cost]))
 
+  // Prices set in admin, sorted so the file diffs cleanly
+  const prices = await client.query('SELECT key, price_inr FROM service_prices ORDER BY key')
+  const priceMap = Object.fromEntries(prices.rows.map(r => [r.key, r.price_inr]))
+
   const changed = [
     writeIfChanged('lib/continent-meta.json', json(meta)) && 'continent-meta.json',
     writeIfChanged('lib/world-universities.json', json(world)) && 'world-universities.json',
     writeIfChanged('lib/country-costs.json', json(costs)) && 'country-costs.json',
+    writeIfChanged('lib/service-prices.json', json(priceMap)) && 'service-prices.json',
   ].filter(Boolean)
 
   console.log(
     `db-export: ${continents.rowCount} continents, ${countries.rowCount} countries, ${universities.rowCount} universities, `
-    + `${uploadPath.size} uploaded logos. `
+    + `${uploadPath.size} uploaded logos, ${prices.rowCount} service prices. `
     + (changed.length ? `Updated ${changed.join(', ')}.` : 'Static snapshot already up to date.')
     + (pruned ? ` Removed ${pruned} unused uploaded logo file(s).` : ''))
 } catch (err) {

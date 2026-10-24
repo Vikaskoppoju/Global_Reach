@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS activity_log (
   occurred_at  timestamptz NOT NULL DEFAULT now(),
   actor        text NOT NULL,
   action       text NOT NULL CHECK (action IN ('create', 'update', 'delete', 'seed')),
-  entity       text NOT NULL CHECK (entity IN ('continent', 'country', 'university', 'atlas')),
+  entity       text NOT NULL CHECK (entity IN ('continent', 'country', 'university', 'atlas', 'price')),
   entity_id    text,
   summary      text NOT NULL,
   changes      jsonb                            -- updates: {field: {from, to}}; create/delete: the record
@@ -69,4 +69,41 @@ CREATE TABLE IF NOT EXISTS uploads (
   original_name  text,
   uploaded_by    text NOT NULL,
   created_at     timestamptz NOT NULL DEFAULT now()
+);
+
+-- Enquiries from the services pages (test prep, SOP, interviews); followed up in admin → Enquiries
+CREATE TABLE IF NOT EXISTS service_enquiries (
+  id              bigserial PRIMARY KEY,
+  created_at      timestamptz NOT NULL DEFAULT now(),
+  service         text NOT NULL,                   -- service or bundle slug from lib/services.ts
+  package         text,
+  name            text NOT NULL,
+  email           text NOT NULL,
+  phone           text,
+  current_score   text,
+  target_intake   text,
+  scholarship_id  text,                            -- set when the student came from a scholarship
+  message         text,
+  consent         boolean NOT NULL,
+  status          text NOT NULL DEFAULT 'new' CHECK (status IN ('new', 'contacted', 'enrolled', 'closed')),
+  updated_at      timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS service_enquiries_created_idx ON service_enquiries (created_at DESC);
+CREATE INDEX IF NOT EXISTS service_enquiries_status_idx ON service_enquiries (status, created_at DESC);
+-- Enquiries are call-back requests: phone is required by the form, email is optional
+ALTER TABLE service_enquiries ALTER COLUMN email DROP NOT NULL;
+ALTER TABLE service_enquiries ADD COLUMN IF NOT EXISTS call_time text;   -- morning | afternoon | evening | any
+
+-- Databases created before service prices existed: allow 'price' entries in the activity log
+ALTER TABLE activity_log DROP CONSTRAINT IF EXISTS activity_log_entity_check;
+ALTER TABLE activity_log ADD CONSTRAINT activity_log_entity_check
+  CHECK (entity IN ('continent', 'country', 'university', 'atlas', 'price'));
+
+-- Prices set in admin → Service Prices. The services and their options live in lib/services.ts;
+-- a row here replaces the price there. Exported to lib/service-prices.json for production.
+CREATE TABLE IF NOT EXISTS service_prices (
+  key         text PRIMARY KEY,                    -- 'package:<service>:<option>' or 'bundle:<bundle>'
+  price_inr   integer NOT NULL CHECK (price_inr >= 0),
+  updated_by  text NOT NULL,
+  updated_at  timestamptz NOT NULL DEFAULT now()
 );

@@ -155,7 +155,7 @@ export interface User {
 }
 
 export type ActivityAction = 'create' | 'update' | 'delete' | 'seed'
-export type ActivityEntity = 'continent' | 'country' | 'university' | 'atlas'
+export type ActivityEntity = 'continent' | 'country' | 'university' | 'atlas' | 'price'
 
 export interface ActivityEntry {
   id: number
@@ -166,4 +166,81 @@ export interface ActivityEntry {
   entityId: string | null
   summary: string
   changes: Record<string, unknown> | null
+}
+
+export type ServiceCategory = 'test-prep' | 'application' | 'interview'
+
+// One way to buy a service, e.g. a mock test pack or a live batch
+export interface ServicePackage {
+  name: string
+  // Indian rupees; 0 = free
+  priceINR: number
+  // Shown after the price, e.g. "per hour"
+  per?: string
+  detail: string
+  // Which student this option suits, in plain words
+  goodIf?: string
+}
+
+export interface Service {
+  slug: string
+  category: ServiceCategory
+  name: string
+  short: string
+  // Explains the test or document itself, for a student who has never heard of it
+  whatIsIt: string
+  // Plain-language "who is this for", shown on cards
+  bestFor: string
+  description: string
+  // What happens after the student signs up, in order
+  steps: string[]
+  includes: string[]
+  format: string
+  duration: string
+  packages: ServicePackage[]
+  // Exam names as examName() returns them, for linking scholarships to their prep
+  exams?: string[]
+  // Path under public/, e.g. the test's own logo
+  logo?: string
+  // Shown but not sold yet; students can ask to be told when it launches
+  comingSoon?: boolean
+}
+
+// One thing in a bundle. With a package, its price comes from the catalogue; without one it's a free extra.
+export interface BundleItem {
+  service: string
+  package?: string
+  label: string
+}
+
+export interface ServiceBundle {
+  slug: string
+  name: string
+  priceINR: number
+  // Plain-language "who should pick this"
+  bestFor: string
+  duration: string
+  items: BundleItem[]
+  // Other service pages that should show this bundle
+  alsoFor?: string[]
+  comingSoon?: boolean
+}
+
+export type EnquiryStatus = 'new' | 'contacted' | 'enrolled' | 'closed'
+
+export interface ServiceEnquiry {
+  id: number
+  createdAt: string
+  service: string
+  package: string | null
+  name: string
+  email: string | null
+  phone: string | null
+  // When the student would like the call: morning | afternoon | evening | any
+  callTime: string | null
+  currentScore: string | null
+  targetIntake: string | null
+  scholarshipId: string | null
+  message: string | null
+  status: EnquiryStatus
 }

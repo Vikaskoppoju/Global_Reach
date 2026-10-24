@@ -1,10 +1,12 @@
 'use client'
 
+import { useMemo } from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/navigation'
-import { useState, type FormEvent } from 'react'
-import { Flag } from '@/components/ui/ScholarshipCard'
 import { atlasStats, scholarshipStats } from '@/lib/data'
+import { useAtlas, topUniversities } from '@/lib/atlas'
+import { ART } from '@/lib/illustrations'
+import UniversityLogo from '@/components/ui/UniversityLogo'
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 30 },
@@ -12,139 +14,167 @@ const fadeUp = (delay: number) => ({
   transition: { duration: 0.8, delay, ease: [0.25, 0.1, 0.25, 1] },
 })
 
-// Plain-language entry points into the scholarship list by study level
-const LEVEL_LINKS = [
-  { level: "Bachelor's", label: 'University (Bachelor’s)', hint: 'Finishing school' },
-  { level: "Master's", label: 'Master’s degree', hint: 'Already have a degree' },
-  { level: 'PhD', label: 'PhD & research', hint: 'Have a Master’s' },
+interface Path {
+  step: string
+  title: string
+  text: string
+  href: string
+  cta: string
+  quick: { label: string; href: string }[]
+  art: string
+  primary?: boolean
+}
+
+// Three separate ways in, not steps: a scholarship already names its university, and a university lists its scholarships
+const PATHS: Path[] = [
+  {
+    step: 'Need funding?',
+    title: 'Find a scholarship',
+    text: `${scholarshipStats.total} scholarships, each with its university. Filter by study level, country, subject and your grades.`,
+    href: '/scholarships',
+    cta: 'Browse scholarships',
+    quick: [
+      { label: 'Bachelor’s', href: "/scholarships?level=Bachelor's" },
+      { label: 'Master’s', href: "/scholarships?level=Master's" },
+      { label: 'PhD', href: '/scholarships?level=PhD' },
+    ],
+    art: ART.scholarship,
+    primary: true,
+  },
+  {
+    step: 'Have a place in mind?',
+    title: 'Find a university',
+    text: `${atlasStats.universities} universities in ${atlasStats.countries} countries. Pick one to see the scholarships it offers.`,
+    href: '/universities',
+    cta: 'Browse universities',
+    quick: scholarshipStats.topDestinations.slice(0, 3).map(d => ({
+      label: d.country,
+      href: `/universities?country=${encodeURIComponent(d.country)}`,
+    })),
+    art: ART.destinations,
+  },
+  {
+    step: 'Ready to apply?',
+    title: 'Get help applying',
+    text: 'Test prep, SOP and essay reviews, and interview practice with a counsellor.',
+    href: '/services',
+    cta: 'See our services',
+    quick: [
+      { label: 'IELTS', href: '/services/ielts' },
+      { label: 'SOP review', href: '/services/sop' },
+      { label: 'Interviews', href: '/services#interview' },
+    ],
+    art: ART.applicationHelp,
+  },
 ]
 
 export default function Hero() {
-  const router = useRouter()
-  const [q, setQ] = useState('')
-
-  const search = (e: FormEvent) => {
-    e.preventDefault()
-    const query = q.trim()
-    router.push(query ? `/universities?q=${encodeURIComponent(query)}` : '/universities')
-  }
+  // The two highest-ranked universities with a logo in each region
+  const atlas = useAtlas()
+  const featured = useMemo(() => atlas.flatMap(c => topUniversities(c).filter(u => u.logo).slice(0, 2)), [atlas])
 
   return (
-    <section
-      id="home"
-      className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center
-        px-5 md:px-10 lg:px-16 pt-32 pb-16 lg:pt-36 lg:pb-24 relative overflow-hidden"
-    >
+    <section id="home" className="relative overflow-hidden px-5 md:px-10 lg:px-16 pt-28 pb-14 lg:pt-32 lg:pb-16">
       {/* Background glow */}
-      <div className="absolute w-[600px] h-[600px] rounded-full top-[-100px] right-[-100px] animate-float pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%)' }} />
+      <div className="absolute w-[600px] h-[600px] rounded-full top-[-150px] left-1/2 -translate-x-1/2 animate-float pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(201,168,76,0.14) 0%, transparent 70%)' }} />
 
-      {/* Left column */}
-      <div className="relative z-10">
-        <motion.div {...fadeUp(0.1)}
-          className="inline-flex items-center gap-2 bg-gold-pale border border-gold/30
-            rounded-full px-4 py-2 text-[11px] font-bold uppercase tracking-[1.5px] text-[#8A6A1A] mb-7"
-        >
-          <span className="w-1.5 h-1.5 bg-gold rounded-full" />
-          For students who dream of studying abroad
-        </motion.div>
+      <div className="relative z-10 max-w-[1200px] mx-auto">
+        {/* Wide enough for the heading and the intro to sit on one line each on laptop screens */}
+        <div className="text-center max-w-[1100px] mx-auto">
+          <motion.h1 {...fadeUp(0.2)}
+            className="font-display font-bold text-navy leading-[1.1] mb-4"
+            style={{ fontSize: 'clamp(32px, 3.6vw, 48px)', letterSpacing: '-1px' }}
+          >
+            Study abroad, <em className="text-gold">with a scholarship to pay&nbsp;for&nbsp;it</em>
+          </motion.h1>
 
-        <motion.h1 {...fadeUp(0.2)}
-          className="font-display font-bold text-navy leading-[1.08] mb-6"
-          style={{ fontSize: 'clamp(36px, 4.6vw, 58px)', letterSpacing: '-1.5px' }}
-        >
-          Find your university abroad, <em className="text-gold">and the scholarship to fund&nbsp;it</em>
-        </motion.h1>
+          <motion.p {...fadeUp(0.3)} className="text-[17px] leading-[1.7] text-navy/60 mb-10">
+            Scholarships, universities and application help in one place. Where would you like to start?
+          </motion.p>
+        </div>
 
-        <motion.p {...fadeUp(0.3)} className="text-[17px] leading-[1.7] text-navy/60 max-w-[520px] mb-9">
-          Pick a country, find a university, and see the scholarships that can help pay for it.
-          Explore {atlasStats.universities} universities and {scholarshipStats.total} scholarships, free.
-        </motion.p>
+        {/* Path chooser */}
+        <ul className="grid gap-5 md:grid-cols-3">
+          {PATHS.map((p, i) => (
+            <motion.li key={p.title} {...fadeUp(0.4 + i * 0.1)}>
+              <div className={`group h-full rounded-3xl overflow-hidden flex flex-col border transition-shadow hover:shadow-[0_24px_60px_rgba(15,31,61,0.12)]
+                ${p.primary ? 'bg-navy border-navy text-white' : 'bg-white border-gold/25 text-navy'}`}>
+                <div className={`m-3 mb-0 h-40 md:h-44 rounded-2xl p-5 ${p.primary ? 'bg-cream' : 'bg-gold-pale'}`}>
+                  <div className="relative w-full h-full transition-transform duration-500 group-hover:scale-[1.04]">
+                    <Image src={p.art} alt="" fill priority className="object-contain" />
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col px-7 pt-6 pb-7">
+                  <span className={`text-[11px] font-bold uppercase tracking-[1.5px] mb-2 ${p.primary ? 'text-gold-light' : 'text-gold'}`}>
+                    {p.step}
+                  </span>
 
-        <motion.form {...fadeUp(0.4)} onSubmit={search} role="search"
-          className="flex flex-col sm:flex-row gap-3 max-w-[560px]">
-          <label htmlFor="hero-search" className="sr-only">Search universities or countries</label>
-          <div className="relative flex-1">
-            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-navy/35" fill="none" stroke="currentColor"
-              strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
-              <circle cx="11" cy="11" r="7" /><path strokeLinecap="round" d="m20 20-4-4" />
-            </svg>
-            <input id="hero-search" type="search" value={q} onChange={e => setQ(e.target.value)}
-              placeholder="Search a university or country"
-              className="w-full bg-white border border-gold/25 rounded-full pl-12 pr-5 py-4 text-[15px] text-navy
-                placeholder:text-navy/35 outline-none shadow-sm focus:border-gold focus:ring-4 focus:ring-gold/10" />
-          </div>
-          <button type="submit" className="btn-primary shadow-[0_8px_24px_rgba(15,31,61,0.25)]">
-            Search
-          </button>
-        </motion.form>
+                  <h2 className="font-display font-bold text-[24px] mb-2">{p.title}</h2>
+                  <p className={`text-[15px] leading-relaxed mb-5 ${p.primary ? 'text-white/65' : 'text-navy/60'}`}>{p.text}</p>
 
-        <motion.div {...fadeUp(0.5)} className="mt-6">
-          <p className="text-[13px] font-semibold text-navy/55 mb-2.5">Show me scholarships for…</p>
-          <div className="flex flex-wrap gap-2.5">
-            {LEVEL_LINKS.map(l => (
-              <a key={l.level} href={`/scholarships?level=${encodeURIComponent(l.level)}`}
-                className="group rounded-2xl border border-gold/30 bg-white px-4 py-2.5 hover:border-gold hover:bg-gold-pale transition-colors">
-                <span className="block text-[14px] font-semibold text-navy">{l.label}</span>
-                <span className="block text-[12px] text-navy/50">{l.hint}</span>
-              </a>
-            ))}
-          </div>
-        </motion.div>
+                  <div className="flex flex-wrap gap-2 mb-7">
+                    {p.quick.map(q => (
+                      <a key={q.label} href={q.href}
+                        className={`text-[12px] font-semibold rounded-full px-3 py-1.5 border transition-colors
+                          ${p.primary
+                            ? 'border-white/20 text-white/80 hover:border-gold hover:text-gold-light'
+                            : 'border-gold/30 bg-cream text-navy/70 hover:border-gold hover:text-navy'}`}>
+                        {q.label}
+                      </a>
+                    ))}
+                  </div>
+
+                  <a href={p.href}
+                    className={`mt-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-[14px] font-semibold transition-colors
+                      ${p.primary ? 'bg-gold text-navy hover:bg-gold-light' : 'bg-navy text-white hover:bg-navy-mid'}`}>
+                    {p.cta} <span aria-hidden>→</span>
+                  </a>
+                </div>
+              </div>
+            </motion.li>
+          ))}
+        </ul>
 
         {/* Stats */}
-        <motion.dl {...fadeUp(0.6)} className="flex gap-10 mt-12">
+        <motion.dl {...fadeUp(0.8)} className="flex flex-wrap justify-center gap-x-12 gap-y-4 mt-12">
           {[
-            { num: atlasStats.universities, label: 'Universities' },
             { num: scholarshipStats.total, label: 'Scholarships' },
+            { num: atlasStats.universities, label: 'Universities' },
             { num: atlasStats.countries, label: 'Countries' },
           ].map(s => (
-            <div key={s.label}>
+            <div key={s.label} className="flex items-baseline gap-2">
               <dt className="sr-only">{s.label}</dt>
-              <dd className="font-display font-bold text-navy leading-none mb-1.5" style={{ fontSize: 'clamp(26px, 3vw, 36px)' }}>
+              <dd className="font-display font-bold text-navy text-[28px] leading-none">
                 {s.num.replace('+', '')}{s.num.endsWith('+') && <span className="text-gold">+</span>}
               </dd>
-              <dd className="text-[13px] text-navy/50 font-medium tracking-wide">{s.label}</dd>
+              <dd className="text-[14px] text-navy/50 font-medium">{s.label}</dd>
             </div>
           ))}
         </motion.dl>
-      </div>
 
-      {/* Right column — popular destinations from the scholarship data */}
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
-        className="relative z-10"
-      >
-        <div className="bg-white rounded-[28px] border border-gold/20 shadow-[0_24px_60px_rgba(15,31,61,0.10)] p-6 md:p-7">
-          <div className="text-[11px] font-bold uppercase tracking-[2px] text-gold mb-1">Popular destinations</div>
-          <h2 className="font-display font-bold text-navy text-[22px] mb-5">Countries with the most scholarships</h2>
-          <ul className="divide-y divide-gold/10">
-            {scholarshipStats.topDestinations.map(d => (
-              <li key={d.country}>
-                <a href={`/scholarships?country=${encodeURIComponent(d.country)}`}
-                  className="group flex items-center gap-4 py-3.5 -mx-2 px-2 rounded-xl hover:bg-cream transition-colors">
-                  <Flag country={d.country} className="w-10 h-7" />
-                  <span className="flex-1 min-w-0">
-                    <span className="block text-[15px] font-semibold text-navy">{d.country}</span>
-                    <span className="block text-[12px] text-navy/50">
-                      {d.scholarships} scholarships · {d.universities} universities
-                    </span>
-                  </span>
-                  <svg className="w-4 h-4 text-navy/30 transition-all group-hover:text-gold group-hover:translate-x-1" fill="none"
-                    stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </li>
-            ))}
-          </ul>
-          <a href="/scholarships" className="mt-4 block text-center text-[13px] font-semibold text-gold hover:text-navy transition-colors">
-            See every destination →
-          </a>
-        </div>
-      </motion.div>
+        {/* Leading universities, scrolling. The list is drawn twice so the loop has no gap. */}
+        {featured.length > 0 && (
+          <motion.div {...fadeUp(0.9)} className="mt-14">
+            <p className="text-center text-[11px] font-bold uppercase tracking-[2px] text-navy/40 mb-5">
+              Some of the top universities you can explore
+            </p>
+            <div className="overflow-hidden motion-reduce:overflow-x-auto
+              [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+              <ul className="flex w-max gap-4 pr-4 animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
+                {[...featured, ...featured].map((u, i) => (
+                  <li key={i} aria-hidden={i >= featured.length || undefined}
+                    className="flex items-center gap-3 bg-white border border-gold/20 rounded-full pl-1.5 pr-5 py-1.5">
+                    <UniversityLogo name={u.name} logo={u.logo} tone="light" />
+                    <span className="text-[13px] font-semibold text-navy whitespace-nowrap">{u.name}</span>
+                    <span className="text-[12px] text-navy/45 whitespace-nowrap">{u.country}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </div>
     </section>
   )
 }

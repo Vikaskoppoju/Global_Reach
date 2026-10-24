@@ -3,7 +3,7 @@
 import { useState, type ReactNode } from 'react'
 import type { MasterView } from '@/components/admin/AtlasMasters'
 
-export type AdminView = 'applications' | MasterView | 'activity'
+export type AdminView = 'applications' | 'enquiries' | 'prices' | MasterView | 'activity'
 
 interface MenuItem { id: AdminView; label: string }
 interface MenuGroup { label: string; icon: ReactNode; items: MenuItem[] }
@@ -12,6 +12,18 @@ const ICONS = {
   applications: (
     <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>
       <path strokeLinecap="round" strokeLinejoin="round" d="M4 13h4l2 3h4l2-3h4M4 13l2.5-7h11L20 13v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5Z" />
+    </svg>
+  ),
+  prices: (
+    <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>
+      <path strokeLinejoin="round" d="M3 12V4h8l9 9-8 8-9-9Z" />
+      <circle cx="7.5" cy="8.5" r="1.3" />
+    </svg>
+  ),
+  enquiries: (
+    <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>
+      <path strokeLinejoin="round" d="M4 5h16v11H9l-5 4V5Z" />
+      <path strokeLinecap="round" d="M8 9h8M8 12h5" />
     </svg>
   ),
   activity: (
@@ -31,6 +43,8 @@ const ICONS = {
 // Top-level entries: a single item, or a group that expands to its sub-items
 const MENU: (MenuItem & { icon: ReactNode } | MenuGroup)[] = [
   { id: 'applications', label: 'Applications', icon: ICONS.applications },
+  { id: 'enquiries', label: 'Call-back Requests', icon: ICONS.enquiries },
+  { id: 'prices', label: 'Service Prices', icon: ICONS.prices },
   {
     label: 'Masters',
     icon: ICONS.masters,

@@ -17,11 +17,19 @@ const force = process.argv.includes('--force')
 const meta = readJson('lib/continent-meta.json')
 const world = readJson('lib/world-universities.json')
 const costs = readJson('lib/country-costs.json')
+const prices = readJson('lib/service-prices.json')
 
 const client = new pg.Client({ connectionString: databaseUrl(root) })
 await client.connect()
 try {
   await client.query(readFileSync(path.join(root, 'db/schema.sql'), 'utf8'))
+
+  // Service prices from the snapshot, for a fresh database. Prices already set in admin are kept.
+  for (const [key, price] of Object.entries(prices)) {
+    await client.query(
+      `INSERT INTO service_prices (key, price_inr, updated_by) VALUES ($1, $2, 'system (db-seed)') ON CONFLICT (key) DO NOTHING`,
+      [key, price])
+  }
 
   const { rows: [{ count }] } = await client.query('SELECT count(*)::int AS count FROM continents')
   if (count > 0 && !force) {
